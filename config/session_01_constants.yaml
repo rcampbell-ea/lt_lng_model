@@ -1,0 +1,28 @@
+# Session 1 gate: pinned raw inputs and the country key.
+# Every numeric value used by the session 1 build and its validation checks
+# lives here, never inline in code (CLAUDE.md, "numbers, failure and
+# provenance"). Counts below are the expected magnitudes named in section 4
+# of the build plan and section 4 of the forecast plan; the build raises if
+# what it reads does not match.
+
+header_search:
+  # How many rows from the top of a sheet to scan while locating the header
+  # row before giving up and raising.
+  max_rows_scanned: 15
+
+ea_dataset_catalogue:
+  expected_total_mappings: 463
+  expected_total_references: 280316
+  expected_total_distinct_ids: 275507
+  expected_per_mapping_raw_distinct:
+    Long term gas supply: {raw: 358, distinct: 179}
+    Long term LNG imports and exports: {raw: 206, distinct: 103}
+    Long term total demand: {raw: 1799, distinct: 953}
+    Long term prices: {raw: 156, distinct: 78}
+
+ea_cargo_tracking:
+  expected_area_count: 53
+  expected_distinct_country_codes: 177
+  expected_distinct_port_ids_areas_file: 1859
+  expected_port_entries_ports_file: 1628
+  expected_sub_country_objects: 30

@@ -1,0 +1,30 @@
+{
+  "files": {
+    "ea_api_mappings.txt": {
+      "asserted_total_distinct_ids": 275507,
+      "asserted_total_mappings": 463,
+      "asserted_total_references": 280316,
+      "byte_count": 6753982,
+      "filename": "ea_api_mappings.txt",
+      "sha256": "4f48c347b1eb3e3e86352af3cc547fe9c3956429aae47797ee0416c92f20f84d"
+    },
+    "ea_ct_areas_metadata.txt": {
+      "asserted_area_count": 53,
+      "asserted_distinct_country_codes": 177,
+      "asserted_distinct_port_ids": 1859,
+      "byte_count": 61450,
+      "filename": "ea_ct_areas_metadata.txt",
+      "sha256": "af2dae7e489bb45c37219791b030f7b4aa64bd236dacdb8bc87f74ee5dab4d3f"
+    },
+    "ea_ct_country_ports.txt": {
+      "byte_count": 43653,
+      "distinct_country_codes": 177,
+      "exploded_row_count": 1859,
+      "filename": "ea_ct_country_ports.txt",
+      "raw_port_list_entries": 1628,
+      "sha256": "1a928616ebf97f11e0c7da958c3b077a38cfe16433b6e5e5930a8e73bb9cdb4a",
+      "sub_country_objects": 30
+    }
+  },
+  "source_directory": "data/raw/ea_api/202608"
+}

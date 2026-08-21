@@ -1,0 +1,12 @@
+{
+  "files": {
+    "iso3166_1_countries.csv": {
+      "byte_count": 5600,
+      "filename": "iso3166_1_countries.csv",
+      "row_count": 249,
+      "sha256": "368135349a271b432ce079324a82a158a64590b3f7392b82d89e3e2f19197856"
+    }
+  },
+  "note": "Authored static snapshot of the ISO 3166-1 alpha-2 list (country_iso2, country_name, region), not pulled from a live service: no offline ISO package (pycountry, babel, iso3166, country_converter) is installed in the lt_lng_flows environment, and session 1 permits no network call. Recommend human sanity check before session 2 sign-off.",
+  "source_directory": "data/geo/raw"
+}

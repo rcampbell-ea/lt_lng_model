@@ -2,6 +2,8 @@
 data/**
 !data/**/
 !data/**/.gitkeep
+!**/.gitkeep
+!**/*_manifest.json
 docs/
 .idea/
 __pycache__/

@@ -1,0 +1,53 @@
+# Candidate EA cargo-tracking area -> section 4.3 node_id mappings, curated
+# by hand from the fourteen area names build plan 4.6b names explicitly as
+# the reason ea_ct_area / ea_ct_area_country matter. This table is the
+# proposal's judgement call, made once by a human reading the plan text, not
+# a runtime string-similarity computation: build_area_node_proposal still
+# refuses to propose a candidate unless the area's actual Countries[] list is
+# exactly the single country expected, and unless the candidate node_id is
+# one of the ids in lng_nodes.yaml. A candidate whose node_id is not in that
+# file (au_south) documents a known plan/EA taxonomy discrepancy rather than
+# inventing a node.
+candidates:
+  - area_name: "Alaska"
+    expected_country_iso2: US
+    candidate_node_id: us_alaska
+  - area_name: "US Gulf"
+    expected_country_iso2: US
+    candidate_node_id: us_gulf
+  - area_name: "US West Coast"
+    expected_country_iso2: US
+    candidate_node_id: us_west
+  - area_name: "US Atlantic Coast"
+    expected_country_iso2: US
+    candidate_node_id: us_east
+  - area_name: "US North Pacific"
+    expected_country_iso2: US
+    candidate_node_id: us_west
+  - area_name: "Canada Atlantic Coast"
+    expected_country_iso2: CA
+    candidate_node_id: ca_east
+  - area_name: "Australia East"
+    expected_country_iso2: AU
+    candidate_node_id: au_east
+  - area_name: "Australia North"
+    expected_country_iso2: AU
+    candidate_node_id: au_north
+  - area_name: "Australia South"
+    expected_country_iso2: AU
+    candidate_node_id: au_south
+  - area_name: "Australia West"
+    expected_country_iso2: AU
+    candidate_node_id: au_west
+  - area_name: "Arctic Ocean & Barents Sea"
+    expected_country_iso2: RU
+    candidate_node_id: ru_arctic_other
+  - area_name: "Baltic Sea Upper"
+    expected_country_iso2: RU
+    candidate_node_id: ru_baltic
+  - area_name: "Baltic Sea Low"
+    expected_country_iso2: RU
+    candidate_node_id: ru_baltic
+  - area_name: "Russian Pacific"
+    expected_country_iso2: RU
+    candidate_node_id: ru_sakhalin

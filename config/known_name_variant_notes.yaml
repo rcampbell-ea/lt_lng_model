@@ -1,0 +1,12 @@
+# Documentary notes only, from the known ISO2 traps in section 4.5 of
+# docs/LT_LNG_flows_forecast_plan.md. Attaching one of these to an unresolved
+# crosswalk row never changes proposed_iso2 or confidence: it is a hint for
+# the human sign-off in session 2, not a proposal. Matched on the raw_value
+# exactly as it appears (case sensitive), because the workbooks are
+# consistent about their own casing.
+known_name_variant_notes:
+  UK: "known EA name variant per plan 4.5.2: UK maps to GB"
+  "South Korea": "known EA name variant per plan 4.5.2: South Korea maps to KR"
+  Turkey: "known EA name variant per plan 4.5.2: Turkey/Turkiye maps to TR"
+  UAE: "known EA name variant per plan 4.5.2: UAE maps to AE"
+  Burma: "known EA name variant per plan 4.5.2: Myanmar and Burma both map to MM"

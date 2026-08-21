@@ -1,0 +1,11 @@
+# Node ids named in section 4.3 of docs/LT_LNG_flows_forecast_plan.md.
+# This is the noun list xwalk_area_node_proposed.csv is allowed to propose
+# into: a proposed_node_id outside this file is not a valid proposal.
+# "All others" nodes (one node per country, node_id == country slug) are not
+# enumerated here because they are derived from dim_country, not a fixed list.
+
+split_country_nodes:
+  US: [us_gulf, us_east, us_west, us_alaska]
+  CA: [ca_east, ca_west]
+  RU: [ru_yamal, ru_baltic, ru_sakhalin, ru_arctic_other]
+  AU: [au_west, au_north, au_east]

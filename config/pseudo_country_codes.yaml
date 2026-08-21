@@ -1,0 +1,22 @@
+# The six pseudo codes from section 4.4 of docs/LT_LNG_flows_forecast_plan.md
+# and section 4.3 of docs/sessions_00_01_build_plan.md. None of these are
+# ISO 3166-1 real countries; is_real_country is False for every one.
+# XK is deliberately absent: it is already used de facto for Kosovo.
+
+pseudo_codes:
+  XP: {meaning: "portfolio seller pool, origin unspecified"}
+  XM: {meaning: "multiple or unspecified destination"}
+  XR: {meaning: "reload or transhipment origin"}
+  XL: {meaning: "the literal Liquefied Natural Gas value in IEA GTF exit and entry columns"}
+  XN: {meaning: "not elsewhere specified, as used in IEA GTF"}
+  ZZ: {meaning: "unknown, error trapping only"}
+
+# Exact, case-insensitive raw-string matches that resolve to a pseudo code
+# at high confidence (build plan 4.4: "an exact match to a known pseudo code
+# case such as Portfolio to XP or Multiple to XM"). Not a fuzzy or partial
+# match: the raw_value must equal the alias exactly, case folded only.
+pseudo_code_aliases:
+  portfolio: XP
+  multiple: XM
+  "liquefied natural gas": XL
+  "not elsewhere specified": XN

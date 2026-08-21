@@ -1,0 +1,54 @@
+area_id,area_name,suez_position,country_iso2_list,proposed_node_id,confidence,note
+24772,Africa Atlantic Coast,west,AO|BJ|CD|CG|CI|CM|CV|GA|GH|GM|GN|GQ|GW|LR|MA|MR|NG|SL|SN|ST|TG,,none,"multi country area (21 countries: AO, BJ, CD, CG, CI, CM, CV, GA, GH, GM, GN, GQ, GW, LR, MA, MR, NG, SL, SN, ST, TG); a multi country area is not a node"
+24719,Alaska,west,US,us_alaska,high,unambiguous single country match to a section 4.3 node id
+24777,Arabian Gulf,east,AE|BH|IQ|IR|KW|OM|QA|SA,,none,"multi country area (8 countries: AE, BH, IQ, IR, KW, OM, QA, SA); a multi country area is not a node"
+24673,Arctic Ocean & Barents Sea,west,CA|FO|GL|IS|NO|RU,,none,"multi country area (6 countries: CA, FO, GL, IS, NO, RU); a multi country area is not a node"
+24769,Argentina & Uruguay,west,AR|BR|FK|UY,,none,"multi country area (4 countries: AR, BR, FK, UY); a multi country area is not a node"
+24781,Australia East,east,AU,au_east,high,unambiguous single country match to a section 4.3 node id
+24704,Australia North,east,AU|TL,,none,"multi country area (2 countries: AU, TL); a multi country area is not a node"
+24774,Australia South,east,AU,,none,EA's taxonomy is finer than the plan's: no node id 'au_south' is named in section 4.3; leaving unresolved rather than inventing one
+24773,Australia West,east,AU,au_west,high,unambiguous single country match to a section 4.3 node id
+24755,Baltic Sea Low,west,DE|DK|LT|LV|PL|RU|SE,,none,"multi country area (7 countries: DE, DK, LT, LV, PL, RU, SE); a multi country area is not a node"
+24594,Baltic Sea Upper,west,EE|FI|RU|SE,,none,"multi country area (4 countries: EE, FI, RU, SE); a multi country area is not a node"
+24583,Black Sea,west,BG|GE|MD|RO|RU|TR|UA,,none,"multi country area (7 countries: BG, GE, MD, RO, RU, TR, UA); a multi country area is not a node"
+24767,Brazil,west,BR,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24757,British Isles,west,GB|IE,,none,"multi country area (2 countries: GB, IE); a multi country area is not a node"
+24740,Canada Atlantic Coast,west,CA,ca_east,high,unambiguous single country match to a section 4.3 node id
+24746,Caribs,west,AG|AI|AW|BB|BQ|BS|CO|CU|CW|DM|DO|GD|GF|GP|GY|HT|JM|KN|KY|LC|MQ|MS|PR|SR|SX|TT|VC|VE|VG|VI,,none,"multi country area (30 countries: AG, AI, AW, BB, BQ, BS, CO, CU, CW, DM, DO, GD, GF, GP, GY, HT, JM, KN, KY, LC, MQ, MS, PR, SR, SX, TT, VC, VE, VG, VI); a multi country area is not a node"
+24726,Central China,east,CN,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24738,Central Mediterranean,west,AL|FR|HR|IT|LY|ME|MT|SI|TN,,none,"multi country area (9 countries: AL, FR, HR, IT, LY, ME, MT, SI, TN); a multi country area is not a node"
+24758,Continent,west,BE|DE|FR|GG|JE|NL,,none,"multi country area (6 countries: BE, DE, FR, GG, JE, NL); a multi country area is not a node"
+24779,East Africa,east,IO|KE|KM|MG|MU|MV|MZ|RE|SC|SO|TZ|YT,,none,"multi country area (12 countries: IO, KE, KM, MG, MU, MV, MZ, RE, SC, SO, TZ, YT); a multi country area is not a node"
+24600,East Coast Central America,west,BZ|CR|GT|HN|PA,,none,"multi country area (5 countries: BZ, CR, GT, HN, PA); a multi country area is not a node"
+24771,East Coast India,east,BD|IN|LK,,none,"multi country area (3 countries: BD, IN, LK); a multi country area is not a node"
+24671,East Coast Mexico,west,MX,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24737,East Mediterranean,west,CY|EG|GR|IL|LB|LY|SY|TR,,none,"multi country area (8 countries: CY, EG, GR, IL, LB, LY, SY, TR); a multi country area is not a node"
+24732,Great Lakes,west,CA|US,,none,"multi country area (2 countries: CA, US); a multi country area is not a node"
+24709,Iberian Atlantic Coast,west,ES|PT,,none,"multi country area (2 countries: ES, PT); a multi country area is not a node"
+24702,Indonesia,east,ID|MY,,none,"multi country area (2 countries: ID, MY); a multi country area is not a node"
+24730,Japan Island,east,JP,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24715,Korea,east,JP|KP|KR,,none,"multi country area (3 countries: JP, KP, KR); a multi country area is not a node"
+24780,New Zealand,east,NZ,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24666,North China,east,CN,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24756,North Sea,west,DK|GB|NO,,none,"multi country area (3 countries: DK, GB, NO); a multi country area is not a node"
+25007,North West Africa,west,ES|MA|PT,,none,"multi country area (3 countries: ES, MA, PT); a multi country area is not a node"
+24782,Pacific Islands,west,AS|CK|FJ|GU|MH|MP|NC|PF|SB|TO|US|VU|WF|WS,,none,"multi country area (14 countries: AS, CK, FJ, GU, MH, MP, NC, PF, SB, TO, US, VU, WF, WS); a multi country area is not a node"
+24764,Pakistan / West Coast India,east,IN|PK,,none,"multi country area (2 countries: IN, PK); a multi country area is not a node"
+24708,Papua New Guinea,east,PG,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24728,Philippines,east,PH,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24778,Red Sea,east,DJ|EG|ER|IL|JO|SA|SD|SO|YE,,none,"multi country area (9 countries: DJ, EG, ER, IL, JO, SA, SD, SO, YE); a multi country area is not a node"
+24714,Russian Pacific,east,RU,ru_sakhalin,high,unambiguous single country match to a section 4.3 node id
+24584,Sea of Marmara,west,TR,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24655,Singapore / Malaysia,east,BN|ID|MY|SG|VN,,none,"multi country area (5 countries: BN, ID, MY, SG, VN); a multi country area is not a node"
+24776,South Africa,west,NA|ZA,,none,"multi country area (2 countries: NA, ZA); a multi country area is not a node"
+24725,South China,east,CN|HK|MO,,none,"multi country area (3 countries: CN, HK, MO); a multi country area is not a node"
+24729,Taiwan,east,TW,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24770,Thailand / Vietnam,east,KH|MM|MY|TH|VN,,none,"multi country area (5 countries: KH, MM, MY, TH, VN); a multi country area is not a node"
+24747,US Atlantic Coast,west,BM|US,,none,"multi country area (2 countries: BM, US); a multi country area is not a node"
+24676,US Gulf,west,US,us_gulf,high,unambiguous single country match to a section 4.3 node id
+24739,US North Pacific,west,CA|US,,none,"multi country area (2 countries: CA, US); a multi country area is not a node"
+24741,US West Coast,west,US,us_west,high,unambiguous single country match to a section 4.3 node id
+24598,West Coast Central America,west,CR|GT|HN|NI|PA|SV,,none,"multi country area (6 countries: CR, GT, HN, NI, PA, SV); a multi country area is not a node"
+24742,West Coast Mexico,west,MX,,none,not among the split-country candidate areas named in build plan 4.6b; a single node country's node id is out of scope for this proposal
+24768,West Coast South America,west,CL|CO|EC|PE,,none,"multi country area (4 countries: CL, CO, EC, PE); a multi country area is not a node"
+24712,West Mediterranean,west,DZ|ES|FR|GI|MA,,none,"multi country area (5 countries: DZ, ES, FR, GI, MA); a multi country area is not a node"
