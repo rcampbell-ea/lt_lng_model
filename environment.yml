@@ -1,0 +1,33 @@
+name: lt_lng_flows
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  # core data
+  - pandas=3.0.*
+  - numpy=2.*
+  - pyarrow=25.*
+  - python-duckdb=1.5.*
+  - scipy=1.*
+  # excel and config
+  - openpyxl=3.1.*
+  - pyyaml=6.*
+  - python-dotenv=1.*
+  # geospatial, conda not pip
+  - geopandas=1.1.*
+  - shapely=2.1.*
+  - pyproj=3.7.*
+  - pyogrio
+  - networkx=3.*
+  # validation and output
+  - pandera=0.32.*
+  - plotly=6.*
+  # tooling
+  - pytest=9.*
+  - pytest-cov
+  - ruff=0.16.*
+  - pre-commit
+  - pip
+  - pip:
+      - searoute==1.6.0
+      - shooju==3.8.16
+      - mcp            # only if the shooju launcher runs on this interpreter

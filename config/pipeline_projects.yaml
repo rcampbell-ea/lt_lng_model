@@ -1,0 +1,81 @@
+# One entry per prospective pipeline project in the central case, per
+# Appendix A.7. Capacity, start year, ramp, availability and source are all
+# null pending house view or a cited source — an invented number here is
+# worse than a null, because a null gets questioned. Seeded with the
+# projects named in section 5.1 as large enough to move the LNG call.
+
+owner: null  # named sign-off owner, per open question 8
+
+projects:
+  - name: Power of Siberia 2
+    origin_iso2: null
+    destination_iso2: null
+    capacity_bcma: null
+    commissioning_year: null
+    ramp_months: null
+    availability_factor: null
+    source: null
+
+  - name: Central Asia to China line D
+    origin_iso2: null
+    destination_iso2: null
+    capacity_bcma: null
+    commissioning_year: null
+    ramp_months: null
+    availability_factor: null
+    source: null
+
+  - name: TANAP and TAP expansion
+    origin_iso2: null
+    destination_iso2: null
+    capacity_bcma: null
+    commissioning_year: null
+    ramp_months: null
+    availability_factor: null
+    source: null
+
+  - name: TAPI
+    origin_iso2: null
+    destination_iso2: null
+    capacity_bcma: null
+    commissioning_year: null
+    ramp_months: null
+    availability_factor: null
+    source: null
+
+  - name: East Med
+    origin_iso2: null
+    destination_iso2: null
+    capacity_bcma: null
+    commissioning_year: null
+    ramp_months: null
+    availability_factor: null
+    source: null
+
+  - name: Nigeria to Morocco
+    origin_iso2: null
+    destination_iso2: null
+    capacity_bcma: null
+    commissioning_year: null
+    ramp_months: null
+    availability_factor: null
+    source: null
+
+  - name: Argentina into Brazil
+    origin_iso2: null
+    destination_iso2: null
+    capacity_bcma: null
+    commissioning_year: null
+    ramp_months: null
+    availability_factor: null
+    source: null
+
+  - name: Russia into Europe restoration
+    origin_iso2: null
+    destination_iso2: null
+    capacity_bcma: null
+    commissioning_year: null
+    ramp_months: null
+    availability_factor: null
+    source: null
+    note: explicit entry so the central case has to state a position rather than leave one implicit, per Appendix A.7

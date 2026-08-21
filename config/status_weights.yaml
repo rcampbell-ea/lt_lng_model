@@ -1,0 +1,33 @@
+# Liquefaction, regas and agreement-type weights.
+# No canonical EA source exists for these (section 7, layer 1), so every
+# judgemental value is marked for review with an owner left null. Firm
+# statuses are set to 1.0 and cancelled/retired to 0.0 per the plan; nothing
+# else is invented.
+
+owner: null  # named sign-off owner, per open question 8
+
+liquefaction_status_weights:
+  Active: 1.0
+  Commissioning: 1.0
+  Under Construction: 1.0  # from start date
+  Advanced Development: null  # marked for review
+  Planned: null  # marked for review, lower than Advanced Development
+  Postponed: null  # marked for review, lower still
+  Cancelled: 0.0
+  Retired: 0.0  # excluded entirely per decision register; see open question 6
+  Probable: null  # marked for review
+
+regas_status_weights:
+  Active: 1.0
+  Commissioning: 1.0
+  Under Construction: 1.0
+  Advanced Development: null
+  Planned: null
+  Postponed: null
+  Cancelled: 0.0
+  Retired: 0.0
+
+agreement_type_weights:
+  SPA: 1.0
+  HOA: null  # not firm, marked for review
+  MOU: null  # not firm, marked for review

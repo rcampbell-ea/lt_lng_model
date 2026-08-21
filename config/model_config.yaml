@@ -1,0 +1,43 @@
+# Structure only. No invented numbers. Nulls are questions, not defaults.
+
+horizon:
+  start_year: 2025
+  end_year: 2050
+
+units:
+  volume: bcm
+  # Canonical internal reference condition. Left null until identified
+  # empirically per Appendix B; never inherited from whichever file was
+  # read last.
+  reference_condition: null
+  mt_to_bcm_lng_factor: null  # workbook cover row states 1.37; confirm via Appendix B.4 before use, do not hardcode here yet
+
+seed:
+  lookback_years: 3
+  regime_break_by_region:
+    europe: null  # decision register: seed from post-2022 regime, not a 2021-2024 average; set start year
+    asia: null
+    americas: null
+    other: null
+
+capacity:
+  liquefaction_ramp_months: null       # roughly 12 to 24 months per 7, but not set here
+  liquefaction_plateau_utilisation: null  # 85 to 100 percent range noted in plan, not chosen
+  regas_ramp_months: null
+  regas_plateau_utilisation: null
+
+balancing:
+  clamp_negative_lng_residuals: false  # must stay false per section 5.6
+  divergence_tolerance_pct_by_country: {}  # per-country tolerance band, section 5.6.4; empty until set
+  global_closure_tolerance_pct: null
+  ras_max_iterations: null
+  ras_convergence_tolerance: null
+
+netback:
+  softmax_temperature: null  # calibrated on ship tracking data, not chosen, section 7 layer 3
+
+pipeline:
+  producer_export_capability_source: null  # LT dataset field name, once known, section 5.5 P2
+
+reconciliation:
+  reconcile_to_lt_country_margins: null  # true if LT publishes country-level pipe imports/exports, section 5.5 P4

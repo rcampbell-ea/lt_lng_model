@@ -1,0 +1,32 @@
+# Vessel reference, charter rate, bunker price, canal costs, port time.
+# All null pending the session 1 answer on whether the LT dataset already
+# publishes these (open question 5). No invented figures.
+
+owner: null
+
+vessel_reference:
+  cargo_capacity_cbm: null
+  boil_off_rate_pct_per_day: null
+  design_speed_knots: null
+
+charter_rate:
+  basis: null       # e.g. spot, term, per source once known
+  value_usd_per_day: null
+  source: null
+
+bunker_price:
+  fuel_type: null
+  value_usd_per_tonne: null
+  source: null
+
+canal_costs:
+  panama:
+    transit_fee_usd: null
+    source: null
+  suez:
+    transit_fee_usd: null
+    source: null
+
+port_time:
+  loading_days: null
+  discharge_days: null

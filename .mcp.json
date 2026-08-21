@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "shooju": {
+      "type": "stdio",
+      "command": "C:\\Users\\robert.campbell\\AppData\\Local\\miniconda3\\python.exe",
+      "args": ["tools/shooju_mcp_launcher.py"],
+      "env": {}
+    }
+  }
+}
