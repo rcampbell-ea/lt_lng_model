@@ -4,7 +4,9 @@ data/**
 !data/**/.gitkeep
 !**/.gitkeep
 !**/*_manifest.json
-docs/
+docs/*
+!docs/sessions_02_03_build_plan.md
+!docs/session_02_geo_master.md
 .idea/
 __pycache__/
 *.pyc

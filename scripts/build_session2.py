@@ -178,12 +178,9 @@ def main() -> None:
         )
     if missing_geometry_relevant:
         log(
-            f"GATE C (new, not previously named): {missing_geometry_relevant} appear with a "
-            f"non-none role_lng or role_pipe but have no polygon in the 1:50m admin0 layer. "
-            f"Resolving this needs either a third network pull (Natural Earth 10m admin0, "
-            f"same public-domain source family, beyond the two pulls sessions_02_03_build_plan "
-            f"2.1/2.1b authorise) or a hand-reviewed coordinate, which the session 2 'do not' "
-            f"list forbids doing unreviewed. Left for sign off rather than resolved silently."
+            f"GATE C (sessions_02_03_build_plan.md section 0): {missing_geometry_relevant} "
+            f"appear with a non-none role_lng or role_pipe but have no polygon in the 1:50m "
+            f"admin0 layer. Not resolved this run; see gate C for the two closing paths."
         )
     new_codes = set(dim_country["country_iso2"])
     added, removed = sorted(new_codes - old_codes), sorted(old_codes - new_codes)
@@ -221,11 +218,10 @@ def main() -> None:
     dissolved_only_codes = sorted(set(dissolved["country_iso2"]) - new_codes)
     if dissolved_only_codes:
         log(
-            f"GATE D (new): Natural Earth geometry exists for {dissolved_only_codes} with no "
-            f"corresponding dim_country row (Kosovo/XK: plan 4.4 reserves the code but never "
-            f"adds it, and it is not in the ISO 3166-1 snapshot). Excluded from "
-            f"dim_country_adjacency, which has a foreign key to dim_country; not modelled "
-            f"either way since it carries no LNG or pipe role. Left for sign off."
+            f"GATE D (sessions_02_03_build_plan.md section 0): Natural Earth geometry exists "
+            f"for {dissolved_only_codes} with no corresponding dim_country row. Excluded from "
+            f"dim_country_adjacency, which has a foreign key to dim_country. Not resolved "
+            f"this run; see gate D."
         )
     geometric_adjacency = geometric_adjacency_raw[
         geometric_adjacency_raw["country_iso2_a"].isin(new_codes)
@@ -506,35 +502,33 @@ def write_report(
     lines.append("## Known open items handed to session 3 or to sign-off")
     lines.append("")
     lines.append(
-        "- **Gate C (new).** Gibraltar (GI) is a real regas importer per the pinned "
-        "workbook, but the pinned Natural Earth Admin 0 Countries 1:50m snapshot does not "
-        "carve it out as a separate polygon (it is absorbed into Spain's outline at that "
-        "resolution), so `dim_country` carries GI with continent/un_subregion/centroid/"
-        "is_landlocked/geo lineage all null and 4.8 check 4 fails for it. Fixing this needs "
-        "either a third network pull (Natural Earth 10m admin0, same public-domain family) "
-        "beyond the two pulls this session is authorised for, or a hand-reviewed coordinate. "
-        "Both need a decision from you before this can close."
+        "Gates C, D and E are recorded in full in `docs/sessions_02_03_build_plan.md` "
+        "section 0, alongside gates A and B, not only here: that file is what session 3 "
+        "reads before starting, and this report is regenerated (overwritten) on every "
+        "`build_session2.py` run, so it is not the durable record."
     )
     lines.append(
-        "- **Gate D (new).** Kosovo has Natural Earth geometry (`ISO_A2_EH='XK'`) but no "
-        "dim_country row: it is not in the ISO 3166-1 snapshot session 1 pinned, and plan 4.4 "
-        "reserves XK for it without ever formally adding it. It carries no LNG or pipe role "
-        "(absent from every pinned workbook and the GTF file), so this session excludes it "
-        "from `dim_country_adjacency` rather than inventing a real/pseudo classification for "
-        "it. Needs a decision on whether Kosovo gets a formal dim_country row."
+        "- **Gate C.** Gibraltar (GI) is a real regas importer per the pinned workbook, "
+        "but has no polygon in the pinned Natural Earth Admin 0 Countries 1:50m snapshot "
+        "(absorbed into Spain's outline at that resolution); 4.8 check 4 fails for it. "
+        "Not resolved this run."
+    )
+    lines.append(
+        "- **Gate D.** Kosovo (Natural Earth `ISO_A2_EH='XK'`) has geometry but no "
+        "dim_country row (not in the pinned ISO 3166-1 snapshot; plan 4.4 reserves XK for "
+        "it without formally adding it). Excluded from dim_country_adjacency rather than "
+        "given an invented classification. Not resolved this run."
+    )
+    lines.append(
+        "- **Gate E.** `crosswalks/xwalk_project_node_proposed.csv` leaves every project "
+        "in the four split countries (US, Canada, Russia, Australia; 31.6% of total "
+        "capacity) unresolved: no sub-national field exists in the pinned workbooks to "
+        "assign a project to us_gulf vs us_east, etc. Not resolved this run."
     )
     lines.append(
         "- `role_pipe` classifies a country seen as both GTF Exit and Entry as "
         "`both`, not `transit`: no flow-direction or volume data is pulled this "
         "session to distinguish the two. Revisit once session 3 pulls series data."
-    )
-    lines.append(
-        "- `crosswalks/xwalk_project_node_proposed.csv` leaves every project in the "
-        "four split countries (US, Canada, Russia, Australia) unresolved: no "
-        "sub-national field exists in the pinned workbooks to assign a project to "
-        "us_gulf vs us_east, etc. Needs the same kind of human sign off as gate A "
-        "and gate B before dim_port_candidate and node-level capacity aggregation "
-        "can be completed for those four countries."
     )
     (DOCS_DIR / "session_02_geo_master.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
