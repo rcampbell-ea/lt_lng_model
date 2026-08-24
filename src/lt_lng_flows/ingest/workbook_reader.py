@@ -284,6 +284,94 @@ def read_iea_gtf(path: Path) -> dict:
     return {"sheets": sheets_info, "country_records": country_records}
 
 
+def read_project_capacity(
+    path: Path, spec: WorkbookSpec, capacity_column: str = "MTPA"
+) -> list[dict]:
+    """Session 2, build plan 4.3/2.6. One row per project on the liquefaction
+    or regas data sheet: raw ``Country``, ``ISO 2-letter code`` and the
+    requested capacity column, alongside the project name. Only used for the
+    session 2 node/capacity aggregation check, so it reads a single named
+    capacity column rather than the whole row -- if a session later needs
+    more columns, extend the read here rather than re-deriving from
+    ``country_records``, which drops everything except the country strings.
+    """
+    if not path.is_file():
+        raise FileNotFoundError(f"workbook not found: {path}")
+
+    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+    rows: list[dict] = []
+    try:
+        ws = wb[spec.data_sheet.sheet_name]
+        required = (*spec.data_sheet.required_columns, capacity_column)
+        header_row, header_values = _find_header_row(ws, required)
+        last_row = _last_nonblank_row(ws, header_row)
+        col_index = {name: idx for idx, name in enumerate(header_values) if name is not None}
+        country_idx = col_index["Country"]
+        iso2_idx = col_index["ISO 2-letter code"]
+        project_idx = col_index["Project"]
+        capacity_idx = col_index[capacity_column]
+
+        for r, row in enumerate(
+            ws.iter_rows(min_row=header_row + 1, max_row=last_row, values_only=True),
+            start=header_row + 1,
+        ):
+            capacity = row[capacity_idx]
+            if capacity is None:
+                raise ValueError(
+                    f"{path.name} row {r}: column '{capacity_column}' is empty inside "
+                    f"the data range ({header_row + 1}-{last_row})"
+                )
+            rows.append(
+                {
+                    "source_system": spec.source_system,
+                    "project": row[project_idx],
+                    "country_raw": row[country_idx],
+                    "iso2_raw": row[iso2_idx],
+                    "capacity": float(capacity),
+                }
+            )
+    finally:
+        wb.close()
+    return rows
+
+
+def read_iea_gtf_border_pairs(path: Path) -> list[dict]:
+    """Session 2, build plan 4.3/2.5. One row per GTF border point: the raw
+    ``Exit`` and ``Entry`` country strings for that row, paired (unlike
+    ``country_records``, which flattens Exit and Entry into separate rows
+    and loses the pairing). Used only as evidence for
+    ``crosswalks/adjacency_override.csv``: a border point whose Exit/Entry
+    countries are not geometrically adjacent is a named pipeline connection
+    across a gap the boundary geometry does not show (e.g. a subsea line),
+    not proof by itself -- every row here still needs a human-reviewed note.
+    """
+    if not path.is_file():
+        raise FileNotFoundError(f"IEA GTF export not found: {path}")
+
+    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+    rows: list[dict] = []
+    try:
+        ws = wb[IEA_GTF_DATA_SHEET]
+        header_row, header_values = _find_header_row(ws, IEA_GTF_REQUIRED_COLUMNS)
+        last_row = _last_nonblank_row(ws, header_row)
+        col_index = {name: idx for idx, name in enumerate(header_values) if name is not None}
+        exit_idx = col_index["Exit"]
+        entry_idx = col_index["Entry"]
+        border_idx = col_index["Borderpoint"]
+
+        for row in ws.iter_rows(min_row=header_row + 1, max_row=last_row, values_only=True):
+            rows.append(
+                {
+                    "borderpoint": row[border_idx],
+                    "exit_raw": row[exit_idx],
+                    "entry_raw": row[entry_idx],
+                }
+            )
+    finally:
+        wb.close()
+    return rows
+
+
 def read_all_workbooks(workbook_root: Path) -> dict:
     """Read all three pinned LNG workbooks under ``workbook_root``.
 

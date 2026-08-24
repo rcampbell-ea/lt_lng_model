@@ -1,0 +1,28 @@
+{
+  "extracted_members": [
+    "ne_10m_ports.README.html",
+    "ne_10m_ports.VERSION.txt",
+    "ne_10m_ports.cpg",
+    "ne_10m_ports.dbf",
+    "ne_10m_ports.prj",
+    "ne_10m_ports.shp",
+    "ne_10m_ports.shx"
+  ],
+  "files": {
+    "ne_10m_ports.zip": {
+      "byte_count": 51824,
+      "filename": "ne_10m_ports.zip",
+      "sha256": "1824cccd897a6c2ad546abbaf1f3545d51cff4bddfbda40244a1ad1ab1e4371d"
+    }
+  },
+  "preferred_source_attempts": [
+    {
+      "error": "HTTP Error 403: Forbidden",
+      "source": "world_port_index",
+      "url": "https://msi.nga.mil/api/publications/download?type=view&key=16920959/SFH00000/WPI.geojson"
+    }
+  ],
+  "retrieved_at": "2026-08-24T17:26:30.167495+00:00",
+  "source_url": "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_ports.zip",
+  "source_used": "natural_earth_10m_ports"
+}

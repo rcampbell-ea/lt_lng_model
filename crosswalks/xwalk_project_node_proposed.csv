@@ -1,0 +1,1233 @@
+source_system,project,country_iso2,capacity,node_id,method
+workbook_liquefaction,Soyo LNG,AO,5.2,angola,single_node_country
+workbook_liquefaction,Angola LNG,AO,5.2,angola,single_node_country
+workbook_liquefaction,Hilli Episeyo FLNG,CM,0.6,cameroon,single_node_country
+workbook_liquefaction,Cameroon LNG,CM,3.5,cameroon,single_node_country
+workbook_liquefaction,Hilli Episeyo FLNG,CM,0.6,cameroon,single_node_country
+workbook_liquefaction,Hilli Episeyo FLNG,CM,0.6,cameroon,single_node_country
+workbook_liquefaction,Etinde FLNG,CM,1.4,cameroon,single_node_country
+workbook_liquefaction,Hilli Episeyo FLNG,CM,0.6,cameroon,single_node_country
+workbook_liquefaction,Congo-Brazzaville FLNG,CG,1.4,congo,single_node_country
+workbook_liquefaction,Tango FLNG (Congo LNG),CG,0.6,congo,single_node_country
+workbook_liquefaction,Nguya FLNG (Congo LNG),CG,2.4,congo,single_node_country
+workbook_liquefaction,Ethiopia-Djibouti LNG,DJ,3.0,djibouti,single_node_country
+workbook_liquefaction,Fortuna FLNG,GQ,2.2,equatorial_guinea,single_node_country
+workbook_liquefaction,EG LNG,GQ,3.7,equatorial_guinea,single_node_country
+workbook_liquefaction,EG LNG,GQ,4.4,equatorial_guinea,single_node_country
+workbook_liquefaction,Gabon LNG,GA,0.7,gabon,single_node_country
+workbook_liquefaction,BirAllah LNG,MR,5.0,mauritania,single_node_country
+workbook_liquefaction,Tortue FLNG,MR,2.4,mauritania,single_node_country
+workbook_liquefaction,Tortue FLNG,MR,2.4,mauritania,single_node_country
+workbook_liquefaction,BirAllah LNG,MR,5.0,mauritania,single_node_country
+workbook_liquefaction,Coral Norte,MZ,3.6,mozambique,single_node_country
+workbook_liquefaction,Mozambique LNG,MZ,6.55,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Mozambique LNG,MZ,6.55,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Mozambique LNG,MZ,6.44,mozambique,single_node_country
+workbook_liquefaction,Mozambique LNG,MZ,6.44,mozambique,single_node_country
+workbook_liquefaction,Mozambique LNG,MZ,6.44,mozambique,single_node_country
+workbook_liquefaction,Coral Sul - LNG Liquefaction Terminal,MZ,3.4,mozambique,single_node_country
+workbook_liquefaction,Rovuma,MZ,1.5,mozambique,single_node_country
+workbook_liquefaction,Mozambique LNG,MZ,6.44,mozambique,single_node_country
+workbook_liquefaction,Brass LNG,NG,5.0,nigeria,single_node_country
+workbook_liquefaction,Ajaokuta,NG,5.475,nigeria,single_node_country
+workbook_liquefaction,NLNG,NG,4.1,nigeria,single_node_country
+workbook_liquefaction,Brass LNG,NG,5.0,nigeria,single_node_country
+workbook_liquefaction,NLNG,NG,3.3,nigeria,single_node_country
+workbook_liquefaction,NLNG,NG,3.3,nigeria,single_node_country
+workbook_liquefaction,NLNG,NG,3.3,nigeria,single_node_country
+workbook_liquefaction,NLNG,NG,4.1,nigeria,single_node_country
+workbook_liquefaction,Ajaokuta,NG,1.825,nigeria,single_node_country
+workbook_liquefaction,Olokola LNG,NG,6.3,nigeria,single_node_country
+workbook_liquefaction,Olokola LNG,NG,6.3,nigeria,single_node_country
+workbook_liquefaction,NLNG,NG,7.6,nigeria,single_node_country
+workbook_liquefaction,NLNG,NG,4.1,nigeria,single_node_country
+workbook_liquefaction,Nigeria FLNG,NG,2.1,nigeria,single_node_country
+workbook_liquefaction,Yakaar-Teranga LNG,SN,2.5,senegal,single_node_country
+workbook_liquefaction,Yakaar-Teranga LNG,SN,2.5,senegal,single_node_country
+workbook_liquefaction,Tanzania LNG,TZ,5.0,tanzania,single_node_country
+workbook_liquefaction,Tanzania LNG,TZ,5.0,tanzania,single_node_country
+workbook_liquefaction,Tanzania LNG,TZ,5.0,tanzania,single_node_country
+workbook_liquefaction,Gorgon,AU,5.2,,unresolved_split_country
+workbook_liquefaction,Fisherman's Landing LNG,AU,3.5,,unresolved_split_country
+workbook_liquefaction,Arrow,AU,4.0,,unresolved_split_country
+workbook_liquefaction,Arrow,AU,4.0,,unresolved_split_country
+workbook_liquefaction,Cash Maple,AU,2.0,,unresolved_split_country
+workbook_liquefaction,Gladstone LNG,AU,3.9,,unresolved_split_country
+workbook_liquefaction,Gladstone LNG,AU,3.9,,unresolved_split_country
+workbook_liquefaction,Gorgon,AU,5.0,,unresolved_split_country
+workbook_liquefaction,Gorgon,AU,5.2,,unresolved_split_country
+workbook_liquefaction,Gorgon,AU,5.2,,unresolved_split_country
+workbook_liquefaction,Gorgon,AU,5.0,,unresolved_split_country
+workbook_liquefaction,Tassie Shoal,AU,3.0,,unresolved_split_country
+workbook_liquefaction,Ichthys LNG,AU,4.45,,unresolved_split_country
+workbook_liquefaction,Ichthys LNG,AU,0.3,,unresolved_split_country
+workbook_liquefaction,Ichthys LNG,AU,4.45,,unresolved_split_country
+workbook_liquefaction,Northern Territory LNG,AU,3.3,,unresolved_split_country
+workbook_liquefaction,Northern Territory LNG,AU,3.3,,unresolved_split_country
+workbook_liquefaction,North West Shelf,AU,2.5,,unresolved_split_country
+workbook_liquefaction,North West Shelf,AU,4.4,,unresolved_split_country
+workbook_liquefaction,North West Shelf,AU,2.5,,unresolved_split_country
+workbook_liquefaction,North West Shelf,AU,2.5,,unresolved_split_country
+workbook_liquefaction,North West Shelf,AU,4.4,,unresolved_split_country
+workbook_liquefaction,Darwin LNG,AU,3.7,,unresolved_split_country
+workbook_liquefaction,Darwin LNG,AU,3.5,,unresolved_split_country
+workbook_liquefaction,Wheatstone LNG,AU,5.0,,unresolved_split_country
+workbook_liquefaction,Wheatstone LNG,AU,4.45,,unresolved_split_country
+workbook_liquefaction,Wheatstone LNG,AU,4.45,,unresolved_split_country
+workbook_liquefaction,Wheatstone LNG,AU,5.0,,unresolved_split_country
+workbook_liquefaction,Bonaparte,AU,2.4,,unresolved_split_country
+workbook_liquefaction,Western Australia LNG,AU,1.0,,unresolved_split_country
+workbook_liquefaction,Australia Pacific LNG,AU,4.5,,unresolved_split_country
+workbook_liquefaction,Browse,AU,5.7,,unresolved_split_country
+workbook_liquefaction,Browse,AU,5.7,,unresolved_split_country
+workbook_liquefaction,Australia Pacific LNG,AU,4.5,,unresolved_split_country
+workbook_liquefaction,Transborders FLNG,AU,1.5,,unresolved_split_country
+workbook_liquefaction,Australia Pacific LNG,AU,4.5,,unresolved_split_country
+workbook_liquefaction,Pluto LNG,AU,4.3,,unresolved_split_country
+workbook_liquefaction,Pluto LNG,AU,4.9,,unresolved_split_country
+workbook_liquefaction,Pluto LNG,AU,4.9,,unresolved_split_country
+workbook_liquefaction,Australia Pacific LNG,AU,4.5,,unresolved_split_country
+workbook_liquefaction,Prelude FLNG,AU,3.6,,unresolved_split_country
+workbook_liquefaction,QCLNG,AU,4.25,,unresolved_split_country
+workbook_liquefaction,QCLNG,AU,3.5,,unresolved_split_country
+workbook_liquefaction,QCLNG,AU,4.25,,unresolved_split_country
+workbook_liquefaction,Arrow,AU,5.0,,unresolved_split_country
+workbook_liquefaction,Arrow,AU,5.0,,unresolved_split_country
+workbook_liquefaction,PNG LNG,PG,4.15,papua_new_guinea,single_node_country
+workbook_liquefaction,Western LNG,PG,1.5,papua_new_guinea,single_node_country
+workbook_liquefaction,PNG LNG,PG,2.8,papua_new_guinea,single_node_country
+workbook_liquefaction,PNG LNG,PG,1.0,papua_new_guinea,single_node_country
+workbook_liquefaction,PNG LNG,PG,4.15,papua_new_guinea,single_node_country
+workbook_liquefaction,Papua LNG,PG,1.0,papua_new_guinea,single_node_country
+workbook_liquefaction,Papua LNG,PG,1.0,papua_new_guinea,single_node_country
+workbook_liquefaction,Papua LNG,PG,1.0,papua_new_guinea,single_node_country
+workbook_liquefaction,Papua LNG,PG,1.0,papua_new_guinea,single_node_country
+workbook_liquefaction,PNG LNG,PG,2.8,papua_new_guinea,single_node_country
+workbook_liquefaction,Cyprus LNG,CY,5.0,cyprus,single_node_country
+workbook_liquefaction,Snøhvit LNG,NO,4.2,norway,single_node_country
+workbook_liquefaction,Kollsnes,NO,0.1,norway,single_node_country
+workbook_liquefaction,Stravanger LNG,NO,0.3,norway,single_node_country
+workbook_liquefaction,Murmansk LNG,RU,6.8,,unresolved_split_country
+workbook_liquefaction,Murmansk LNG,RU,6.8,,unresolved_split_country
+workbook_liquefaction,Sakhalin 2,RU,5.4,,unresolved_split_country
+workbook_liquefaction,Far East LNG (Sakhalin 1),RU,6.2,,unresolved_split_country
+workbook_liquefaction,Sakhalin 2,RU,4.8,,unresolved_split_country
+workbook_liquefaction,Arctic LNG 2,RU,6.6,,unresolved_split_country
+workbook_liquefaction,Arctic LNG 1,RU,6.6,,unresolved_split_country
+workbook_liquefaction,Arctic LNG 1,RU,6.6,,unresolved_split_country
+workbook_liquefaction,Yakutia LNG,RU,9.0,,unresolved_split_country
+workbook_liquefaction,Cryogas-Vysotsk,RU,1.2,,unresolved_split_country
+workbook_liquefaction,Arctic LNG 2,RU,6.6,,unresolved_split_country
+workbook_liquefaction,Cryogas-Vysotsk,RU,0.66,,unresolved_split_country
+workbook_liquefaction,Murmansk LNG,RU,7.4,,unresolved_split_country
+workbook_liquefaction,Vladivostok - LNG Liquefaction Terminal,RU,10.0,,unresolved_split_country
+workbook_liquefaction,Taezhnyi,RU,2.0,,unresolved_split_country
+workbook_liquefaction,Ust-Luga (Baltic LNG),RU,6.5,,unresolved_split_country
+workbook_liquefaction,Ust-Luga (Baltic LNG),RU,6.5,,unresolved_split_country
+workbook_liquefaction,Ust-Luga (Baltic LNG),RU,6.5,,unresolved_split_country
+workbook_liquefaction,Obsky,RU,3.0,,unresolved_split_country
+workbook_liquefaction,Obsky,RU,3.0,,unresolved_split_country
+workbook_liquefaction,Arctic LNG 2,RU,6.6,,unresolved_split_country
+workbook_liquefaction,Sakhalin 2,RU,4.8,,unresolved_split_country
+workbook_liquefaction,Arctic LNG 1,RU,6.6,,unresolved_split_country
+workbook_liquefaction,Yamal LNG,RU,5.5,,unresolved_split_country
+workbook_liquefaction,Yamal LNG,RU,5.5,,unresolved_split_country
+workbook_liquefaction,Yamal LNG,RU,0.94,,unresolved_split_country
+workbook_liquefaction,Portovaya,RU,2.0,,unresolved_split_country
+workbook_liquefaction,Portovaya,RU,1.5,,unresolved_split_country
+workbook_liquefaction,Yamal LNG,RU,5.5,,unresolved_split_country
+workbook_liquefaction,Yakutia LNG,RU,9.0,,unresolved_split_country
+workbook_liquefaction,Golfo San Matias FLNG,AR,2.45,argentina,single_node_country
+workbook_liquefaction,Golfo San Matias FLNG,AR,3.5,argentina,single_node_country
+workbook_liquefaction,Argentina LNG,AR,5.0,argentina,single_node_country
+workbook_liquefaction,Argentina LNG,AR,6.0,argentina,single_node_country
+workbook_liquefaction,Argentina LNG,AR,5.0,argentina,single_node_country
+workbook_liquefaction,Argentina LNG,AR,6.0,argentina,single_node_country
+workbook_liquefaction,Tango FLNG,AR,0.5,argentina,single_node_country
+workbook_liquefaction,Tecpetrol LNG,AR,4.0,argentina,single_node_country
+workbook_liquefaction,Bahia Blanca - LNG Liquefaction Terminal,AR,1.0,argentina,single_node_country
+workbook_liquefaction,Bahia Blanca - LNG Liquefaction Terminal,AR,1.0,argentina,single_node_country
+workbook_liquefaction,Santos Basin FLNG,BR,2.7,brazil,single_node_country
+workbook_liquefaction,Colombia Caribbean Coast,CO,0.5,colombia,single_node_country
+workbook_liquefaction,Jobo,CO,0.0193,colombia,single_node_country
+workbook_liquefaction,Peru LNG,PE,4.45,peru,single_node_country
+workbook_liquefaction,Firebird LNG,SR,1.0,suriname,single_node_country
+workbook_liquefaction,Firebird LNG,SR,1.0,suriname,single_node_country
+workbook_liquefaction,Firebird LNG,SR,1.0,suriname,single_node_country
+workbook_liquefaction,Firebird LNG,SR,1.0,suriname,single_node_country
+workbook_liquefaction,ALNG,TT,5.2,trinidad_and_tobago,single_node_country
+workbook_liquefaction,ALNG,TT,3.4,trinidad_and_tobago,single_node_country
+workbook_liquefaction,ALNG,TT,3.4,trinidad_and_tobago,single_node_country
+workbook_liquefaction,Caribbean LNG,TT,0.5,trinidad_and_tobago,single_node_country
+workbook_liquefaction,Caribbean LNG,TT,0.5,trinidad_and_tobago,single_node_country
+workbook_liquefaction,ALNG,TT,3.3,trinidad_and_tobago,single_node_country
+workbook_liquefaction,Mariscal Sucre,VE,6.08,venezuela_bolivarian_republic_of,single_node_country
+workbook_liquefaction,Arzew GL2Z,DZ,1.3666667,algeria,single_node_country
+workbook_liquefaction,Arzew GL1Z,DZ,1.3166667,algeria,single_node_country
+workbook_liquefaction,Arzew GL1Z,DZ,1.3166667,algeria,single_node_country
+workbook_liquefaction,Arzew GL1Z,DZ,1.3166667,algeria,single_node_country
+workbook_liquefaction,Arzew GL1Z,DZ,1.3166667,algeria,single_node_country
+workbook_liquefaction,Skikda GL1K,DZ,4.5,algeria,single_node_country
+workbook_liquefaction,Skikda GL1K,DZ,1.0,algeria,single_node_country
+workbook_liquefaction,Skikda GL1K,DZ,1.0,algeria,single_node_country
+workbook_liquefaction,Skikda GL1K,DZ,1.0,algeria,single_node_country
+workbook_liquefaction,Skikda GL2K,DZ,1.0,algeria,single_node_country
+workbook_liquefaction,Skikda GL2K,DZ,1.25,algeria,single_node_country
+workbook_liquefaction,Skikda GL2K,DZ,1.25,algeria,single_node_country
+workbook_liquefaction,Arzew GL2Z,DZ,1.3666667,algeria,single_node_country
+workbook_liquefaction,Arzew GL1Z,DZ,1.3166667,algeria,single_node_country
+workbook_liquefaction,Arzew GL1Z,DZ,1.3166667,algeria,single_node_country
+workbook_liquefaction,Arzew GL2Z,DZ,1.3666667,algeria,single_node_country
+workbook_liquefaction,Arzew GL3Z,DZ,4.7,algeria,single_node_country
+workbook_liquefaction,Arzew GL4Z (Camel),DZ,0.5,algeria,single_node_country
+workbook_liquefaction,Arzew GL4Z (Camel),DZ,0.5,algeria,single_node_country
+workbook_liquefaction,Arzew GL2Z,DZ,1.3666667,algeria,single_node_country
+workbook_liquefaction,Arzew GL4Z (Camel),DZ,0.5,algeria,single_node_country
+workbook_liquefaction,Arzew GL2Z,DZ,1.3666667,algeria,single_node_country
+workbook_liquefaction,Arzew GL2Z,DZ,1.3666667,algeria,single_node_country
+workbook_liquefaction,ELNG,EG,3.6,egypt,single_node_country
+workbook_liquefaction,Damietta LNG,EG,5.2,egypt,single_node_country
+workbook_liquefaction,ELNG,EG,3.6,egypt,single_node_country
+workbook_liquefaction,Iran small scale,IR,0.5,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Iran small scale,IR,0.5,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Forouzan FLNG,IR,1.0,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Iran small scale,IR,0.5,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Kharg Island FLNG,IR,1.0,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Iran small scale,IR,0.5,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Iran LNG,IR,5.4,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Iran small scale,IR,0.5,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Iran small scale,IR,0.5,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Iran LNG,IR,5.4,iran_islamic_republic_of,single_node_country
+workbook_liquefaction,Leviathan FLNG,IL,4.6,israel,single_node_country
+workbook_liquefaction,Marsa El Brega - LNG Liquefaction Terminal,LY,3.2,libya,single_node_country
+workbook_liquefaction,Oman LNG,OM,3.45,oman,single_node_country
+workbook_liquefaction,Oman LNG,OM,3.45,oman,single_node_country
+workbook_liquefaction,Oman LNG,OM,3.45,oman,single_node_country
+workbook_liquefaction,Oman LNG,OM,0.35,oman,single_node_country
+workbook_liquefaction,Oman LNG,OM,0.35,oman,single_node_country
+workbook_liquefaction,Oman LNG,OM,3.8,oman,single_node_country
+workbook_liquefaction,Marsa LNG,OM,1.0,oman,single_node_country
+workbook_liquefaction,Oman LNG,OM,0.35,oman,single_node_country
+workbook_liquefaction,QatarEnergy LNG N (III),QA,7.8,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG N (II),QA,7.8,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG N (II),QA,7.8,qatar,single_node_country
+workbook_liquefaction,North Field South ,QA,8.0,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG S (II),QA,4.7,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG N (I),QA,3.3,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG N (I),QA,3.3,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG N (I),QA,3.3,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG S (II),QA,4.7,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG S (II),QA,4.7,qatar,single_node_country
+workbook_liquefaction,North Field South ,QA,8.0,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG S (I),QA,3.3,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG S (I),QA,3.3,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG N (IV),QA,7.8,qatar,single_node_country
+workbook_liquefaction,North Field West ,QA,8.0,qatar,single_node_country
+workbook_liquefaction,North Field West ,QA,8.0,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG S (III),QA,7.8,qatar,single_node_country
+workbook_liquefaction,North Field East ,QA,8.0,qatar,single_node_country
+workbook_liquefaction,North Field East ,QA,8.0,qatar,single_node_country
+workbook_liquefaction,North Field East ,QA,8.0,qatar,single_node_country
+workbook_liquefaction,North Field East ,QA,8.0,qatar,single_node_country
+workbook_liquefaction,QatarEnergy LNG S (III),QA,7.8,qatar,single_node_country
+workbook_liquefaction,Das Island - LNG Liquefaction Terminal,AE,1.3,united_arab_emirates,single_node_country
+workbook_liquefaction,Das Island - LNG Liquefaction Terminal,AE,3.2,united_arab_emirates,single_node_country
+workbook_liquefaction,Ruwais LNG,AE,4.8,united_arab_emirates,single_node_country
+workbook_liquefaction,Das Island - LNG Liquefaction Terminal,AE,1.3,united_arab_emirates,single_node_country
+workbook_liquefaction,Ruwais LNG,AE,4.8,united_arab_emirates,single_node_country
+workbook_liquefaction,Yemen LNG,YE,3.6,yemen,single_node_country
+workbook_liquefaction,Yemen LNG,YE,3.6,yemen,single_node_country
+workbook_liquefaction,Ksi Lisims LNG,CA,6.0,,unresolved_split_country
+workbook_liquefaction,Kwispaa LNG,CA,6.0,,unresolved_split_country
+workbook_liquefaction,Kwispaa LNG,CA,6.0,,unresolved_split_country
+workbook_liquefaction,LNG Canada,CA,7.0,,unresolved_split_country
+workbook_liquefaction,LNG Canada,CA,7.0,,unresolved_split_country
+workbook_liquefaction,LNG Canada,CA,7.0,,unresolved_split_country
+workbook_liquefaction,LNG Canada,CA,7.0,,unresolved_split_country
+workbook_liquefaction,Aurora LNG,CA,12.0,,unresolved_split_country
+workbook_liquefaction,Malahat LNG,CA,6.0,,unresolved_split_country
+workbook_liquefaction,Nisga'a LNG,CA,21.0,,unresolved_split_country
+workbook_liquefaction,Orca LNG,CA,24.0,,unresolved_split_country
+workbook_liquefaction,Pacific NorthWest LNG,CA,12.0,,unresolved_split_country
+workbook_liquefaction,Passamaquoddy Bay,CA,3.0,,unresolved_split_country
+workbook_liquefaction,Bear Head LNG,CA,4.0,,unresolved_split_country
+workbook_liquefaction,Bear Head LNG,CA,4.0,,unresolved_split_country
+workbook_liquefaction,Becancour - LNG Liquefaction Terminal,CA,0.5,,unresolved_split_country
+workbook_liquefaction,Woodfibre LNG,CA,1.05,,unresolved_split_country
+workbook_liquefaction,Woodfibre LNG,CA,1.05,,unresolved_split_country
+workbook_liquefaction,WCC LNG,CA,15.0,,unresolved_split_country
+workbook_liquefaction,Triton LNG,CA,8.5,,unresolved_split_country
+workbook_liquefaction,Tilbury Island,CA,0.25,,unresolved_split_country
+workbook_liquefaction,Port Edward,CA,0.3,,unresolved_split_country
+workbook_liquefaction,Prince Rupert LNG,CA,7.0,,unresolved_split_country
+workbook_liquefaction,Prince Rupert LNG,CA,7.0,,unresolved_split_country
+workbook_liquefaction,Prince Rupert LNG,CA,7.0,,unresolved_split_country
+workbook_liquefaction,Prince Rupert - LNG Liquefaction Terminal,CA,5.0,,unresolved_split_country
+workbook_liquefaction,Prince Rupert - LNG Liquefaction Terminal,CA,5.0,,unresolved_split_country
+workbook_liquefaction,Prince Rupert - LNG Liquefaction Terminal,CA,5.0,,unresolved_split_country
+workbook_liquefaction,AC LNG,CA,4.5,,unresolved_split_country
+workbook_liquefaction,Quebec LNG,CA,5.65,,unresolved_split_country
+workbook_liquefaction,Quebec LNG,CA,5.65,,unresolved_split_country
+workbook_liquefaction,AC LNG,CA,4.5,,unresolved_split_country
+workbook_liquefaction,AC LNG,CA,4.5,,unresolved_split_country
+workbook_liquefaction,Discovery LNG,CA,20.0,,unresolved_split_country
+workbook_liquefaction,Tilbury Island,CA,0.03,,unresolved_split_country
+workbook_liquefaction,Douglas Channel LNG,CA,0.55,,unresolved_split_country
+workbook_liquefaction,Stolt LNGaz,CA,1.0,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.125,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.0,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.125,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.125,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.125,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,2.0,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.125,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.125,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.125,,unresolved_split_country
+workbook_liquefaction,Stewart LNG,CA,3.125,,unresolved_split_country
+workbook_liquefaction,Cedar LNG,CA,3.3,,unresolved_split_country
+workbook_liquefaction,Goldboro LNG,CA,4.8,,unresolved_split_country
+workbook_liquefaction,Goldboro LNG,CA,4.8,,unresolved_split_country
+workbook_liquefaction,Grassy Point LNG,CA,20.0,,unresolved_split_country
+workbook_liquefaction,Tilbury Island,CA,1.95,,unresolved_split_country
+workbook_liquefaction,Tilbury Island,CA,0.37,,unresolved_split_country
+workbook_liquefaction,Kitimat LNG,CA,6.0,,unresolved_split_country
+workbook_liquefaction,Kitimat LNG,CA,6.0,,unresolved_split_country
+workbook_liquefaction,Kitimat LNG,CA,6.0,,unresolved_split_country
+workbook_liquefaction,Kitsault LNG,CA,20.0,,unresolved_split_country
+workbook_liquefaction,Ksi Lisims LNG,CA,6.0,,unresolved_split_country
+workbook_liquefaction,Amigo LNG,MX,3.6,mexico,single_node_country
+workbook_liquefaction,Amigo LNG,MX,4.2,mexico,single_node_country
+workbook_liquefaction,Altamira - LNG Liquefaction Terminal,MX,1.4,mexico,single_node_country
+workbook_liquefaction,Altamira - LNG Liquefaction Terminal,MX,1.4,mexico,single_node_country
+workbook_liquefaction,Altamira - LNG Liquefaction Terminal,MX,1.4,mexico,single_node_country
+workbook_liquefaction,Vista Pacifico LNG (Topolobampo),MX,4.0,mexico,single_node_country
+workbook_liquefaction,MPL,MX,4.7,mexico,single_node_country
+workbook_liquefaction,MPL,MX,4.7,mexico,single_node_country
+workbook_liquefaction,MPL,MX,4.7,mexico,single_node_country
+workbook_liquefaction,MPL,MX,4.7,mexico,single_node_country
+workbook_liquefaction,MPL,MX,4.7,mexico,single_node_country
+workbook_liquefaction,MPL,MX,4.7,mexico,single_node_country
+workbook_liquefaction,Lakach LNG,MX,1.4,mexico,single_node_country
+workbook_liquefaction,Coatzacoalcos,MX,4.6,mexico,single_node_country
+workbook_liquefaction,Energia Costa Azul,MX,3.25,mexico,single_node_country
+workbook_liquefaction,Energia Costa Azul,MX,6.0,mexico,single_node_country
+workbook_liquefaction,Energia Costa Azul,MX,6.0,mexico,single_node_country
+workbook_liquefaction,Salina Cruz - LNG Liquefaction Terminal,MX,3.0,mexico,single_node_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Alaska LNG,US,6.7,,unresolved_split_country
+workbook_liquefaction,Alaska LNG,US,6.7,,unresolved_split_country
+workbook_liquefaction,Alaska LNG,US,6.7,,unresolved_split_country
+workbook_liquefaction,Annova LNG,US,1.1583333,,unresolved_split_country
+workbook_liquefaction,Annova LNG,US,1.1583333,,unresolved_split_country
+workbook_liquefaction,Annova LNG,US,1.1583333,,unresolved_split_country
+workbook_liquefaction,Annova LNG,US,1.1583333,,unresolved_split_country
+workbook_liquefaction,Annova LNG,US,1.1583333,,unresolved_split_country
+workbook_liquefaction,Annova LNG,US,1.1583333,,unresolved_split_country
+workbook_liquefaction,Avocet FLNG,US,3.5,,unresolved_split_country
+workbook_liquefaction,Avocet FLNG,US,3.5,,unresolved_split_country
+workbook_liquefaction,Brownsville FLNG,US,4.0,,unresolved_split_country
+workbook_liquefaction,Brownsville FLNG,US,4.0,,unresolved_split_country
+workbook_liquefaction,Brownsville FLNG,US,4.0,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Calcasieu Pass,US,0.625,,unresolved_split_country
+workbook_liquefaction,Cameron LNG,US,4.0,,unresolved_split_country
+workbook_liquefaction,Cameron LNG,US,4.0,,unresolved_split_country
+workbook_liquefaction,Cameron LNG,US,4.0,,unresolved_split_country
+workbook_liquefaction,Cameron LNG,US,6.75,,unresolved_split_country
+workbook_liquefaction,Cameron LNG,US,4.0,,unresolved_split_country
+workbook_liquefaction,Cameron Parish,US,1.5,,unresolved_split_country
+workbook_liquefaction,Carib,US,0.3039897,,unresolved_split_country
+workbook_liquefaction,CE FLNG,US,8.131724,,unresolved_split_country
+workbook_liquefaction,Commonwealth,US,1.58,,unresolved_split_country
+workbook_liquefaction,Commonwealth,US,1.58,,unresolved_split_country
+workbook_liquefaction,Commonwealth,US,1.58,,unresolved_split_country
+workbook_liquefaction,Commonwealth,US,1.58,,unresolved_split_country
+workbook_liquefaction,Commonwealth,US,1.58,,unresolved_split_country
+workbook_liquefaction,Commonwealth,US,1.58,,unresolved_split_country
+workbook_liquefaction,Corpus Christi - LNG Liquefaction Terminal,US,4.5,,unresolved_split_country
+workbook_liquefaction,Corpus Christi - LNG Liquefaction Terminal,US,4.5,,unresolved_split_country
+workbook_liquefaction,Corpus Christi - LNG Liquefaction Terminal,US,4.5,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.428,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.428,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.64,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.428,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.64,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.428,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.428,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.428,,unresolved_split_country
+workbook_liquefaction,Corpus Christi Stage 3,US,1.428,,unresolved_split_country
+workbook_liquefaction,Cove Point - LNG Liquefaction Terminal,US,5.25,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.8,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.8,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.8,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.8,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.8,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,CP2 LNG,US,1.54,,unresolved_split_country
+workbook_liquefaction,Delfin FLNG,US,4.4,,unresolved_split_country
+workbook_liquefaction,Delfin FLNG,US,3.325,,unresolved_split_country
+workbook_liquefaction,Delfin FLNG,US,4.4,,unresolved_split_country
+workbook_liquefaction,Delfin FLNG,US,4.4,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Delta LNG,US,0.5555556,,unresolved_split_country
+workbook_liquefaction,Downeast LNG - LNG Liquefaction Terminal,US,3.0,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Elba Island,US,0.25,,unresolved_split_country
+workbook_liquefaction,Floridian,US,0.2,,unresolved_split_country
+workbook_liquefaction,Fourchon LNG,US,3.0,,unresolved_split_country
+workbook_liquefaction,Fourchon LNG,US,2.0,,unresolved_split_country
+workbook_liquefaction,Freeport LNG,US,5.0,,unresolved_split_country
+workbook_liquefaction,Freeport LNG,US,5.0,,unresolved_split_country
+workbook_liquefaction,Freeport LNG,US,5.0,,unresolved_split_country
+workbook_liquefaction,Freeport LNG,US,5.0,,unresolved_split_country
+workbook_liquefaction,Galveston Bay - LNG Liquefaction Terminal,US,5.5,,unresolved_split_country
+workbook_liquefaction,Galveston Bay - LNG Liquefaction Terminal,US,5.5,,unresolved_split_country
+workbook_liquefaction,Galveston Bay - LNG Liquefaction Terminal,US,5.5,,unresolved_split_country
+workbook_liquefaction,Golden Pass,US,6.0,,unresolved_split_country
+workbook_liquefaction,Golden Pass,US,6.0,,unresolved_split_country
+workbook_liquefaction,Golden Pass,US,6.0,,unresolved_split_country
+workbook_liquefaction,Gulf LNG - LNG Liquefaction Terminal,US,5.45,,unresolved_split_country
+workbook_liquefaction,Gulf LNG - LNG Liquefaction Terminal,US,5.0,,unresolved_split_country
+workbook_liquefaction,Gulfsteam LNG,US,2.0,,unresolved_split_country
+workbook_liquefaction,Gulfsteam LNG,US,2.0,,unresolved_split_country
+workbook_liquefaction,Hialeah,US,0.07,,unresolved_split_country
+workbook_liquefaction,Ingleside,US,8.3,,unresolved_split_country
+workbook_liquefaction,Jordan Cove,US,1.56,,unresolved_split_country
+workbook_liquefaction,Jordan Cove,US,1.56,,unresolved_split_country
+workbook_liquefaction,Jordan Cove,US,1.56,,unresolved_split_country
+workbook_liquefaction,Jordan Cove,US,1.56,,unresolved_split_country
+workbook_liquefaction,Jordan Cove,US,1.56,,unresolved_split_country
+workbook_liquefaction,Kenai LNG,US,0.75,,unresolved_split_country
+workbook_liquefaction,Kenai LNG,US,0.75,,unresolved_split_country
+workbook_liquefaction,Lake Charles - LNG Liquefaction Terminal,US,5.5,,unresolved_split_country
+workbook_liquefaction,Lake Charles - LNG Liquefaction Terminal,US,5.5,,unresolved_split_country
+workbook_liquefaction,Lake Charles - LNG Liquefaction Terminal,US,5.5,,unresolved_split_country
+workbook_liquefaction,Lavaca Bay LNG,US,10.487645,,unresolved_split_country
+workbook_liquefaction,Louisiana FLNG,US,1.4,,unresolved_split_country
+workbook_liquefaction,Louisiana FLNG,US,1.4,,unresolved_split_country
+workbook_liquefaction,Louisiana FLNG,US,1.4,,unresolved_split_country
+workbook_liquefaction,Magnolia LNG,US,2.2,,unresolved_split_country
+workbook_liquefaction,Magnolia LNG,US,2.2,,unresolved_split_country
+workbook_liquefaction,Magnolia LNG,US,2.2,,unresolved_split_country
+workbook_liquefaction,Magnolia LNG,US,2.2,,unresolved_split_country
+workbook_liquefaction,Main Pass Energy Hub,US,12.0,,unresolved_split_country
+workbook_liquefaction,Main Pass Energy Hub,US,12.0,,unresolved_split_country
+workbook_liquefaction,Maxville LNG,US,0.14,,unresolved_split_country
+workbook_liquefaction,Monkey Island,US,5.25,,unresolved_split_country
+workbook_liquefaction,Monkey Island,US,5.25,,unresolved_split_country
+workbook_liquefaction,Monkey Island,US,5.25,,unresolved_split_country
+workbook_liquefaction,Penn LNG,US,3.2,,unresolved_split_country
+workbook_liquefaction,Penn LNG,US,3.2,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.8,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.8,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.8,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.8,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.8,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.8,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.8,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.8,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Plaquemines,US,0.7775,,unresolved_split_country
+workbook_liquefaction,Port Arthur LNG,US,6.5,,unresolved_split_country
+workbook_liquefaction,Port Arthur LNG,US,6.5,,unresolved_split_country
+workbook_liquefaction,Port Arthur LNG,US,6.5,,unresolved_split_country
+workbook_liquefaction,Port Arthur LNG,US,6.5,,unresolved_split_country
+workbook_liquefaction,Qilak LNG,US,4.0,,unresolved_split_country
+workbook_liquefaction,Rio Grande LNG,US,5.4,,unresolved_split_country
+workbook_liquefaction,Rio Grande LNG,US,5.4,,unresolved_split_country
+workbook_liquefaction,Rio Grande LNG,US,5.4,,unresolved_split_country
+workbook_liquefaction,Rio Grande LNG,US,5.4,,unresolved_split_country
+workbook_liquefaction,Rio Grande LNG,US,5.4,,unresolved_split_country
+workbook_liquefaction,Sabine Pass - LNG Liquefaction Terminal,US,5.0,,unresolved_split_country
+workbook_liquefaction,Sabine Pass - LNG Liquefaction Terminal,US,5.0,,unresolved_split_country
+workbook_liquefaction,Sabine Pass - LNG Liquefaction Terminal,US,5.0,,unresolved_split_country
+workbook_liquefaction,Sabine Pass - LNG Liquefaction Terminal,US,5.0,,unresolved_split_country
+workbook_liquefaction,Sabine Pass - LNG Liquefaction Terminal,US,5.0,,unresolved_split_country
+workbook_liquefaction,Sabine Pass - LNG Liquefaction Terminal,US,5.0,,unresolved_split_country
+workbook_liquefaction,Sabine Pass Stage 5,US,7.0,,unresolved_split_country
+workbook_liquefaction,Sabine Pass Stage 5,US,7.0,,unresolved_split_country
+workbook_liquefaction,Sabine Pass Stage 5,US,6.5,,unresolved_split_country
+workbook_liquefaction,SB Power Solutions,US,0.5,,unresolved_split_country
+workbook_liquefaction,Starke,US,0.6,,unresolved_split_country
+workbook_liquefaction,Texas LNG,US,2.0,,unresolved_split_country
+workbook_liquefaction,Texas LNG,US,2.0,,unresolved_split_country
+workbook_liquefaction,Warrenton,US,9.499679,,unresolved_split_country
+workbook_liquefaction,Woodside Louisiana LNG,US,5.5,,unresolved_split_country
+workbook_liquefaction,Woodside Louisiana LNG,US,5.5,,unresolved_split_country
+workbook_liquefaction,Woodside Louisiana LNG,US,5.5,,unresolved_split_country
+workbook_liquefaction,Woodside Louisiana LNG,US,5.5,,unresolved_split_country
+workbook_liquefaction,Woodside Louisiana LNG,US,5.5,,unresolved_split_country
+workbook_liquefaction,Brunei LNG,BN,1.44,brunei_darussalam,single_node_country
+workbook_liquefaction,Brunei LNG,BN,1.44,brunei_darussalam,single_node_country
+workbook_liquefaction,Brunei LNG,BN,1.44,brunei_darussalam,single_node_country
+workbook_liquefaction,Brunei LNG,BN,1.44,brunei_darussalam,single_node_country
+workbook_liquefaction,Brunei LNG,BN,1.44,brunei_darussalam,single_node_country
+workbook_liquefaction,Greater Sunrise,TL,4.0,timor_leste,single_node_country
+workbook_liquefaction,Greater Sunrise,TL,4.0,timor_leste,single_node_country
+workbook_liquefaction,Greater Sunrise,TL,4.0,timor_leste,single_node_country
+workbook_liquefaction,Greater Sunrise,TL,4.0,timor_leste,single_node_country
+workbook_liquefaction,Abadi,ID,4.75,indonesia,single_node_country
+workbook_liquefaction,Arun LNG - LNG Liquefaction Terminal,ID,2.1,indonesia,single_node_country
+workbook_liquefaction,Donggi-Senoro LNG,ID,2.1,indonesia,single_node_country
+workbook_liquefaction,Arun LNG - LNG Liquefaction Terminal,ID,2.1,indonesia,single_node_country
+workbook_liquefaction,Arun LNG - LNG Liquefaction Terminal,ID,2.1,indonesia,single_node_country
+workbook_liquefaction,Arun LNG - LNG Liquefaction Terminal,ID,2.1,indonesia,single_node_country
+workbook_liquefaction,Arun LNG - LNG Liquefaction Terminal,ID,2.1,indonesia,single_node_country
+workbook_liquefaction,Abadi,ID,4.75,indonesia,single_node_country
+workbook_liquefaction,Sengkang LNG,ID,0.5,indonesia,single_node_country
+workbook_liquefaction,Sengkang LNG,ID,0.5,indonesia,single_node_country
+workbook_liquefaction,Sengkang LNG,ID,0.5,indonesia,single_node_country
+workbook_liquefaction,Tangguh LNG,ID,3.8,indonesia,single_node_country
+workbook_liquefaction,Tangguh LNG,ID,3.8,indonesia,single_node_country
+workbook_liquefaction,Tangguh LNG,ID,3.8,indonesia,single_node_country
+workbook_liquefaction,Sengkang LNG,ID,0.5,indonesia,single_node_country
+workbook_liquefaction,Bontang LNG,ID,2.9,indonesia,single_node_country
+workbook_liquefaction,Bontang LNG,ID,2.7,indonesia,single_node_country
+workbook_liquefaction,Bontang LNG,ID,3.0,indonesia,single_node_country
+workbook_liquefaction,Bontang LNG,ID,2.9,indonesia,single_node_country
+workbook_liquefaction,Bontang LNG,ID,2.7,indonesia,single_node_country
+workbook_liquefaction,Arun LNG - LNG Liquefaction Terminal,ID,2.1,indonesia,single_node_country
+workbook_liquefaction,Bontang LNG,ID,2.7,indonesia,single_node_country
+workbook_liquefaction,Bontang LNG,ID,2.7,indonesia,single_node_country
+workbook_liquefaction,Bontang LNG,ID,2.7,indonesia,single_node_country
+workbook_liquefaction,West Papua FLNG,ID,1.2,indonesia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,2.8,malaysia,single_node_country
+workbook_liquefaction,PFLNG 1,MY,1.2,malaysia,single_node_country
+workbook_liquefaction,PFLNG 2,MY,1.5,malaysia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,3.2,malaysia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,3.2,malaysia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,3.85,malaysia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,2.8,malaysia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,3.2,malaysia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,3.85,malaysia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,2.8,malaysia,single_node_country
+workbook_liquefaction,Bintulu LNG,MY,3.6,malaysia,single_node_country
+workbook_liquefaction,PFLNG 3,MY,2.1,malaysia,single_node_country
+workbook_regas,Tema FSRU Golar Tundra Phase 1,GH,5.0,ghana,single_node_country
+workbook_regas,Tema LNG Phase 1,GH,1.7,ghana,single_node_country
+workbook_regas,Ivory Coast FSRU Phase 1,CI,3.0,cote_d_ivoire,single_node_country
+workbook_regas,Kenya LNG-to-power Phase 1,KE,0.0,kenya,single_node_country
+workbook_regas,Nacala FSRU Phase 1,MZ,2.0,mozambique,single_node_country
+workbook_regas,Matola FSRU Phase 1,MZ,5.7,mozambique,single_node_country
+workbook_regas,Lagos - LNG Regasification Terminal Phase 1,NG,0.0,nigeria,single_node_country
+workbook_regas,Senegal Powership Phase 1,SN,2.5,senegal,single_node_country
+workbook_regas,FSRU Phase 1,ZA,1.6,south_africa,single_node_country
+workbook_regas,NFE terminal Phase 1,ZA,0.0,south_africa,single_node_country
+workbook_regas,Richards Bay - LNG Regasification Terminal Phase 2,ZA,1.0,south_africa,single_node_country
+workbook_regas,Richards Bay - LNG Regasification Terminal Phase 1,ZA,3.0,south_africa,single_node_country
+workbook_regas,Richards Bay Transnet FSRU Unit 1,ZA,3.0,south_africa,single_node_country
+workbook_regas,Coega - LNG Regasification Terminal Phase 1,ZA,2.0,south_africa,single_node_country
+workbook_regas,Ngqura Phase 1,ZA,3.7,south_africa,single_node_country
+workbook_regas,Ngqura Phase 2,ZA,3.7,south_africa,single_node_country
+workbook_regas,Newcastle LNG Phase 1,AU,3.5,,unresolved_split_country
+workbook_regas,Port Adelaide Phase 1,AU,2.4,,unresolved_split_country
+workbook_regas,Port Phillip Bay Phase 1,AU,3.0,,unresolved_split_country
+workbook_regas,Victoria Energy Terminal Phase 1,AU,6.1,,unresolved_split_country
+workbook_regas,Crib Point Phase 1,AU,3.0,,unresolved_split_country
+workbook_regas,Geelong - LNG Regasification Terminal Phase 1,AU,4.3,,unresolved_split_country
+workbook_regas,Port Kembla - LNG Regasification Terminal Phase 1,AU,2.4,,unresolved_split_country
+workbook_regas,Eagle - LNG Regasification Terminal Phase 1,AL,5.88,albania,single_node_country
+workbook_regas,Vlora Phase 1,AL,3.7,albania,single_node_country
+workbook_regas,Zeebrugge - LNG Regasification Terminal Phase 4,BE,4.7,belgium,single_node_country
+workbook_regas,Zeebrugge - LNG Regasification Terminal Phase 5,BE,1.3,belgium,single_node_country
+workbook_regas,Zeebrugge - LNG Regasification Terminal Phase 2,BE,3.0,belgium,single_node_country
+workbook_regas,Zeebrugge - LNG Regasification Terminal Phase 1,BE,3.79,belgium,single_node_country
+workbook_regas,Krk Island Phase 2,HR,0.22,croatia,single_node_country
+workbook_regas,Krk Island Phase 4,HR,1.83,croatia,single_node_country
+workbook_regas,Krk Island Phase 1,HR,1.9,croatia,single_node_country
+workbook_regas,Krk Island Phase 3,HR,0.55,croatia,single_node_country
+workbook_regas,Vasilikos - LNG Regasification Terminal Phase 1,CY,2.0,cyprus,single_node_country
+workbook_regas,Muuga - LNG Regasification Terminal Phase 1,EE,1.1,estonia,single_node_country
+workbook_regas,Paldiski - LNG Regasification Terminal Phase 1,EE,2.2,estonia,single_node_country
+workbook_regas,Tornio Manga Phase 1,FI,0.4,finland,single_node_country
+workbook_regas,Inkoo - LNG Regasification Terminal Phase 1,FI,3.68,finland,single_node_country
+workbook_regas,Hamina - LNG Regasification Terminal Phase 1,FI,0.1,finland,single_node_country
+workbook_regas,Turku - Pansio Harbour Phase 1,FI,0.04,finland,single_node_country
+workbook_regas,Pori LNG Terminal Phase 1,FI,0.08,finland,single_node_country
+workbook_regas,Montoir-de-Bretagne Phase 1,FR,8.0,france,single_node_country
+workbook_regas,Dunkirk LNG Phase 1,FR,9.6,france,single_node_country
+workbook_regas,Fos Cavaou Phase 1,FR,6.0,france,single_node_country
+workbook_regas,Fos Tonkin Phase 1,FR,1.2,france,single_node_country
+workbook_regas,Project Bonnie Phase 1,FR,0.2,france,single_node_country
+workbook_regas,Le Havre - LNG Regasification Terminal Phase 1,FR,2.9,france,single_node_country
+workbook_regas,Fos Cavaou Phase 2,FR,1.37,france,single_node_country
+workbook_regas,Wilhelmshaven FSRU I Phase 1,DE,4.35,germany,single_node_country
+workbook_regas,Lubmin (Deutsche Regas) Phase 2,DE,4.65,germany,single_node_country
+workbook_regas,Lubmin (RWE) Phase 1,DE,3.7,germany,single_node_country
+workbook_regas,Mukran - LNG Regasification Terminal Phase 2,DE,3.83,germany,single_node_country
+workbook_regas,Lubmin (Deutsche Regas) Phase 3,DE,1.47,germany,single_node_country
+workbook_regas,Wilhelmshaven Onshore Phase 2,DE,2.21,germany,single_node_country
+workbook_regas,Wilhelmshaven Onshore Phase 4,DE,2.94,germany,single_node_country
+workbook_regas,Wilhelmshaven Onshore Phase 3,DE,2.95,germany,single_node_country
+workbook_regas,Wilhelmshaven Onshore Phase 1,DE,8.1,germany,single_node_country
+workbook_regas,Wilhelmshaven FSRU II Phase 1,DE,2.95,germany,single_node_country
+workbook_regas,Stade Onshore Phase 1,DE,9.6,germany,single_node_country
+workbook_regas,Stade FSRU Phase 1,DE,4.42,germany,single_node_country
+workbook_regas,Rostock - LNG Regasification Terminal Phase 1,DE,1.1,germany,single_node_country
+workbook_regas,Brunsbüttel FSRU Phase 1,DE,2.54,germany,single_node_country
+workbook_regas,Brunsbüttel FSRU Phase 2,DE,1.16,germany,single_node_country
+workbook_regas,Brunsbüttel Onshore Phase 1,DE,7.4,germany,single_node_country
+workbook_regas,Mukran - LNG Regasification Terminal Phase 1,DE,5.53,germany,single_node_country
+workbook_regas,Lubmin (Deutsche Regas) Phase 1,DE,3.83,germany,single_node_country
+workbook_regas,Gibraltar LNG terminal Gibraltar LNG,GI,0.55,gibraltar,single_node_country
+workbook_regas,Aegean Phase 1,GR,3.68,greece,single_node_country
+workbook_regas,Revithoussa - LNG Regasification Terminal Phase 1,GR,5.1,greece,single_node_country
+workbook_regas,Thrace INGS Phase 1,GR,4.0,greece,single_node_country
+workbook_regas,Alexandroupolis - LNG Regasification Terminal Phase 1,GR,4.06,greece,single_node_country
+workbook_regas,Dioriga Gas Phase 1,GR,3.2,greece,single_node_country
+workbook_regas,Thessaloniki - LNG Regasification Terminal Phase 1,GR,5.4,greece,single_node_country
+workbook_regas,Argo FSRU Phase 1,GR,3.83,greece,single_node_country
+workbook_regas,Shannon Phase 1,IE,3.68,ireland,single_node_country
+workbook_regas,Predator LNG Phase 1,IE,2.0,ireland,single_node_country
+workbook_regas,Port of Cork Phase 1,IE,3.0,ireland,single_node_country
+workbook_regas,Ravenna FSRU Phase 1,IT,3.7,italy,single_node_country
+workbook_regas,Livorno/LNG Toscana Phase 1,IT,2.7,italy,single_node_country
+workbook_regas,Porto Empedocle - LNG Regasification Terminal Phase 1,IT,7.5,italy,single_node_country
+workbook_regas,Falconara Marittima Phase 1,IT,4.8,italy,single_node_country
+workbook_regas,Gioia Tauro - LNG Regasification Terminal Phase 1,IT,8.82,italy,single_node_country
+workbook_regas,Piombino FSRU Phase 1,IT,3.68,italy,single_node_country
+workbook_regas,Panigaglia Phase 2,IT,3.38,italy,single_node_country
+workbook_regas,Panigaglia Phase 1,IT,2.5,italy,single_node_country
+workbook_regas,HIGAS LNG Phase 1,IT,0.3,italy,single_node_country
+workbook_regas,Adriatic LNG/Rovigo Phase 1,IT,5.8,italy,single_node_country
+workbook_regas,Trieste - LNG Regasification Terminal Phase 1,IT,5.88,italy,single_node_country
+workbook_regas,Ravenna LNG Phase 1,IT,0.0,italy,single_node_country
+workbook_regas,Adriatic LNG/Rovigo Phase 2,IT,0.7,italy,single_node_country
+workbook_regas,Portovesme Phase 1,IT,3.0,italy,single_node_country
+workbook_regas,Livorno/LNG Toscana Phase 2,IT,0.92,italy,single_node_country
+workbook_regas,Adriatic LNG/Rovigo Expansion 2,IT,0.37,italy,single_node_country
+workbook_regas,Vado Ligure - LNG Regasification Terminal Phase 1,IT,3.68,italy,single_node_country
+workbook_regas,Adriatic LNG/Rovigo Expansion,IT,0.57,italy,single_node_country
+workbook_regas,Skulte LNG Phase 1,LV,4.8,latvia,single_node_country
+workbook_regas,Klaipeda LNG Phase 1,LT,3.0,lithuania,single_node_country
+workbook_regas,Klaipeda LNG Phase 2,LT,0.92,lithuania,single_node_country
+workbook_regas,Delimara Phase 1,MT,0.5,malta,single_node_country
+workbook_regas,Port of Bar Phase 1,ME,0.4,montenegro,single_node_country
+workbook_regas,Gate Phase 1,NL,8.8,netherlands,single_node_country
+workbook_regas,Eemshaven FSRU Phase 3,NL,0.75,netherlands,single_node_country
+workbook_regas,Gate Phase 2,NL,2.94,netherlands,single_node_country
+workbook_regas,Eemshaven FSRU Phase 4,NL,0.73,netherlands,single_node_country
+workbook_regas,Zeeland LNG Phase 1,NL,5.51,netherlands,single_node_country
+workbook_regas,Terneuzen (Gasunie) Phase 1,NL,3.7,netherlands,single_node_country
+workbook_regas,Gate Phase 4,NL,2.95,netherlands,single_node_country
+workbook_regas,Terneuzen (VTTI) Phase 1,NL,3.7,netherlands,single_node_country
+workbook_regas,Eemshaven FSRU Phase 2,NL,3.0,netherlands,single_node_country
+workbook_regas,Eemshaven FSRU Phase 1,NL,2.89,netherlands,single_node_country
+workbook_regas,Ora LNG Phase 1,NO,0.1,norway,single_node_country
+workbook_regas,Mosjoen Phase 1,NO,0.4,norway,single_node_country
+workbook_regas,Swinoujscie - LNG Regasification Terminal Phase 3,PL,1.52,poland,single_node_country
+workbook_regas,Swinoujscie - LNG Regasification Terminal Phase 2,PL,1.0,poland,single_node_country
+workbook_regas,Swinoujscie - LNG Regasification Terminal Phase 1,PL,3.6,poland,single_node_country
+workbook_regas,Gdansk FSRU Phase 1,PL,4.5,poland,single_node_country
+workbook_regas,Gdansk FSRU Phase 2,PL,3.3,poland,single_node_country
+workbook_regas,Sines LNG Phase 1,PT,5.8,portugal,single_node_country
+workbook_regas,Constanta Phase 1,RO,6.0,romania,single_node_country
+workbook_regas,Barcelona - LNG Regasification Terminal Phase 1,ES,12.8,spain,single_node_country
+workbook_regas,Tenerife - LNG Regasification Terminal Phase 1,ES,0.96,spain,single_node_country
+workbook_regas,Bilbao - LNG Regasification Terminal Phase 1,ES,5.3,spain,single_node_country
+workbook_regas,Saggas Phase 1,ES,6.7,spain,single_node_country
+workbook_regas,Cartagena Phase 1,ES,7.6,spain,single_node_country
+workbook_regas,Mugardos LNG Phase 1,ES,2.6,spain,single_node_country
+workbook_regas,Huelva - LNG Regasification Terminal Phase 1,ES,8.9,spain,single_node_country
+workbook_regas,Gran Canaria - Arinaga Phase 1,ES,0.96,spain,single_node_country
+workbook_regas,El Musel Phase 1,ES,0.0,spain,single_node_country
+workbook_regas,Gothenburg LNG terminal Phase 1,SE,0.37,sweden,single_node_country
+workbook_regas,Nynäshamn LNG terminal Phase 1,SE,0.37,sweden,single_node_country
+workbook_regas,Lysekil LNG Terminal Phase 1,SE,0.22,sweden,single_node_country
+workbook_regas,Gävle Phase 1,SE,0.22,sweden,single_node_country
+workbook_regas,Marmara Ereglisi Expansion 2,TR,2.7,turkiye,single_node_country
+workbook_regas,Marmara Ereglisi Expansion 1,TR,1.3,turkiye,single_node_country
+workbook_regas,Dortyol FSRU FSRU Ertugrul Gazi,TR,7.5,turkiye,single_node_country
+workbook_regas,Dortyol FSRU FSRU Challenger,TR,4.1,turkiye,single_node_country
+workbook_regas,Saros FSRU Phase 1,TR,5.4,turkiye,single_node_country
+workbook_regas,EgeGaz Aliaga LNG Phase 2,TR,2.2,turkiye,single_node_country
+workbook_regas,EgeGaz Aliaga LNG Phase 1,TR,4.4,turkiye,single_node_country
+workbook_regas,EgeGaz Aliaga LNG Phase 3,TR,4.1,turkiye,single_node_country
+workbook_regas,ENKA FSRU Phase 1,TR,0.0,turkiye,single_node_country
+workbook_regas,Etki LNG Phase 2,TR,1.95,turkiye,single_node_country
+workbook_regas,Etki LNG Phase 1,TR,3.75,turkiye,single_node_country
+workbook_regas,Marmara Ereglisi Phase 1,TR,5.9,turkiye,single_node_country
+workbook_regas,South Hook Phase 1,GB,15.6,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,Barrow-in-Furness FSRU Phase 1,GB,5.0,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,Dragon LNG Phase 1,GB,5.6,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,Grain - LNG Regasification Terminal Phase 3,GB,5.0,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,Grain - LNG Regasification Terminal Phase 2,GB,6.5,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,South Hook Phase 2,GB,3.9,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,Grain - LNG Regasification Terminal Phase 4,GB,4.7,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,Teesside GasPort Phase 1,GB,0.0,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,Grain - LNG Regasification Terminal Phase 1,GB,3.3,united_kingdom_of_great_britain_and_northern_ireland,single_node_country
+workbook_regas,Kaliningrad LNG Phase 1,RU,2.7,,unresolved_split_country
+workbook_regas,Odessa LNG terminal Phase 1,UA,3.68,ukraine,single_node_country
+workbook_regas,Bahia Blanca GasPort Phase 2,AR,3.8,argentina,single_node_country
+workbook_regas,Bahia Blanca GasPort Phase 1,AR,3.8,argentina,single_node_country
+workbook_regas,Bahia Blanca GasPort Phase 3,AR,3.8,argentina,single_node_country
+workbook_regas,La Plata - LNG Regasification Terminal Phase 1,AR,0.0,argentina,single_node_country
+workbook_regas,Puerto Escobar Phase 1,AR,6.1,argentina,single_node_country
+workbook_regas,Bahia Blanca GasPort Phase 4,AR,3.8,argentina,single_node_country
+workbook_regas,Bahamas LNG Phase 1,BS,0.3,bahamas,single_node_country
+workbook_regas,Nassau LNG project Nassau Mini,BS,0.69,bahamas,single_node_country
+workbook_regas,Sao Marcos Phase 1,BR,5.6,brazil,single_node_country
+workbook_regas,Bahia/TRBA Phase 1,BR,5.6,brazil,single_node_country
+workbook_regas,Barra do Riacho Phase 1,BR,0.0,brazil,single_node_country
+workbook_regas,Guanabara LNG/Rio de Janeiro Phase 1,BR,5.38,brazil,single_node_country
+workbook_regas,Macae Phase 1,BR,0.0,brazil,single_node_country
+workbook_regas,Pecém Phase 1,BR,3.8,brazil,single_node_country
+workbook_regas,Pontal do Parana OR Paranagua Phase 1,BR,3.76,brazil,single_node_country
+workbook_regas,Port of Acu Phase 1,BR,5.6,brazil,single_node_country
+workbook_regas,Port of Itaqui Phase 1,BR,0.0,brazil,single_node_country
+workbook_regas,Port of Suape (OnCorp) Phase 1,BR,1.3,brazil,single_node_country
+workbook_regas,Presidente Kennedy Phase 1,BR,5.37,brazil,single_node_country
+workbook_regas,Sao Francisco do Sul (Santa Catarina state) Phase 1,BR,6.0,brazil,single_node_country
+workbook_regas,Sao Luis Phase 1,BR,0.0,brazil,single_node_country
+workbook_regas,Sergipe/Barra dos Coqueiros Phase 1,BR,5.6,brazil,single_node_country
+workbook_regas,Rio Grande do Sul Phase 1,BR,3.8,brazil,single_node_country
+workbook_regas,Port of Vila do Conde / Barcarena (Para state) Phase 1,BR,6.0,brazil,single_node_country
+workbook_regas,TRSP – São Paulo FSRU Phase 1,BR,5.1,brazil,single_node_country
+workbook_regas,Karpowership Brazil Phase 1,BR,2.5,brazil,single_node_country
+workbook_regas,Guanabara LNG/Rio de Janeiro Phase 2,BR,6.0,brazil,single_node_country
+workbook_regas,Talcahuano - LNG Regasification Terminal Phase 1,CL,2.27,chile,single_node_country
+workbook_regas,Penco Lirquén Phase 1,CL,3.0,chile,single_node_country
+workbook_regas,Quintero - LNG Regasification Terminal Phase 1,CL,4.0,chile,single_node_country
+workbook_regas,Mejillones LNG Phase 1,CL,1.5,chile,single_node_country
+workbook_regas,Quintero - LNG Regasification Terminal Phase 2,CL,0.0,chile,single_node_country
+workbook_regas,Andes LNG Phase 1,CL,0.0,chile,single_node_country
+workbook_regas,Brisa Unit 1,CO,1.44,colombia,single_node_country
+workbook_regas,Puerto Bahia LNG Phase 2,CO,1.88,colombia,single_node_country
+workbook_regas,SPEC Cartagena Phase 2,CO,0.57,colombia,single_node_country
+workbook_regas,Buenaventura LNG Phase 2,CO,0.54,colombia,single_node_country
+workbook_regas,SPEC Cartagena Phase 3,CO,0.44,colombia,single_node_country
+workbook_regas,Buenaventura LNG Phase 1,CO,0.69,colombia,single_node_country
+workbook_regas,SPEC Cartagena Phase 1,CO,3.7,colombia,single_node_country
+workbook_regas,Pacific LNG Phase 1,CO,3.0,colombia,single_node_country
+workbook_regas,Covenas LNG Phase 2,CO,2.05,colombia,single_node_country
+workbook_regas,Puerto Bahia LNG Phase 1,CO,0.97,colombia,single_node_country
+workbook_regas,Ballena Unit 1,CO,2.0,colombia,single_node_country
+workbook_regas,Amazonica Unit 1,CO,0.8,colombia,single_node_country
+workbook_regas,Caribe Unit 1,CO,0.43,colombia,single_node_country
+workbook_regas,Covenas LNG Phase 1,CO,0.98,colombia,single_node_country
+workbook_regas,AES Andrés Phase 1,DO,1.7,dominican_republic,single_node_country
+workbook_regas,FSRU Manzanillo (Do) Phase 1 (Energos Freeze),DO,1.0,dominican_republic,single_node_country
+workbook_regas,Bajo Alto FSRU Phase 1,EC,0.0,ecuador,single_node_country
+workbook_regas,Port of Acajutla Phase 1,SV,2.13,el_salvador,single_node_country
+workbook_regas,Puerto Cortes LNG Phase 1,HN,2.4,honduras,single_node_country
+workbook_regas,Montego Bay FSRU Phase 1,JM,0.44,jamaica,single_node_country
+workbook_regas,Hunts Bay Phase 1,JM,0.65,jamaica,single_node_country
+workbook_regas,Old Harbour LNG Phase 1,JM,3.6,jamaica,single_node_country
+workbook_regas,Puerto Sandino - LNG Regasification Terminal Phase 1,NI,5.0,nicaragua,single_node_country
+workbook_regas,Costa Norte LNG Phase 1,PA,1.6,panama,single_node_country
+workbook_regas,Sinolam LNG Phase 1,PA,0.4,panama,single_node_country
+workbook_regas,New Fortress FSRU Phase 1,PR,1.05,puerto_rico,single_node_country
+workbook_regas,Peñuelas Phase 1,PR,2.0,puerto_rico,single_node_country
+workbook_regas,Aguirre FSRU Phase 1,PR,3.8,puerto_rico,single_node_country
+workbook_regas,GNL del Plata Phase 1,UY,2.7,uruguay,single_node_country
+workbook_regas,Bahrain LNG Phase 1,BH,6.0,bahrain,single_node_country
+workbook_regas,Bahrain LNG Phase 1,BH,6.0,bahrain,single_node_country
+workbook_regas,FSRU 3 Phase 1,EG,5.0,egypt,single_node_country
+workbook_regas,Ain Sokhna FSRU Phase 2 (Energos Eskimo),EG,3.8,egypt,single_node_country
+workbook_regas,Ain Sokhna FSRU Phase 5 (Ertugrul Gazi),EG,4.1,egypt,single_node_country
+workbook_regas,Ain Sokhna FSRU Phase 1 (Hoegh Galleon),EG,5.6,egypt,single_node_country
+workbook_regas,Ain Sokhna Phase 2,EG,3.8,egypt,single_node_country
+workbook_regas,Damietta FSRU Unit 1 (Energos Winter),EG,6.0,egypt,single_node_country
+workbook_regas,Ain Sokhna Phase 1,EG,3.6,egypt,single_node_country
+workbook_regas,Ain Sokhna FSRU Phase 3 (Energos Power),EG,5.5,egypt,single_node_country
+workbook_regas,Ain Sokhna FSRU Phase 6 (Hoegh Gandria),EG,8.0,egypt,single_node_country
+workbook_regas,Khor Al-Zubair Phase 1,IQ,3.8,iraq,single_node_country
+workbook_regas,Hadera Gateway Phase 1,IL,3.0,israel,single_node_country
+workbook_regas,Aqaba LNG Phase 3 (Excelerate Acadia),JO,3.8,jordan,single_node_country
+workbook_regas,Aqaba onshore terminal Aqaba (Onshore),JO,5.5,jordan,single_node_country
+workbook_regas,Aqaba LNG Phase 1 (Energos Eskimo),JO,3.8,jordan,single_node_country
+workbook_regas,Aqaba LNG Phase 2 (Energos Force),JO,4.42,jordan,single_node_country
+workbook_regas,Al-Zour - LNG Regasification Terminal Phase 1,KW,11.0,kuwait,single_node_country
+workbook_regas,Mina Al-Ahmadi - LNG Regasification Terminal Phase 1,KW,5.8,kuwait,single_node_country
+workbook_regas,Al-Zour - LNG Regasification Terminal Phase 2,KW,11.0,kuwait,single_node_country
+workbook_regas,Mohammedia Port Phase 1,MA,3.0,morocco,single_node_country
+workbook_regas,Jorf Lasfar - LNG Regasification Terminal Phase 1,MA,5.15,morocco,single_node_country
+workbook_regas,Mohammedia Port Phase 2,MA,0.44,morocco,single_node_country
+workbook_regas,Nador West Med Phase 1,MA,5.0,morocco,single_node_country
+workbook_regas,Dakhla LNG terminal Dakhla FSRU,MA,3.0,morocco,single_node_country
+workbook_regas,Mohammedia Port Phase 3,MA,0.96,morocco,single_node_country
+workbook_regas,Port of Duqm Phase 1,OM,0.11,oman,single_node_country
+workbook_regas,Port Sudan FSRU Phase 1,SD,2.21,sudan,single_node_country
+workbook_regas,Sharjah - LNG Regasification Terminal Phase 1,AE,5.0,united_arab_emirates,single_node_country
+workbook_regas,Jebel Ali FSRU (Dubai) Phase 2,AE,3.0,united_arab_emirates,single_node_country
+workbook_regas,Ruwais FSRU (Abu Dhabi) Phase 1,AE,3.8,united_arab_emirates,single_node_country
+workbook_regas,Jebel Ali FSRU (Dubai) Phase 1,AE,3.0,united_arab_emirates,single_node_country
+workbook_regas,Fujairah - LNG Regasification Terminal Phase 1,AE,9.0,united_arab_emirates,single_node_country
+workbook_regas,Canaport - LNG Regasification Terminal Phase 1,CA,7.5,,unresolved_split_country
+workbook_regas,Veracruz - LNG Regasification Terminal Phase 1,MX,2.5,mexico,single_node_country
+workbook_regas,Altamira LNG Phase 1,MX,5.4,mexico,single_node_country
+workbook_regas,Costa Azul Phase 1,MX,7.5,mexico,single_node_country
+workbook_regas,Manzanillo - LNG Regasification Terminal Phase 1,MX,3.8,mexico,single_node_country
+workbook_regas,Sonora LNG Phase 1,MX,0.0,mexico,single_node_country
+workbook_regas,Pichilingue BCS (La Paz) Phase 1,MX,0.7,mexico,single_node_country
+workbook_regas,Lake Charles - LNG Regasification Terminal Phase 1,US,17.3,,unresolved_split_country
+workbook_regas,Everett - LNG Regasification Terminal Phase 1,US,5.4,,unresolved_split_country
+workbook_regas,Gulf LNG - LNG Regasification Terminal Phase 1,US,11.3,,unresolved_split_country
+workbook_regas,Northeast Gateway Phase 1,US,3.0,,unresolved_split_country
+workbook_regas,Downeast LNG - LNG Regasification Terminal Phase 1,US,0.0,,unresolved_split_country
+workbook_regas,Qidong - LNG Regasification Terminal Phase 4,CN,2.0,china,single_node_country
+workbook_regas,Zhejiang Zhoushan Phase 2,CN,5.0,china,single_node_country
+workbook_regas,Zhuhai - LNG Regasification Terminal Phase 1,CN,3.5,china,single_node_country
+workbook_regas,Beihai - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Beihai - LNG Regasification Terminal Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Beihai - LNG Regasification Terminal Phase 3,CN,6.25,china,single_node_country
+workbook_regas,Zhuhai - LNG Regasification Terminal Phase 2,CN,3.5,china,single_node_country
+workbook_regas,Shanghai - LNG Regasification Terminal Phase 3,CN,3.0,china,single_node_country
+workbook_regas,Shanghai - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Shanghai - LNG Regasification Terminal Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Shenzhen Diefubei Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Shenzhen Huaan Phase 1,CN,0.8,china,single_node_country
+workbook_regas,Shenzhen Huaan Phase 2,CN,2.0,china,single_node_country
+workbook_regas,Baota Penglai Phase 1,CN,2.6,china,single_node_country
+workbook_regas,Fujian - LNG Regasification Terminal Phase 1,CN,2.6,china,single_node_country
+workbook_regas,Huagang Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Huagang Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Huanghuagang Phase 1,CN,2.6,china,single_node_country
+workbook_regas,Diefu Phase 1,CN,4.0,china,single_node_country
+workbook_regas,Huizhou - LNG Regasification Terminal Phase 2,CN,3.45,china,single_node_country
+workbook_regas,Huizhou - LNG Regasification Terminal Phase 1,CN,4.0,china,single_node_country
+workbook_regas,Huludao - LNG Regasification Terminal Phase 1,CN,2.6,china,single_node_country
+workbook_regas,Guangdong Dapeng LNG Phase 2,CN,3.4,china,single_node_country
+workbook_regas,Guangdong Dapeng LNG Phase 1,CN,6.8,china,single_node_country
+workbook_regas,Jiangmen - LNG Regasification Terminal Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Jiangyin - LNG Regasification Terminal Phase 1,CN,2.0,china,single_node_country
+workbook_regas,Jiaxing Phase 1,CN,1.0,china,single_node_country
+workbook_regas,Jieyang - LNG Regasification Terminal Phase 1,CN,6.5,china,single_node_country
+workbook_regas,Fangchenggang Phase 2,CN,0.4,china,single_node_country
+workbook_regas,Yingkou Changlian Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Yantai-PetroChina Phase 1,CN,6.0,china,single_node_country
+workbook_regas,Damaiyu Phase 2,CN,4.0,china,single_node_country
+workbook_regas,Haikou - LNG Regasification Terminal Phase 1,CN,0.5,china,single_node_country
+workbook_regas,Damaiyu Phase 1,CN,2.0,china,single_node_country
+workbook_regas,Yantai - LNG Regasification Terminal Phase 2,CN,5.0,china,single_node_country
+workbook_regas,Yantai - LNG Regasification Terminal Phase 1,CN,5.0,china,single_node_country
+workbook_regas,Dalian - LNG Regasification Terminal Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Lianyungang - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Liuheng - Sinopec Phase 1,CN,7.18,china,single_node_country
+workbook_regas,Liuheng - Zhejiang Energy Phase 1,CN,6.0,china,single_node_country
+workbook_regas,Dalian - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Longkou - PipeChina Phase 3,CN,5.0,china,single_node_country
+workbook_regas,Longkou - PipeChina Phase 1,CN,5.0,china,single_node_country
+workbook_regas,Longkou - PipeChina Phase 2,CN,10.0,china,single_node_country
+workbook_regas,Longkou - Sinopec Phase 1,CN,6.5,china,single_node_country
+workbook_regas,Longkou - Sinopec Phase 2,CN,5.5,china,single_node_country
+workbook_regas,Yangpu - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Fujian - LNG Regasification Terminal Phase 2,CN,3.7,china,single_node_country
+workbook_regas,Yuedong Phase 1,CN,2.0,china,single_node_country
+workbook_regas,Xishui Phase 2,CN,2.0,china,single_node_country
+workbook_regas,Xishui Phase 1,CN,3.5,china,single_node_country
+workbook_regas,Wuhu - LNG Regasification Terminal Phase 1,CN,1.5,china,single_node_country
+workbook_regas,Wuhaogou Phase 1,CN,0.5,china,single_node_country
+workbook_regas,Dongguan - LNG Regasification Terminal Phase 1,CN,1.5,china,single_node_country
+workbook_regas,Wuhaogou Phase 2,CN,1.0,china,single_node_country
+workbook_regas,Ganyu Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Ningbo - LNG Regasification Terminal Phase 3,CN,6.0,china,single_node_country
+workbook_regas,Wenzhou - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Fangchenggang Phase 1,CN,0.6,china,single_node_country
+workbook_regas,Chaozhou Huaying Phase 1,CN,6.0,china,single_node_country
+workbook_regas,Chaozhou Huafeng Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Toumen port Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Tianjin - Sinopec Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Zhanjiang - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Tianjin - Sinopec Phase 3,CN,0.85,china,single_node_country
+workbook_regas,Tianjin - Sinopec Phase 2,CN,4.8,china,single_node_country
+workbook_regas,Tianjin - Sinopec Phase1 Expansion,CN,3.0,china,single_node_country
+workbook_regas,Tianjin - PipeChina Phase 1,CN,3.8,china,single_node_country
+workbook_regas,Tianjin - PipeChina Phase 3,CN,1.8,china,single_node_country
+workbook_regas,Tianjin - Nangang Phase 3,CN,0.18,china,single_node_country
+workbook_regas,Tianjin - Nangang Phase 2,CN,1.0,china,single_node_country
+workbook_regas,Zhejiang Zhoushan Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Putian Phase 1,CN,5.65,china,single_node_country
+workbook_regas,Qidong - LNG Regasification Terminal Phase 2,CN,0.55,china,single_node_country
+workbook_regas,Qidong - LNG Regasification Terminal Phase 3,CN,1.85,china,single_node_country
+workbook_regas,Qidong - LNG Regasification Terminal Phase 1,CN,0.6,china,single_node_country
+workbook_regas,Qingdao - LNG Regasification Terminal Phase 2,CN,1.0,china,single_node_country
+workbook_regas,Qingdao - LNG Regasification Terminal Phase 1,CN,6.0,china,single_node_country
+workbook_regas,Qingdao - LNG Regasification Terminal Phase 3,CN,4.0,china,single_node_country
+workbook_regas,Tangshan - Suntien Phase 1,CN,5.0,china,single_node_country
+workbook_regas,Tangshan Caofeidian Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Tangshan Caofeidian Phase 3,CN,3.5,china,single_node_country
+workbook_regas,Tangshan Caofeidian Phase 1,CN,3.5,china,single_node_country
+workbook_regas,Rizhao Lanqiao Phase 1,CN,0.0,china,single_node_country
+workbook_regas,Rizhao Lanshan Phase 1,CN,2.0,china,single_node_country
+workbook_regas,Binzhou Phase 1,CN,2.0,china,single_node_country
+workbook_regas,Rudong Phase 3,CN,3.5,china,single_node_country
+workbook_regas,Rudong Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Rudong Phase 1,CN,3.5,china,single_node_country
+workbook_regas,Rudong Guoxin Phase 1,CN,2.95,china,single_node_country
+workbook_regas,Rudong Guoxin Phase 2,CN,3.05,china,single_node_country
+workbook_regas,Zhuhai - LNG Regasification Terminal Phase 3,CN,5.0,china,single_node_country
+workbook_regas,Chaozhou Huafeng Phase 1,CN,1.0,china,single_node_country
+workbook_regas,Chaozhou Huaying Phase 2,CN,6.0,china,single_node_country
+workbook_regas,Fujian Zhangzhou Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Guangzhou - LNG Regasification Terminal Phase 2,CN,1.0,china,single_node_country
+workbook_regas,Guangzhou - LNG Regasification Terminal Phase 1,CN,1.1,china,single_node_country
+workbook_regas,Hong Kong FSRU Phase 1,CN,4.0,china,single_node_country
+workbook_regas,Huagang Phase 3,CN,4.0,china,single_node_country
+workbook_regas,Huidong Jiangsu Rudong Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Jiangsu-Binhai Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Maoming - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Maoming - LNG Regasification Terminal Phase 2,CN,7.0,china,single_node_country
+workbook_regas,Ningbo - LNG Regasification Terminal Phase 1,CN,3.0,china,single_node_country
+workbook_regas,Ningbo - LNG Regasification Terminal Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Putian Phase 2,CN,4.35,china,single_node_country
+workbook_regas,Rudong CR Phase 1,CN,6.5,china,single_node_country
+workbook_regas,Tangshan - Suntien Phase 2,CN,5.0,china,single_node_country
+workbook_regas,Tangshan - Suntien Phase 3,CN,2.0,china,single_node_country
+workbook_regas,Tianjin - Nangang Phase 1,CN,5.0,china,single_node_country
+workbook_regas,Tianjin - PipeChina Phase 1 replacement,CN,6.0,china,single_node_country
+workbook_regas,Tianjin - PipeChina Phase 2,CN,6.0,china,single_node_country
+workbook_regas,Yangjiang Hailingwan Phase 1,CN,2.8,china,single_node_country
+workbook_regas,Yangjiang Hailingwan Phase 2,CN,3.2,china,single_node_country
+workbook_regas,Yangpu - LNG Regasification Terminal Phase 2,CN,3.0,china,single_node_country
+workbook_regas,Yingkou - LNG Regasification Terminal Phase 1,CN,6.2,china,single_node_country
+workbook_regas,Zhejiang Zhoushan Phase 3,CN,3.0,china,single_node_country
+workbook_regas,Mizushima LNG Phase 1,JP,1.7,japan,single_node_country
+workbook_regas,Mizushima LNG Phase 2,JP,2.6,japan,single_node_country
+workbook_regas,Himeji - LNG Regasification Terminal Phase 1,JP,5.5,japan,single_node_country
+workbook_regas,Nakagusuku - LNG Regasification Terminal Phase 1,JP,0.7,japan,single_node_country
+workbook_regas,Naoetsu - LNG Regasification Terminal Phase 1,JP,2.1,japan,single_node_country
+workbook_regas,Negishi - LNG Regasification Terminal Phase 1,JP,12.0,japan,single_node_country
+workbook_regas,Himeji - LNG Regasification Terminal Phase 2,JP,8.1,japan,single_node_country
+workbook_regas,Higashi-Ohgishima Phase 1,JP,13.2,japan,single_node_country
+workbook_regas,Hibiki LNG Phase 1,JP,2.4,japan,single_node_country
+workbook_regas,Nihonkai Phase 1,JP,8.5,japan,single_node_country
+workbook_regas,Niihama Kita Phase 1,JP,1.0,japan,single_node_country
+workbook_regas,Ohgishima Phase 1,JP,10.2,japan,single_node_country
+workbook_regas,Oita - LNG Regasification Terminal Phase 1,JP,5.4,japan,single_node_country
+workbook_regas,Hatsukaichi LNG Terminal Phase 1,JP,0.8,japan,single_node_country
+workbook_regas,Yanai - LNG Regasification Terminal Phase 1,JP,2.3,japan,single_node_country
+workbook_regas,Sakaide - LNG Regasification Terminal Phase 1,JP,1.2,japan,single_node_country
+workbook_regas,Sakai - LNG Regasification Terminal Phase 1,JP,6.4,japan,single_node_country
+workbook_regas,Senboku Phase 2,JP,10.0,japan,single_node_country
+workbook_regas,Senboku Phase 1,JP,2.0,japan,single_node_country
+workbook_regas,Hachinohe LNG Phase 1,JP,1.0,japan,single_node_country
+workbook_regas,Shin-Sendai Phase 1,JP,1.7,japan,single_node_country
+workbook_regas,Sodegaura - LNG Regasification Terminal Phase 1,JP,32.7,japan,single_node_country
+workbook_regas,Sodeshi/Shimizu LNG Phase 1,JP,2.9,japan,single_node_country
+workbook_regas,Soma - LNG Regasification Terminal Phase 1,JP,1.5,japan,single_node_country
+workbook_regas,Yokkaichi Works Phase 1,JP,2.1,japan,single_node_country
+workbook_regas,Chita LNG Joint/ Chita Kyodo Phase 2,JP,7.5,japan,single_node_country
+workbook_regas,Futtsu Phase 1,JP,22.9,japan,single_node_country
+workbook_regas,Yokkaichi LNG Center Phase 1,JP,6.4,japan,single_node_country
+workbook_regas,Tobata - LNG Regasification Terminal Phase 1,JP,7.6,japan,single_node_country
+workbook_regas,Toyama Shinko Phase 1,JP,1.8,japan,single_node_country
+workbook_regas,Kawagoe Phase 1,JP,8.7,japan,single_node_country
+workbook_regas,Joetsu Phase 1,JP,3.2,japan,single_node_country
+workbook_regas,Ishikari LNG Phase 2,JP,3.2,japan,single_node_country
+workbook_regas,Ishikari LNG Phase 1,JP,1.4,japan,single_node_country
+workbook_regas,Hitachi LNG Phase 2,JP,2.1,japan,single_node_country
+workbook_regas,Hitachi LNG Phase 1,JP,1.7,japan,single_node_country
+workbook_regas,Shin Minato Phase 1,JP,0.3,japan,single_node_country
+workbook_regas,Chita Phase 1,JP,11.0,japan,single_node_country
+workbook_regas,Hakodate Phase 1,JP,0.2,japan,single_node_country
+workbook_regas,Chita Midorihama Works Phase 3,JP,7.7,japan,single_node_country
+workbook_regas,Wakayama - LNG Regasification Terminal Phase 1,JP,8.4,japan,single_node_country
+workbook_regas,Akita Phase 1,JP,0.5,japan,single_node_country
+workbook_regas,Hibiki LNG Phase 2,JP,1.53,japan,single_node_country
+workbook_regas,Kagoshima Phase 1,JP,0.2,japan,single_node_country
+workbook_regas,Kushiro Phase 1,JP,0.5,japan,single_node_country
+workbook_regas,Nagasaki Phase 1,JP,0.2,japan,single_node_country
+workbook_regas,Boryeong - LNG Regasification Terminal Phase 2-4,KR,3.15,korea_republic_of,single_node_country
+workbook_regas,Boryeong - LNG Regasification Terminal Phase 2-2,KR,2.28,korea_republic_of,single_node_country
+workbook_regas,Boryeong - LNG Regasification Terminal Phase 2-1,KR,2.54,korea_republic_of,single_node_country
+workbook_regas,Jeju LNG - LNG Regasification Terminal Phase 1,KR,1.1,korea_republic_of,single_node_country
+workbook_regas,Incheon - LNG Regasification Terminal Phase 1,KR,54.4,korea_republic_of,single_node_country
+workbook_regas,Myodo Phase 1,KR,3.0,korea_republic_of,single_node_country
+workbook_regas,Myodo Phase 2,KR,8.1,korea_republic_of,single_node_country
+workbook_regas,Ulsan - LNG Regasification Terminal Phase 1,KR,3.0,korea_republic_of,single_node_country
+workbook_regas,Ulsan - LNG Regasification Terminal Phase 2,KR,3.2,korea_republic_of,single_node_country
+workbook_regas,Dangjin (KOGAS) Phase 2,KR,6.96,korea_republic_of,single_node_country
+workbook_regas,Gwangyang - LNG Regasification Terminal phase 1-2,KR,2.1,korea_republic_of,single_node_country
+workbook_regas,Gwangyang - LNG Regasification Terminal Phase 1,KR,3.1,korea_republic_of,single_node_country
+workbook_regas,Tong-Yeong Phase 1,KR,26.5,korea_republic_of,single_node_country
+workbook_regas,Pyeong-Taek Phase 1,KR,41.0,korea_republic_of,single_node_country
+workbook_regas,Gwangyang - LNG Regasification Terminal Phase 2,KR,1.9,korea_republic_of,single_node_country
+workbook_regas,Dangjin (KOGAS) Phase 1,KR,13.7,korea_republic_of,single_node_country
+workbook_regas,Samcheok Phase 1,KR,11.6,korea_republic_of,single_node_country
+workbook_regas,Boryeong - LNG Regasification Terminal Phase 1,KR,4.29,korea_republic_of,single_node_country
+workbook_regas,Dangjin (Posco/LX) Phase 1,KR,3.5,korea_republic_of,single_node_country
+workbook_regas,Zhouji LNG Terminal Phase 1,TW,6.0,taiwan_province_of_china,single_node_country
+workbook_regas,Hsieh Ho Phase 2,TW,0.9,taiwan_province_of_china,single_node_country
+workbook_regas,Hsieh Ho Phase 1,TW,0.9,taiwan_province_of_china,single_node_country
+workbook_regas,Yong an Phase 5,TW,1.5,taiwan_province_of_china,single_node_country
+workbook_regas,Taichung CPS Phase 4,TW,3.0,taiwan_province_of_china,single_node_country
+workbook_regas,Yong an Phase 2,TW,3.0,taiwan_province_of_china,single_node_country
+workbook_regas,Yong an Phase 3,TW,3.0,taiwan_province_of_china,single_node_country
+workbook_regas,Yong an Phase 4,TW,3.0,taiwan_province_of_china,single_node_country
+workbook_regas,Taichung CPS Phase 1,TW,3.0,taiwan_province_of_china,single_node_country
+workbook_regas,Taoyuan - LNG Regasification Terminal Phase 1,TW,3.0,taiwan_province_of_china,single_node_country
+workbook_regas,Taichung CPS Phase 3,TW,4.0,taiwan_province_of_china,single_node_country
+workbook_regas,Yong an Phase 1,TW,1.5,taiwan_province_of_china,single_node_country
+workbook_regas,Taichung CPS Phase 2,TW,3.0,taiwan_province_of_china,single_node_country
+workbook_regas,Taichung TPS Phase 1,TW,4.1,taiwan_province_of_china,single_node_country
+workbook_regas,Mailiao LNG Terminal Phase 1,TW,6.0,taiwan_province_of_china,single_node_country
+workbook_regas,Excellence FSRU Phase 1,BD,3.8,bangladesh,single_node_country
+workbook_regas,Matarbari - LNG Regasification Terminal Phase 1,BD,7.5,bangladesh,single_node_country
+workbook_regas,Kutubdia Island Phase 1,BD,7.5,bangladesh,single_node_country
+workbook_regas,Chittagong - LNG Regasification Terminal Phase 1,BD,1.5,bangladesh,single_node_country
+workbook_regas,Summit FSRU Phase 2,BD,4.5,bangladesh,single_node_country
+workbook_regas,Payra FSRU Unit 1,BD,3.8,bangladesh,single_node_country
+workbook_regas,Summit FSRU Phase 1,BD,3.8,bangladesh,single_node_country
+workbook_regas,Chittagong - LNG Regasification Terminal Phase 2,BD,1.5,bangladesh,single_node_country
+workbook_regas,Express FSRU Phase 1,BD,3.8,bangladesh,single_node_country
+workbook_regas,Dabhol - LNG Regasification Terminal Phase 3-1,IN,1.3,india,single_node_country
+workbook_regas,Krishnapatnam BPCL Phase 3,IN,2.0,india,single_node_country
+workbook_regas,Dabhol - LNG Regasification Terminal Phase 3-2,IN,5.0,india,single_node_country
+workbook_regas,Krishnapatnam BPCL Phase 2,IN,2.0,india,single_node_country
+workbook_regas,Hazira LNG Phase 2_debottleneck,IN,1.1,india,single_node_country
+workbook_regas,Hazira LNG Phase 3,IN,1.4,india,single_node_country
+workbook_regas,Dabhol - LNG Regasification Terminal Phase 1,IN,2.9,india,single_node_country
+workbook_regas,Dahej LNG Phase 3b_1,IN,2.5,india,single_node_country
+workbook_regas,Dahej LNG Phase 3b_2,IN,2.5,india,single_node_country
+workbook_regas,Kukrahati Phase 1,IN,3.0,india,single_node_country
+workbook_regas,Jafrabad Phase 1,IN,5.0,india,single_node_country
+workbook_regas,Ennore LNG Phase 2,IN,5.0,india,single_node_country
+workbook_regas,Ennore LNG Phase 1,IN,5.0,india,single_node_country
+workbook_regas,Haldia LNG Phase 1,IN,1.0,india,single_node_country
+workbook_regas,Hazira LNG Phase 4,IN,2.5,india,single_node_country
+workbook_regas,Hazira LNG Phase 1,IN,2.5,india,single_node_country
+workbook_regas,Digha Phase 1,IN,3.0,india,single_node_country
+workbook_regas,Dhamra - LNG Regasification Terminal Phase 2,IN,5.0,india,single_node_country
+workbook_regas,Gopalpur - LNG Regasification Terminal Phase 1,IN,4.0,india,single_node_country
+workbook_regas,Jaigarh - LNG Regasification Terminal Phase 1,IN,6.0,india,single_node_country
+workbook_regas,Jaigarh - LNG Regasification Terminal Phase 2,IN,3.0,india,single_node_country
+workbook_regas,Kakinada (Crown LNG) Phase 1,IN,7.2,india,single_node_country
+workbook_regas,Kakinada (H-Energy) Phase 1,IN,4.0,india,single_node_country
+workbook_regas,Dhamra - LNG Regasification Terminal Phase 1,IN,5.0,india,single_node_country
+workbook_regas,Karaikal - LNG Regasification Terminal Phase 1,IN,1.0,india,single_node_country
+workbook_regas,Kochi LNG Phase 1,IN,5.0,india,single_node_country
+workbook_regas,Krishna Godavari LNG Phase 2,IN,5.0,india,single_node_country
+workbook_regas,Krishnapatnam BPCL Phase 1,IN,1.0,india,single_node_country
+workbook_regas,Krishnapatnam Petrogas Phase 2,IN,5.0,india,single_node_country
+workbook_regas,Kukrahati Phase 2,IN,3.0,india,single_node_country
+workbook_regas,Dahej LNG Phase 2,IN,3.5,india,single_node_country
+workbook_regas,Dahej LNG Phase 3_a2,IN,2.5,india,single_node_country
+workbook_regas,Mangalore FSRU Phase 1,IN,3.0,india,single_node_country
+workbook_regas,Dahej LNG Phase 3_a1,IN,5.0,india,single_node_country
+workbook_regas,Dahej LNG Phase 1,IN,5.0,india,single_node_country
+workbook_regas,Dahej LNG Phase 1_debottleneck,IN,1.5,india,single_node_country
+workbook_regas,Dabhol - LNG Regasification Terminal Phase 2,IN,2.1,india,single_node_country
+workbook_regas,Mumbai FSRU Phase 1,IN,3.5,india,single_node_country
+workbook_regas,Mundra - LNG Regasification Terminal Phase 1,IN,5.0,india,single_node_country
+workbook_regas,Chhara Phase 1,IN,5.0,india,single_node_country
+workbook_regas,Gangavaram - LNG Regasification Terminal Phase 1,IN,5.0,india,single_node_country
+workbook_regas,Karachi (CNCEC) Phase 2,PK,3.2,pakistan,single_node_country
+workbook_regas,Port Qasim FSRU - ETPL 2 Phase 1,PK,4.56,pakistan,single_node_country
+workbook_regas,Karachi (PSO) Phase 1,PK,5.0,pakistan,single_node_country
+workbook_regas,Port Qasim FSRU - Energas Phase 1,PK,5.7,pakistan,single_node_country
+workbook_regas,Port Qasim FSRU - GasPort Phase 1,PK,5.0,pakistan,single_node_country
+workbook_regas,Port Qasim FSRU - GEIL Phase 1,PK,5.6,pakistan,single_node_country
+workbook_regas,Marshal FSRU Phase 1,PK,3.8,pakistan,single_node_country
+workbook_regas,Port Qasim FSRU - GasPort Phase 2,PK,5.6,pakistan,single_node_country
+workbook_regas,Port Qasim FSRU - ETPL FSRU Exquisite,PK,4.8,pakistan,single_node_country
+workbook_regas,Port Qasim FSRU - GasPort 2 Phase 1,PK,0.7,pakistan,single_node_country
+workbook_regas,Gwadar-Nasbah Phase 1,PK,4.0,pakistan,single_node_country
+workbook_regas,Karachi (CNCEC) Phase 1,PK,2.5,pakistan,single_node_country
+workbook_regas,Easy LNG Phase 1,PK,1.0,pakistan,single_node_country
+workbook_regas,Port Qasim Onshore - ETPL Phase 1,PK,5.25,pakistan,single_node_country
+workbook_regas,Port Qasim FSRU - Tabeer Phase 1,PK,5.6,pakistan,single_node_country
+workbook_regas,Colombo - LNG Regasification Terminal Phase 1,LK,2.0,sri_lanka,single_node_country
+workbook_regas,Kerawalapitiya Phase 1,LK,2.7,sri_lanka,single_node_country
+workbook_regas,Botum Sakor Phase 1,KH,1.5,cambodia,single_node_country
+workbook_regas,Teluk Lamong Phase 1,ID,0.3,indonesia,single_node_country
+workbook_regas,Tanjung Benoa (Bali) Phase 2,ID,0.0,indonesia,single_node_country
+workbook_regas,Ambon LNG Phase 1,ID,0.0,indonesia,single_node_country
+workbook_regas,Porong Phase 1,ID,0.0,indonesia,single_node_country
+workbook_regas,Central Java (Cilacap) Phase 1,ID,1.0,indonesia,single_node_country
+workbook_regas,Jawa Satu Power FSRU (Cilamaya) Phase 1,ID,2.4,indonesia,single_node_country
+workbook_regas,Sulawesi-Maluku cluster Phase 1,ID,2.3,indonesia,single_node_country
+workbook_regas,Sumatra LNG Phase 1,ID,0.0,indonesia,single_node_country
+workbook_regas,Lampung FSRU Phase 1,ID,2.7,indonesia,single_node_country
+workbook_regas,Simenggaris Phase 1,ID,0.17,indonesia,single_node_country
+workbook_regas,Semarang FSRU Phase 1,ID,0.0,indonesia,single_node_country
+workbook_regas,Salawati Phase 1,ID,0.3,indonesia,single_node_country
+workbook_regas,"Gorontalo, Sulawesi Phase 1 (Hua Xiang 8 FSRU)",ID,0.3,indonesia,single_node_country
+workbook_regas,Bojonegoro Phase 1,ID,4.0,indonesia,single_node_country
+workbook_regas,North Java Phase 1,ID,0.0,indonesia,single_node_country
+workbook_regas,Tanjung Benoa (Bali) Phase 1,ID,0.38,indonesia,single_node_country
+workbook_regas,Pulau Asam Phase 1,ID,0.0,indonesia,single_node_country
+workbook_regas,Arun LNG - LNG Regasification Terminal Phase 1,ID,3.0,indonesia,single_node_country
+workbook_regas,Makassar - LNG Regasification Terminal Phase 1,ID,0.0,indonesia,single_node_country
+workbook_regas,West Java FSRU (Nusantara Satu) Phase 1,ID,3.0,indonesia,single_node_country
+workbook_regas,Amman LNG Phase 1,ID,5.6,indonesia,single_node_country
+workbook_regas,Palu Phase 1,ID,2.0,indonesia,single_node_country
+workbook_regas,Pengerang LNG (Johor) Phase 1,MY,3.5,malaysia,single_node_country
+workbook_regas,Lumut - LNG Regasification Terminal Phase 1,MY,1.0,malaysia,single_node_country
+workbook_regas,RGT Yan Unit 1,MY,6.0,malaysia,single_node_country
+workbook_regas,Bintulu FSRU Phase 1,MY,0.0,malaysia,single_node_country
+workbook_regas,Lahad Datu - LNG Regasification Terminal Phase 1,MY,1.0,malaysia,single_node_country
+workbook_regas,Melaka LNG (Lekas) Phase 1,MY,3.8,malaysia,single_node_country
+workbook_regas,Yangon LNG Phase 1,MM,4.0,myanmar,single_node_country
+workbook_regas,Dawei SEZ Phase 1,MM,6.0,myanmar,single_node_country
+workbook_regas,Thilawa - LNG Regasification Terminal Phase 1,MM,0.3,myanmar,single_node_country
+workbook_regas,Mee Laung Gyaing Phase 1,MM,4.0,myanmar,single_node_country
+workbook_regas,Rakhine LNG Phase 1,MM,0.5,myanmar,single_node_country
+workbook_regas,Thilawa - LNG Regasification Terminal CNTIC V Power Energy,MM,1.3,myanmar,single_node_country
+workbook_regas,Thilawa - LNG Regasification Terminal Phase 2,MM,1.8,myanmar,single_node_country
+workbook_regas,Kanbauk LNG Phase 1,MM,3.0,myanmar,single_node_country
+workbook_regas,Mariveles LNG Terminal Phase 1,PH,0.4,philippines,single_node_country
+workbook_regas,Pagbilao LNG (EWC) Phase 1,PH,3.0,philippines,single_node_country
+workbook_regas,Batangas Bay (VEC) Phase 1,PH,3.0,philippines,single_node_country
+workbook_regas,Batangas Bay (First Gen) Phase 1,PH,5.3,philippines,single_node_country
+workbook_regas,Batangas Clean Energy Phase 1,PH,3.0,philippines,single_node_country
+workbook_regas,Batangas - Tabangao (Shell) Phase 1,PH,3.0,philippines,single_node_country
+workbook_regas,Tanglawan LNG (Phoenix) Phase 1,PH,2.2,philippines,single_node_country
+workbook_regas,Philippines LNG (AG&P) Phase 1,PH,5.0,philippines,single_node_country
+workbook_regas,Mindanao Phase 1,PH,5.0,philippines,single_node_country
+workbook_regas,Filipinas LNG (Luzon LNG) Phase 1,PH,4.4,philippines,single_node_country
+workbook_regas,Singapore - LNG Regasification Terminal Phase 3,SG,5.0,singapore,single_node_country
+workbook_regas,Singapore - LNG Regasification Terminal Phase 4,SG,0.0,singapore,single_node_country
+workbook_regas,Singapore - LNG Regasification Terminal Phase 1,SG,3.5,singapore,single_node_country
+workbook_regas,SLNG FSRU Phase 1,SG,5.0,singapore,single_node_country
+workbook_regas,Singapore - LNG Regasification Terminal Phase 2,SG,2.5,singapore,single_node_country
+workbook_regas,Gulf MPT Phase 1,TH,8.0,thailand,single_node_country
+workbook_regas,Map Ta Phut - LNG Regasification Terminal Phase 2,TH,5.0,thailand,single_node_country
+workbook_regas,Map Ta Phut - LNG Regasification Terminal Phase 3,TH,1.5,thailand,single_node_country
+workbook_regas,Map Ta Phut - LNG Regasification Terminal Phase 1,TH,5.0,thailand,single_node_country
+workbook_regas,Songkhla - LNG Regasification Terminal Phase 1,TH,1.0,thailand,single_node_country
+workbook_regas,Surat Thani FSRU Phase 1,TH,5.0,thailand,single_node_country
+workbook_regas,Gulf MPT Phase 2,TH,2.8,thailand,single_node_country
+workbook_regas,Gulf of Thailand Phase 1,TH,5.0,thailand,single_node_country
+workbook_regas,Nong Fab Phase 2,TH,5.0,thailand,single_node_country
+workbook_regas,Nong Fab Phase 1,TH,2.5,thailand,single_node_country
+workbook_regas,Vung Tau (FSRU) Phase 1,VN,2.0,viet_nam,single_node_country
+workbook_regas,Hai Lang (Quang Tri) Phase 2,VN,1.5,viet_nam,single_node_country
+workbook_regas,Cai Mep Ha (Ba Ria-Vung Tau) Phase 3,VN,3.0,viet_nam,single_node_country
+workbook_regas,Northern Vietnam LNG Terminal (NVLT) Phase 1,VN,0.7,viet_nam,single_node_country
+workbook_regas,Northern Vietnam LNG Terminal (NVLT) Phase 2,VN,0.5,viet_nam,single_node_country
+workbook_regas,Soc Trang Phase 1,VN,9.0,viet_nam,single_node_country
+workbook_regas,Hoa Binh (Bac Lieu) Phase 2,VN,2.0,viet_nam,single_node_country
+workbook_regas,Hoa Binh (Bac Lieu) Phase 1,VN,1.0,viet_nam,single_node_country
+workbook_regas,Hiep Phuoc LNG terminal Phase 1,VN,2.15,viet_nam,single_node_country
+workbook_regas,Hai Phong Phase 1,VN,0.65,viet_nam,single_node_country
+workbook_regas,Hai Lang (Quang Tri) Phase 1,VN,1.5,viet_nam,single_node_country
+workbook_regas,Son My (Binh Thuan) Phase 1,VN,3.6,viet_nam,single_node_country
+workbook_regas,Son My (Binh Thuan) Phase 2,VN,2.4,viet_nam,single_node_country
+workbook_regas,Chan May LNG Phase 2,VN,0.9,viet_nam,single_node_country
+workbook_regas,Ca Na (Ninh Thuan) Phase 1,VN,4.8,viet_nam,single_node_country
+workbook_regas,Chan May LNG Phase 1,VN,1.4,viet_nam,single_node_country
+workbook_regas,Ninh Hoa Phase 1,VN,0.0,viet_nam,single_node_country
+workbook_regas,Cai Trap Phase 1,VN,2.0,viet_nam,single_node_country
+workbook_regas,Tien Lang Phase 1,VN,6.0,viet_nam,single_node_country
+workbook_regas,Mui Ke Ga (Binh Tuan) Phase 1,VN,1.5,viet_nam,single_node_country
+workbook_regas,Son My (Binh Thuan) Phase 3,VN,4.0,viet_nam,single_node_country
+workbook_regas,Cai Mep Ha (Ba Ria-Vung Tau) Phase 2,VN,3.0,viet_nam,single_node_country
+workbook_regas,Cai Mep Ha (Ba Ria-Vung Tau) Phase 1,VN,3.0,viet_nam,single_node_country
+workbook_regas,Thi Vai (Ba Ria-Vung Tau) Phase 1_expansion,VN,1.52,viet_nam,single_node_country
+workbook_regas,Thi Vai (Ba Ria-Vung Tau) Phase 2,VN,0.0,viet_nam,single_node_country
+workbook_regas,Thi Vai (Ba Ria-Vung Tau) Phase 1,VN,1.0,viet_nam,single_node_country
+workbook_regas,Tan Tap (Long An) Phase 1,VN,3.0,viet_nam,single_node_country

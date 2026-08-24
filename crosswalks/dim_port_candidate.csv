@@ -1,0 +1,1233 @@
+node_id,country_iso2,ea_project_name,port_role,gazetteer_port_name,gazetteer_id,latitude,longitude,method,confidence,source,note
+angola,AO,Soyo LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+angola,AO,Angola LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cameroon,CM,Hilli Episeyo FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cameroon,CM,Cameroon LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cameroon,CM,Hilli Episeyo FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cameroon,CM,Hilli Episeyo FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cameroon,CM,Etinde FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cameroon,CM,Hilli Episeyo FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+congo,CG,Congo-Brazzaville FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+congo,CG,Tango FLNG (Congo LNG),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+congo,CG,Nguya FLNG (Congo LNG),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+djibouti,DJ,Ethiopia-Djibouti LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+equatorial_guinea,GQ,Fortuna FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+equatorial_guinea,GQ,EG LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+equatorial_guinea,GQ,EG LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+gabon,GA,Gabon LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mauritania,MR,BirAllah LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mauritania,MR,Tortue FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mauritania,MR,Tortue FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mauritania,MR,BirAllah LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Coral Norte,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Mozambique LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Mozambique LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Mozambique LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Mozambique LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Mozambique LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Coral Sul - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Rovuma,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Mozambique LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,Brass LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,Ajaokuta,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,NLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,Brass LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,NLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,NLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,NLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,NLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,Ajaokuta,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,Olokola LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,Olokola LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,NLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,NLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,Nigeria FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+senegal,SN,Yakaar-Teranga LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+senegal,SN,Yakaar-Teranga LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+tanzania,TZ,Tanzania LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+tanzania,TZ,Tanzania LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+tanzania,TZ,Tanzania LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Gorgon,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Fisherman's Landing LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Arrow,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Arrow,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Cash Maple,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Gladstone LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Gladstone LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Gorgon,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Gorgon,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Gorgon,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Gorgon,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Tassie Shoal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Ichthys LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Ichthys LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Ichthys LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Northern Territory LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Northern Territory LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,North West Shelf,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,North West Shelf,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,North West Shelf,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,North West Shelf,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,North West Shelf,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Darwin LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Darwin LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Wheatstone LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Wheatstone LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Wheatstone LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Wheatstone LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Bonaparte,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Western Australia LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Australia Pacific LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Browse,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Browse,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Australia Pacific LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Transborders FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Australia Pacific LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Pluto LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Pluto LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Pluto LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Australia Pacific LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Prelude FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,QCLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,QCLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,QCLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Arrow,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Arrow,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,PNG LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,Western LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,PNG LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,PNG LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,PNG LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,Papua LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,Papua LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,Papua LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,Papua LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+papua_new_guinea,PG,PNG LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cyprus,CY,Cyprus LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+norway,NO,Snøhvit LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+norway,NO,Kollsnes,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+norway,NO,Stravanger LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Murmansk LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Murmansk LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Sakhalin 2,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Far East LNG (Sakhalin 1),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Sakhalin 2,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Arctic LNG 2,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Arctic LNG 1,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Arctic LNG 1,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Yakutia LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Cryogas-Vysotsk,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Arctic LNG 2,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Cryogas-Vysotsk,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Murmansk LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Vladivostok - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Taezhnyi,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Ust-Luga (Baltic LNG),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Ust-Luga (Baltic LNG),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Ust-Luga (Baltic LNG),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Obsky,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Obsky,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Arctic LNG 2,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Sakhalin 2,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Arctic LNG 1,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Yamal LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Yamal LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Yamal LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Portovaya,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Portovaya,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Yamal LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Yakutia LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Golfo San Matias FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Golfo San Matias FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Argentina LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Argentina LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Argentina LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Argentina LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Tango FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Tecpetrol LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Bahia Blanca - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Bahia Blanca - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Santos Basin FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Colombia Caribbean Coast,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Jobo,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+peru,PE,Peru LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+suriname,SR,Firebird LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+suriname,SR,Firebird LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+suriname,SR,Firebird LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+suriname,SR,Firebird LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+trinidad_and_tobago,TT,ALNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+trinidad_and_tobago,TT,ALNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+trinidad_and_tobago,TT,ALNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+trinidad_and_tobago,TT,Caribbean LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+trinidad_and_tobago,TT,Caribbean LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+trinidad_and_tobago,TT,ALNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+venezuela_bolivarian_republic_of,VE,Mariscal Sucre,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL2Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL1Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL1Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL1Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL1Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Skikda GL1K,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Skikda GL1K,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Skikda GL1K,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Skikda GL1K,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Skikda GL2K,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Skikda GL2K,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Skikda GL2K,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL2Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL1Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL1Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL2Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL3Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL4Z (Camel),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL4Z (Camel),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL2Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL4Z (Camel),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL2Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+algeria,DZ,Arzew GL2Z,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,ELNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Damietta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,ELNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Iran small scale,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Iran small scale,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Forouzan FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Iran small scale,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Kharg Island FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Iran small scale,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Iran LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Iran small scale,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Iran small scale,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iran_islamic_republic_of,IR,Iran LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+israel,IL,Leviathan FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+libya,LY,Marsa El Brega - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Oman LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Oman LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Oman LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Oman LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Oman LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Oman LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Marsa LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Oman LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG N (III),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG N (II),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG N (II),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,North Field South,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG S (II),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG N (I),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG N (I),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG N (I),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG S (II),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG S (II),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,North Field South,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG S (I),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG S (I),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG N (IV),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,North Field West,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,North Field West,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG S (III),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,North Field East,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,North Field East,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,North Field East,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,North Field East,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+qatar,QA,QatarEnergy LNG S (III),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Das Island - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Das Island - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Ruwais LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Das Island - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Ruwais LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+yemen,YE,Yemen LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+yemen,YE,Yemen LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Ksi Lisims LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Kwispaa LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Kwispaa LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,LNG Canada,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,LNG Canada,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,LNG Canada,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,LNG Canada,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Aurora LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Malahat LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Nisga'a LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Orca LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Pacific NorthWest LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Passamaquoddy Bay,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Bear Head LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Bear Head LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Becancour - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Woodfibre LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Woodfibre LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,WCC LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Triton LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Tilbury Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Port Edward,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Prince Rupert LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Prince Rupert LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Prince Rupert LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Prince Rupert - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Prince Rupert - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Prince Rupert - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,AC LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Quebec LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Quebec LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,AC LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,AC LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Discovery LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Tilbury Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Douglas Channel LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stolt LNGaz,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Stewart LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Cedar LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Goldboro LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Goldboro LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Grassy Point LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Tilbury Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Tilbury Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Kitimat LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Kitimat LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Kitimat LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Kitsault LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Ksi Lisims LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Amigo LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Amigo LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Altamira - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Altamira - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Altamira - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Vista Pacifico LNG (Topolobampo),load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,MPL,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,MPL,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,MPL,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,MPL,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,MPL,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,MPL,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Lakach LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Coatzacoalcos,load,Coatzacoalcos,1730088197,18.12972222,-94.41896349,exact_name,high,natural_earth_10m_ports,
+mexico,MX,Energia Costa Azul,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Energia Costa Azul,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Energia Costa Azul,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Salina Cruz - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Alaska LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Alaska LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Alaska LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Annova LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Annova LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Annova LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Annova LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Annova LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Annova LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Avocet FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Avocet FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Brownsville FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Brownsville FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Brownsville FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Calcasieu Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Cameron LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Cameron LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Cameron LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Cameron LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Cameron LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Cameron Parish,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Carib,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CE FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Commonwealth,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Commonwealth,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Commonwealth,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Commonwealth,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Commonwealth,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Commonwealth,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Corpus Christi Stage 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Cove Point - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,CP2 LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delfin FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delfin FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delfin FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delfin FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Delta LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Downeast LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Elba Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Floridian,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Fourchon LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Fourchon LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Freeport LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Freeport LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Freeport LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Freeport LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Galveston Bay - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Galveston Bay - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Galveston Bay - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Golden Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Golden Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Golden Pass,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Gulf LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Gulf LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Gulfsteam LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Gulfsteam LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Hialeah,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Ingleside,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Jordan Cove,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Jordan Cove,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Jordan Cove,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Jordan Cove,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Jordan Cove,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Kenai LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Kenai LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Lake Charles - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Lake Charles - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Lake Charles - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Lavaca Bay LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Louisiana FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Louisiana FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Louisiana FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Magnolia LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Magnolia LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Magnolia LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Magnolia LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Main Pass Energy Hub,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Main Pass Energy Hub,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Maxville LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Monkey Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Monkey Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Monkey Island,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Penn LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Penn LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Plaquemines,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Port Arthur LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Port Arthur LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Port Arthur LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Port Arthur LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Qilak LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Rio Grande LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Rio Grande LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Rio Grande LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Rio Grande LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Rio Grande LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass Stage 5,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass Stage 5,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Sabine Pass Stage 5,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,SB Power Solutions,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Starke,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Texas LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Texas LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Warrenton,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Woodside Louisiana LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Woodside Louisiana LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Woodside Louisiana LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Woodside Louisiana LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Woodside Louisiana LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brunei_darussalam,BN,Brunei LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brunei_darussalam,BN,Brunei LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brunei_darussalam,BN,Brunei LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brunei_darussalam,BN,Brunei LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brunei_darussalam,BN,Brunei LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+timor_leste,TL,Greater Sunrise,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+timor_leste,TL,Greater Sunrise,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+timor_leste,TL,Greater Sunrise,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+timor_leste,TL,Greater Sunrise,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Abadi,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Arun LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Donggi-Senoro LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Arun LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Arun LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Arun LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Arun LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Abadi,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Sengkang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Sengkang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Sengkang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Tangguh LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Tangguh LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Tangguh LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Sengkang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bontang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bontang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bontang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bontang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bontang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Arun LNG - LNG Liquefaction Terminal,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bontang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bontang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bontang LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,West Papua FLNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,PFLNG 1,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,PFLNG 2,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu LNG,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,PFLNG 3,load,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+ghana,GH,Tema FSRU Golar Tundra Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+ghana,GH,Tema LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cote_d_ivoire,CI,Ivory Coast FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+kenya,KE,Kenya LNG-to-power Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Nacala FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mozambique,MZ,Matola FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nigeria,NG,Lagos - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+senegal,SN,Senegal Powership Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+south_africa,ZA,FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+south_africa,ZA,NFE terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+south_africa,ZA,Richards Bay - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+south_africa,ZA,Richards Bay - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+south_africa,ZA,Richards Bay Transnet FSRU Unit 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+south_africa,ZA,Coega - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+south_africa,ZA,Ngqura Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+south_africa,ZA,Ngqura Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Newcastle LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Port Adelaide Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Port Phillip Bay Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Victoria Energy Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Crib Point Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Geelong - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,AU,Port Kembla - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+albania,AL,Eagle - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+albania,AL,Vlora Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+belgium,BE,Zeebrugge - LNG Regasification Terminal Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+belgium,BE,Zeebrugge - LNG Regasification Terminal Phase 5,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+belgium,BE,Zeebrugge - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+belgium,BE,Zeebrugge - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+croatia,HR,Krk Island Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+croatia,HR,Krk Island Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+croatia,HR,Krk Island Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+croatia,HR,Krk Island Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cyprus,CY,Vasilikos - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+estonia,EE,Muuga - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+estonia,EE,Paldiski - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+finland,FI,Tornio Manga Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+finland,FI,Inkoo - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+finland,FI,Hamina - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+finland,FI,Turku - Pansio Harbour Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+finland,FI,Pori LNG Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+france,FR,Montoir-de-Bretagne Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+france,FR,Dunkirk LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+france,FR,Fos Cavaou Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+france,FR,Fos Tonkin Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+france,FR,Project Bonnie Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+france,FR,Le Havre - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+france,FR,Fos Cavaou Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Wilhelmshaven FSRU I Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Lubmin (Deutsche Regas) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Lubmin (RWE) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Mukran - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Lubmin (Deutsche Regas) Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Wilhelmshaven Onshore Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Wilhelmshaven Onshore Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Wilhelmshaven Onshore Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Wilhelmshaven Onshore Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Wilhelmshaven FSRU II Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Stade Onshore Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Stade FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Rostock - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Brunsbüttel FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Brunsbüttel FSRU Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Brunsbüttel Onshore Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Mukran - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+germany,DE,Lubmin (Deutsche Regas) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+gibraltar,GI,Gibraltar LNG terminal Gibraltar LNG,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+greece,GR,Aegean Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+greece,GR,Revithoussa - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+greece,GR,Thrace INGS Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+greece,GR,Alexandroupolis - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+greece,GR,Dioriga Gas Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+greece,GR,Thessaloniki - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+greece,GR,Argo FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+ireland,IE,Shannon Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+ireland,IE,Predator LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+ireland,IE,Port of Cork Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Ravenna FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Livorno/LNG Toscana Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Porto Empedocle - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Falconara Marittima Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Gioia Tauro - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Piombino FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Panigaglia Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Panigaglia Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,HIGAS LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Adriatic LNG/Rovigo Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Trieste - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Ravenna LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Adriatic LNG/Rovigo Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Portovesme Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Livorno/LNG Toscana Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Adriatic LNG/Rovigo Expansion 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Vado Ligure - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+italy,IT,Adriatic LNG/Rovigo Expansion,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+latvia,LV,Skulte LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+lithuania,LT,Klaipeda LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+lithuania,LT,Klaipeda LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malta,MT,Delimara Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+montenegro,ME,Port of Bar Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Gate Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Eemshaven FSRU Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Gate Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Eemshaven FSRU Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Zeeland LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Terneuzen (Gasunie) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Gate Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Terneuzen (VTTI) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Eemshaven FSRU Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+netherlands,NL,Eemshaven FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+norway,NO,Ora LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+norway,NO,Mosjoen Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+poland,PL,Swinoujscie - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+poland,PL,Swinoujscie - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+poland,PL,Swinoujscie - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+poland,PL,Gdansk FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+poland,PL,Gdansk FSRU Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+portugal,PT,Sines LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+romania,RO,Constanta Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,Barcelona - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,Tenerife - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,Bilbao - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,Saggas Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,Cartagena Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,Mugardos LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,Huelva - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,Gran Canaria - Arinaga Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+spain,ES,El Musel Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+sweden,SE,Gothenburg LNG terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+sweden,SE,Nynäshamn LNG terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+sweden,SE,Lysekil LNG Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+sweden,SE,Gävle Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,Marmara Ereglisi Expansion 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,Marmara Ereglisi Expansion 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,Dortyol FSRU FSRU Ertugrul Gazi,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,Dortyol FSRU FSRU Challenger,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,Saros FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,EgeGaz Aliaga LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,EgeGaz Aliaga LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,EgeGaz Aliaga LNG Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,ENKA FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,Etki LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,Etki LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+turkiye,TR,Marmara Ereglisi Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,South Hook Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,Barrow-in-Furness FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,Dragon LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,Grain - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,Grain - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,South Hook Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,Grain - LNG Regasification Terminal Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,Teesside GasPort Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_kingdom_of_great_britain_and_northern_ireland,GB,Grain - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,RU,Kaliningrad LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+ukraine,UA,Odessa LNG terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Bahia Blanca GasPort Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Bahia Blanca GasPort Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Bahia Blanca GasPort Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,La Plata - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Puerto Escobar Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+argentina,AR,Bahia Blanca GasPort Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bahamas,BS,Bahamas LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bahamas,BS,Nassau LNG project Nassau Mini,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Sao Marcos Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Bahia/TRBA Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Barra do Riacho Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Guanabara LNG/Rio de Janeiro Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Macae Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Pecém Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Pontal do Parana OR Paranagua Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Port of Acu Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Port of Itaqui Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Port of Suape (OnCorp) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Presidente Kennedy Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Sao Francisco do Sul (Santa Catarina state) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Sao Luis Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Sergipe/Barra dos Coqueiros Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Rio Grande do Sul Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Port of Vila do Conde / Barcarena (Para state) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,TRSP – São Paulo FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Karpowership Brazil Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+brazil,BR,Guanabara LNG/Rio de Janeiro Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+chile,CL,Talcahuano - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+chile,CL,Penco Lirquén Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+chile,CL,Quintero - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+chile,CL,Mejillones LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+chile,CL,Quintero - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+chile,CL,Andes LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Brisa Unit 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Puerto Bahia LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,SPEC Cartagena Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Buenaventura LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,SPEC Cartagena Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Buenaventura LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,SPEC Cartagena Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Pacific LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Covenas LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Puerto Bahia LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Ballena Unit 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Amazonica Unit 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Caribe Unit 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+colombia,CO,Covenas LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+dominican_republic,DO,AES Andrés Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+dominican_republic,DO,FSRU Manzanillo (Do) Phase 1 (Energos Freeze),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+ecuador,EC,Bajo Alto FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+el_salvador,SV,Port of Acajutla Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+honduras,HN,Puerto Cortes LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+jamaica,JM,Montego Bay FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+jamaica,JM,Hunts Bay Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+jamaica,JM,Old Harbour LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+nicaragua,NI,Puerto Sandino - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+panama,PA,Costa Norte LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+panama,PA,Sinolam LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+puerto_rico,PR,New Fortress FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+puerto_rico,PR,Peñuelas Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+puerto_rico,PR,Aguirre FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+uruguay,UY,GNL del Plata Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bahrain,BH,Bahrain LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bahrain,BH,Bahrain LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,FSRU 3 Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Ain Sokhna FSRU Phase 2 (Energos Eskimo),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Ain Sokhna FSRU Phase 5 (Ertugrul Gazi),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Ain Sokhna FSRU Phase 1 (Hoegh Galleon),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Ain Sokhna Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Damietta FSRU Unit 1 (Energos Winter),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Ain Sokhna Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Ain Sokhna FSRU Phase 3 (Energos Power),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+egypt,EG,Ain Sokhna FSRU Phase 6 (Hoegh Gandria),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+iraq,IQ,Khor Al-Zubair Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+israel,IL,Hadera Gateway Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+jordan,JO,Aqaba LNG Phase 3 (Excelerate Acadia),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+jordan,JO,Aqaba onshore terminal Aqaba (Onshore),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+jordan,JO,Aqaba LNG Phase 1 (Energos Eskimo),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+jordan,JO,Aqaba LNG Phase 2 (Energos Force),discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+kuwait,KW,Al-Zour - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+kuwait,KW,Mina Al-Ahmadi - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+kuwait,KW,Al-Zour - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+morocco,MA,Mohammedia Port Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+morocco,MA,Jorf Lasfar - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+morocco,MA,Mohammedia Port Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+morocco,MA,Nador West Med Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+morocco,MA,Dakhla LNG terminal Dakhla FSRU,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+morocco,MA,Mohammedia Port Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+oman,OM,Port of Duqm Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+sudan,SD,Port Sudan FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Sharjah - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Jebel Ali FSRU (Dubai) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Ruwais FSRU (Abu Dhabi) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Jebel Ali FSRU (Dubai) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+united_arab_emirates,AE,Fujairah - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,CA,Canaport - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Veracruz - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Altamira LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Costa Azul Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Manzanillo - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Sonora LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+mexico,MX,Pichilingue BCS (La Paz) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Lake Charles - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Everett - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Gulf LNG - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Northeast Gateway Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+,US,Downeast LNG - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Qidong - LNG Regasification Terminal Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Zhejiang Zhoushan Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Zhuhai - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Beihai - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Beihai - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Beihai - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Zhuhai - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Shanghai - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Shanghai - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Shanghai - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Shenzhen Diefubei Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Shenzhen Huaan Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Shenzhen Huaan Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Baota Penglai Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Fujian - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Huagang Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Huagang Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Huanghuagang Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Diefu Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Huizhou - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Huizhou - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Huludao - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Guangdong Dapeng LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Guangdong Dapeng LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Jiangmen - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Jiangyin - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Jiaxing Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Jieyang - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Fangchenggang Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yingkou Changlian Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yantai-PetroChina Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Damaiyu Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Haikou - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Damaiyu Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yantai - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yantai - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Dalian - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Lianyungang - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Liuheng - Sinopec Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Liuheng - Zhejiang Energy Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Dalian - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Longkou - PipeChina Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Longkou - PipeChina Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Longkou - PipeChina Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Longkou - Sinopec Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Longkou - Sinopec Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yangpu - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Fujian - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yuedong Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Xishui Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Xishui Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Wuhu - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Wuhaogou Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Dongguan - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Wuhaogou Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Ganyu Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Ningbo - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Wenzhou - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Fangchenggang Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Chaozhou Huaying Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Chaozhou Huafeng Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Toumen port Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - Sinopec Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Zhanjiang - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - Sinopec Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - Sinopec Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - Sinopec Phase1 Expansion,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - PipeChina Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - PipeChina Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - Nangang Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - Nangang Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Zhejiang Zhoushan Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Putian Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Qidong - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Qidong - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Qidong - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Qingdao - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Qingdao - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Qingdao - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tangshan - Suntien Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tangshan Caofeidian Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tangshan Caofeidian Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tangshan Caofeidian Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Rizhao Lanqiao Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Rizhao Lanshan Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Binzhou Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Rudong Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Rudong Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Rudong Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Rudong Guoxin Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Rudong Guoxin Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Zhuhai - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Chaozhou Huafeng Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Chaozhou Huaying Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Fujian Zhangzhou Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Guangzhou - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Guangzhou - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Hong Kong FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Huagang Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Huidong Jiangsu Rudong Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Jiangsu-Binhai Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Maoming - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Maoming - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Ningbo - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Ningbo - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Putian Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Rudong CR Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tangshan - Suntien Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tangshan - Suntien Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - Nangang Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - PipeChina Phase 1 replacement,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Tianjin - PipeChina Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yangjiang Hailingwan Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yangjiang Hailingwan Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yangpu - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Yingkou - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+china,CN,Zhejiang Zhoushan Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Mizushima LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Mizushima LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Himeji - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Nakagusuku - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Naoetsu - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Negishi - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Himeji - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Higashi-Ohgishima Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Hibiki LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Nihonkai Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Niihama Kita Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Ohgishima Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Oita - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Hatsukaichi LNG Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Yanai - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Sakaide - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Sakai - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Senboku Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Senboku Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Hachinohe LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Shin-Sendai Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Sodegaura - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Sodeshi/Shimizu LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Soma - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Yokkaichi Works Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Chita LNG Joint/ Chita Kyodo Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Futtsu Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Yokkaichi LNG Center Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Tobata - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Toyama Shinko Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Kawagoe Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Joetsu Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Ishikari LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Ishikari LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Hitachi LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Hitachi LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Shin Minato Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Chita Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Hakodate Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Chita Midorihama Works Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Wakayama - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Akita Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Hibiki LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Kagoshima Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Kushiro Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+japan,JP,Nagasaki Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Boryeong - LNG Regasification Terminal Phase 2-4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Boryeong - LNG Regasification Terminal Phase 2-2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Boryeong - LNG Regasification Terminal Phase 2-1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Jeju LNG - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Incheon - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Myodo Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Myodo Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Ulsan - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Ulsan - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Dangjin (KOGAS) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Gwangyang - LNG Regasification Terminal phase 1-2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Gwangyang - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Tong-Yeong Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Pyeong-Taek Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Gwangyang - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Dangjin (KOGAS) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Samcheok Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Boryeong - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+korea_republic_of,KR,Dangjin (Posco/LX) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Zhouji LNG Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Hsieh Ho Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Hsieh Ho Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Yong an Phase 5,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Taichung CPS Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Yong an Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Yong an Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Yong an Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Taichung CPS Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Taoyuan - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Taichung CPS Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Yong an Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Taichung CPS Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Taichung TPS Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+taiwan_province_of_china,TW,Mailiao LNG Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Excellence FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Matarbari - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Kutubdia Island Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Chittagong - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Summit FSRU Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Payra FSRU Unit 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Summit FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Chittagong - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+bangladesh,BD,Express FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dabhol - LNG Regasification Terminal Phase 3-1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Krishnapatnam BPCL Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dabhol - LNG Regasification Terminal Phase 3-2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Krishnapatnam BPCL Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Hazira LNG Phase 2_debottleneck,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Hazira LNG Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dabhol - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dahej LNG Phase 3b_1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dahej LNG Phase 3b_2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Kukrahati Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Jafrabad Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Ennore LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Ennore LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Haldia LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Hazira LNG Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Hazira LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Digha Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dhamra - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Gopalpur - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Jaigarh - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Jaigarh - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Kakinada (Crown LNG) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Kakinada (H-Energy) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dhamra - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Karaikal - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Kochi LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Krishna Godavari LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Krishnapatnam BPCL Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Krishnapatnam Petrogas Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Kukrahati Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dahej LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dahej LNG Phase 3_a2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Mangalore FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dahej LNG Phase 3_a1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dahej LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dahej LNG Phase 1_debottleneck,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Dabhol - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Mumbai FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Mundra - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Chhara Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+india,IN,Gangavaram - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Karachi (CNCEC) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim FSRU - ETPL 2 Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Karachi (PSO) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim FSRU - Energas Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim FSRU - GasPort Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim FSRU - GEIL Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Marshal FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim FSRU - GasPort Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim FSRU - ETPL FSRU Exquisite,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim FSRU - GasPort 2 Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Gwadar-Nasbah Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Karachi (CNCEC) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Easy LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim Onshore - ETPL Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+pakistan,PK,Port Qasim FSRU - Tabeer Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+sri_lanka,LK,Colombo - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+sri_lanka,LK,Kerawalapitiya Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+cambodia,KH,Botum Sakor Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Teluk Lamong Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Tanjung Benoa (Bali) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Ambon LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Porong Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Central Java (Cilacap) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Jawa Satu Power FSRU (Cilamaya) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Sulawesi-Maluku cluster Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Sumatra LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Lampung FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Simenggaris Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Semarang FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Salawati Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,"Gorontalo, Sulawesi Phase 1 (Hua Xiang 8 FSRU)",discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Bojonegoro Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,North Java Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Tanjung Benoa (Bali) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Pulau Asam Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Arun LNG - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Makassar - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,West Java FSRU (Nusantara Satu) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Amman LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+indonesia,ID,Palu Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Pengerang LNG (Johor) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Lumut - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,RGT Yan Unit 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Bintulu FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Lahad Datu - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+malaysia,MY,Melaka LNG (Lekas) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+myanmar,MM,Yangon LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+myanmar,MM,Dawei SEZ Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+myanmar,MM,Thilawa - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+myanmar,MM,Mee Laung Gyaing Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+myanmar,MM,Rakhine LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+myanmar,MM,Thilawa - LNG Regasification Terminal CNTIC V Power Energy,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+myanmar,MM,Thilawa - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+myanmar,MM,Kanbauk LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Mariveles LNG Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Pagbilao LNG (EWC) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Batangas Bay (VEC) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Batangas Bay (First Gen) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Batangas Clean Energy Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Batangas - Tabangao (Shell) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Tanglawan LNG (Phoenix) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Philippines LNG (AG&P) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Mindanao Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+philippines,PH,Filipinas LNG (Luzon LNG) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+singapore,SG,Singapore - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+singapore,SG,Singapore - LNG Regasification Terminal Phase 4,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+singapore,SG,Singapore - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+singapore,SG,SLNG FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+singapore,SG,Singapore - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Gulf MPT Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Map Ta Phut - LNG Regasification Terminal Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Map Ta Phut - LNG Regasification Terminal Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Map Ta Phut - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Songkhla - LNG Regasification Terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Surat Thani FSRU Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Gulf MPT Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Gulf of Thailand Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Nong Fab Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+thailand,TH,Nong Fab Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Vung Tau (FSRU) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Hai Lang (Quang Tri) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Cai Mep Ha (Ba Ria-Vung Tau) Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Northern Vietnam LNG Terminal (NVLT) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Northern Vietnam LNG Terminal (NVLT) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Soc Trang Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Hoa Binh (Bac Lieu) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Hoa Binh (Bac Lieu) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Hiep Phuoc LNG terminal Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Hai Phong Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Hai Lang (Quang Tri) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Son My (Binh Thuan) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Son My (Binh Thuan) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Chan May LNG Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Ca Na (Ninh Thuan) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Chan May LNG Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Ninh Hoa Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Cai Trap Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Tien Lang Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Mui Ke Ga (Binh Tuan) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Son My (Binh Thuan) Phase 3,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Cai Mep Ha (Ba Ria-Vung Tau) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Cai Mep Ha (Ba Ria-Vung Tau) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Thi Vai (Ba Ria-Vung Tau) Phase 1_expansion,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Thi Vai (Ba Ria-Vung Tau) Phase 2,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Thi Vai (Ba Ria-Vung Tau) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country
+viet_nam,VN,Tan Tap (Long An) Phase 1,discharge,,,,,unresolved,none,natural_earth_10m_ports,no exact case-insensitive name match within country

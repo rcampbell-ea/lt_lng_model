@@ -1,14 +1,17 @@
 """
 geo_checks.py
 --------------
-Session 1, build plan 4.7. Thirteen checks, written alongside each
-deliverable rather than after it. Each function raises ``AssertionError``
-naming the offender on failure; nothing is dropped, clamped or defaulted
-silently (CLAUDE.md, "fail loudly").
+Session 1, build plan 4.7: checks 1-13 below. Session 2, build plan 4.8:
+checks under the ``session2_check_`` prefix, checks 1-5 and 8-11 of that
+section (6 and 7, port coordinates and route distances, cannot run until
+gate B closes and are reported skipped, not implemented as pass/fail here).
+Each function raises ``AssertionError`` naming the offender on failure;
+nothing is dropped, clamped or defaulted silently (CLAUDE.md, "fail loudly").
 """
 
 from __future__ import annotations
 
+import hashlib
 import re
 import subprocess
 from pathlib import Path
@@ -303,3 +306,196 @@ def check_data_interim_provenance(
             raise AssertionError(
                 f"check 13: parquet {name} is not git-ignored but data/raw outputs must be"
             )
+
+
+# ---------------------------------------------------------------------------
+# Session 2, build plan 4.8.
+# ---------------------------------------------------------------------------
+
+
+# 4.8 check 1: country_iso2 unique, two uppercase letters, every real ISO code present.
+def session2_check_1_country_iso2_shape(
+    dim_country: pd.DataFrame, iso_dim_country: pd.DataFrame
+) -> None:
+    check_dim_country_pk_unique(dim_country)
+    bad_codes = [
+        c for c in dim_country["country_iso2"] if not (len(c) == 2 and c.isalpha() and c.isupper())
+    ]
+    if bad_codes:
+        raise AssertionError(f"4.8 check 1: codes not two uppercase letters: {bad_codes}")
+    expected_real = set(iso_dim_country.loc[iso_dim_country["is_real_country"], "country_iso2"])
+    present_real = set(dim_country.loc[dim_country["is_real_country"], "country_iso2"])
+    missing = sorted(expected_real - present_real)
+    if missing:
+        raise AssertionError(f"4.8 check 1: real ISO codes missing from dim_country: {missing}")
+
+
+# 4.8 check 2: every raw name string in every source resolves through the applied crosswalk.
+def session2_check_2_all_raw_values_resolved(applied_crosswalk: pd.DataFrame) -> None:
+    unresolved = applied_crosswalk[
+        applied_crosswalk["country_iso2"].isnull() | (applied_crosswalk["country_iso2"] == "")
+    ]
+    if not unresolved.empty:
+        offenders = list(
+            unresolved[["source_system", "raw_value"]].itertuples(index=False, name=None)
+        )[:10]
+        raise AssertionError(
+            f"4.8 check 2: {len(unresolved)} rows in the applied crosswalk are unresolved, "
+            f"e.g. {offenders}"
+        )
+
+
+# 4.8 check 3: alias table many to one within each source system.
+def session2_check_3_alias_many_to_one(applied_crosswalk: pd.DataFrame) -> None:
+    dupes = applied_crosswalk[
+        applied_crosswalk.duplicated(subset=["source_system", "raw_value"], keep=False)
+    ]
+    if not dupes.empty:
+        bad = sorted(set(map(tuple, dupes[["source_system", "raw_value"]].values.tolist())))
+        raise AssertionError(
+            f"4.8 check 3: (source_system, raw_value) appears more than once: {bad[:10]}"
+        )
+
+
+# 4.8 check 4: every real country has geometry, and its stored point falls inside its own polygon.
+def session2_check_4_geometry_and_containment(
+    dim_country: pd.DataFrame, dissolved_geometry, centroids: pd.DataFrame
+) -> list[str]:
+    """Returns the list of real, LNG/pipe-role-relevant countries missing
+    geometry at 1:50m resolution ("gate C" candidates) instead of raising
+    for them: build_dim_country has already decided these are a reported
+    gap rather than a build blocker (see its docstring), since neither a
+    hand-entered polygon nor a third network pull is something this check
+    is entitled to reach for on its own. A genuinely broken containment for
+    a country that DOES have geometry still raises: that is a real defect,
+    not a sourcing gap.
+    """
+    from shapely.geometry import Point
+
+    real = dim_country[dim_country["is_real_country"]]
+    missing_geom = set(real["country_iso2"]) - set(dissolved_geometry["country_iso2"])
+    relevant = sorted(
+        code
+        for code in missing_geom
+        if dim_country.loc[dim_country["country_iso2"] == code, "role_lng"].iloc[0] != "none"
+        or dim_country.loc[dim_country["country_iso2"] == code, "role_pipe"].iloc[0] != "none"
+    )
+
+    merged = dissolved_geometry.merge(centroids, on="country_iso2")
+    failures = []
+    for _, row in merged.iterrows():
+        point = Point(row["centroid_lon"], row["centroid_lat"])
+        if not row.geometry.contains(point):
+            failures.append(row["country_iso2"])
+    if failures:
+        raise AssertionError(
+            f"4.8 check 4: stored centroid falls outside its own polygon: {sorted(failures)}"
+        )
+
+    return relevant
+
+
+# 4.8 check 8: no landlocked country appears as an LNG exporter or importer.
+def session2_check_8_no_landlocked_lng_role(dim_country: pd.DataFrame) -> None:
+    violations = dim_country[
+        (dim_country["is_landlocked"] == True)  # noqa: E712
+        & dim_country["role_lng"].isin(["exporter", "importer", "both"])
+    ]
+    if not violations.empty:
+        raise AssertionError(
+            f"4.8 check 8: landlocked country with an LNG role: "
+            f"{sorted(violations['country_iso2'])}"
+        )
+
+
+# 4.8 check 9: adjacency is symmetric, and every modelled pipe corridor has adjacency or an
+# override.
+def session2_check_9_adjacency_symmetric_and_pipe_corridors(
+    applied_adjacency: pd.DataFrame,
+    gtf_border_pairs: list[dict],
+    applied_crosswalk: pd.DataFrame,
+    real_country_codes: set[str],
+) -> None:
+    pairs = set(map(tuple, applied_adjacency.values.tolist()))
+    asymmetric = sorted(p for p in pairs if (p[1], p[0]) not in pairs)
+    if asymmetric:
+        raise AssertionError(f"4.8 check 9: adjacency not symmetric for pairs: {asymmetric[:10]}")
+
+    xwalk_map = {
+        (row["source_system"], row["raw_value"]): row["country_iso2"]
+        for _, row in applied_crosswalk[applied_crosswalk["source_system"] == "iea_gtf"].iterrows()
+    }
+    unsupported = []
+    for record in gtf_border_pairs:
+        exit_code = xwalk_map.get(("iea_gtf", record["exit_raw"]))
+        entry_code = xwalk_map.get(("iea_gtf", record["entry_raw"]))
+        if exit_code not in real_country_codes or entry_code not in real_country_codes:
+            continue
+        if exit_code == entry_code:
+            continue
+        if (exit_code, entry_code) not in pairs:
+            unsupported.append((record["borderpoint"], exit_code, entry_code))
+    if unsupported:
+        raise AssertionError(
+            f"4.8 check 9: GTF border point(s) with neither geometric adjacency nor an "
+            f"override entry: {unsupported[:10]}"
+        )
+
+
+# 4.8 check 10: no ZZ anywhere in any output.
+def session2_check_10_no_zz(
+    tables: dict[str, pd.DataFrame], columns_by_table: dict[str, list[str]]
+) -> None:
+    offenders = []
+    for name, df in tables.items():
+        for col in columns_by_table.get(name, []):
+            if col in df.columns and (df[col] == "ZZ").any():
+                offenders.append((name, col))
+    if offenders:
+        raise AssertionError(f"4.8 check 10: ZZ present in output: {offenders}")
+
+
+# 4.8 check 11: snapshot hashes match the manifest.
+def session2_check_11_snapshot_hashes_match_manifest(
+    manifest_files: dict[str, dict], base_dir: Path
+) -> None:
+    mismatches = []
+    for filename, facts in manifest_files.items():
+        path = base_dir / filename
+        if not path.is_file():
+            mismatches.append((filename, "missing"))
+            continue
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        if digest != facts["sha256"]:
+            mismatches.append((filename, "sha256 mismatch"))
+    if mismatches:
+        raise AssertionError(
+            f"4.8 check 11: snapshot hash mismatch against manifest (source changed without "
+            f"a version bump): {mismatches}"
+        )
+
+
+# 2.9: dim_port_candidate confidence/coordinate consistency.
+def session2_check_port_candidate_confidence(port_candidates: pd.DataFrame) -> None:
+    high = port_candidates[port_candidates["confidence"] == "high"]
+    bad_high = high[high["latitude"].isnull() | high["longitude"].isnull()]
+    if not bad_high.empty:
+        raise AssertionError(
+            f"2.9: {len(bad_high)} confidence=high port candidate rows have a null coordinate"
+        )
+    out_of_bounds = high[~high["latitude"].between(-90, 90) | ~high["longitude"].between(-180, 180)]
+    if not out_of_bounds.empty:
+        raise AssertionError(
+            f"2.9: {len(out_of_bounds)} confidence=high port candidate rows have an "
+            f"out-of-bounds coordinate"
+        )
+
+    unresolved = port_candidates[port_candidates["method"] == "unresolved"]
+    bad_unresolved = unresolved[
+        unresolved["latitude"].notnull() | unresolved["longitude"].notnull()
+    ]
+    if not bad_unresolved.empty:
+        raise AssertionError(
+            f"2.9: {len(bad_unresolved)} method=unresolved port candidate rows have a "
+            f"non null coordinate"
+        )

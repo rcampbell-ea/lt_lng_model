@@ -1,0 +1,20 @@
+{
+  "extracted_members": [
+    "ne_50m_admin_0_countries.README.html",
+    "ne_50m_admin_0_countries.VERSION.txt",
+    "ne_50m_admin_0_countries.cpg",
+    "ne_50m_admin_0_countries.dbf",
+    "ne_50m_admin_0_countries.prj",
+    "ne_50m_admin_0_countries.shp",
+    "ne_50m_admin_0_countries.shx"
+  ],
+  "files": {
+    "ne_50m_admin_0_countries.zip": {
+      "byte_count": 799734,
+      "filename": "ne_50m_admin_0_countries.zip",
+      "sha256": "5fed433373581fa648920435f937d95f2d3c0200e067409c6478dcdf1b853139"
+    }
+  },
+  "retrieved_at": "2026-08-24T17:26:29.171555+00:00",
+  "source_url": "https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_countries.zip"
+}

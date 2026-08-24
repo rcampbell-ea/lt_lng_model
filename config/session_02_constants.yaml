@@ -1,0 +1,38 @@
+# Session 2 gate: geo master (sessions_02_03_build_plan.md section 2).
+# Every numeric value used by the session 2 build and its validation checks
+# lives here, never inline in code (CLAUDE.md, "numbers, failure and
+# provenance").
+
+natural_earth_admin0:
+  # This vintage's row count and known ISO_A2 patch cases (build plan 4.5
+  # trap 1). The build raises if the pulled snapshot's shape has moved,
+  # rather than silently reprocessing a different vintage.
+  expected_row_count: 242
+  # TYPE values ranked most to least "primary polity", used to pick which
+  # admin0 row supplies continent/subregion/display name when one
+  # country_iso2 spans multiple admin0 rows (e.g. Australia plus its two
+  # island-territory rows). Not used for geometry, which unions every row
+  # sharing the code.
+  type_preference_order:
+    - "Sovereign country"
+    - "Country"
+    - "Sovereignty"
+    - "Disputed"
+    - "Indeterminate"
+    - "Dependency"
+
+adjacency:
+  # Tolerance, in degrees (EPSG:4326), for treating two country boundaries
+  # that nearly but not exactly coincide (vector digitising slack at 1:50m)
+  # as a shared land border. ~0.01 degree is on the order of 1 km at the
+  # equator, small relative to real border lengths.
+  shared_border_buffer_degrees: 0.01
+  # Same buffer, used the other way: a country boundary fully covered by the
+  # buffered union of every other country's geometry has no coastline and is
+  # landlocked (build plan 4.3, is_landlocked).
+  landlocked_buffer_degrees: 0.01
+
+port_candidate:
+  # Build plan 4.3: roughly 40 load and 60 to 80 discharge ports.
+  expected_load_port_order_of_magnitude: 40
+  expected_discharge_port_order_of_magnitude: 70

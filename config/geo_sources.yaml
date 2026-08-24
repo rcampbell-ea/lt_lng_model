@@ -1,0 +1,30 @@
+# Pinned source URLs for scripts/pull_geo_snapshots.py (build plan 4.6,
+# sessions_02_03_build_plan.md 2.1 and 2.1b). A URL living in config rather
+# than inline in the pull script is the generalisation point: swapping a
+# vintage or mirror is a config edit, not a code change.
+#
+# Do not add geopandas.datasets or any other bundled/deprecated source here
+# (build plan 2.1 warning). Do not add ArcGIS Living Atlas: out of scope for
+# session 2.
+
+natural_earth_admin0_50m:
+  url: "https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_countries.zip"
+  description: "Natural Earth Admin 0 Countries, 1:50m, cultural vectors, public domain"
+
+port_gazetteer:
+  # Preference order per build plan 2.1b. World Port Index (NGA Publication
+  # 150) is preferred but has no stable, unauthenticated, machine-fetchable
+  # download endpoint as of this pull: msi.nga.mil returns 403 to a
+  # non-browser client on both the publication page and the guessed
+  # publications API. Natural Earth 10m ports is the documented fallback,
+  # same source family as the admin0 layer above, and is what this session
+  # actually pulls. Record the WPI attempt and its failure in the manifest
+  # rather than silently skipping straight to the fallback.
+  preferred:
+    name: world_port_index
+    url: "https://msi.nga.mil/api/publications/download?type=view&key=16920959/SFH00000/WPI.geojson"
+    description: "World Port Index, NGA Publication 150, public domain (US Government work)"
+  fallback:
+    name: natural_earth_10m_ports
+    url: "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_ports.zip"
+    description: "Natural Earth 10m Ports, cultural vectors, public domain"

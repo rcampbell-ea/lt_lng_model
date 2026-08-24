@@ -1,5 +1,10 @@
 # The six pseudo codes from section 4.4 of docs/LT_LNG_flows_forecast_plan.md
-# and section 4.3 of docs/sessions_00_01_build_plan.md. None of these are
+# and section 4.3 of docs/sessions_00_01_build_plan.md, plus XX, added in
+# session 2 per docs/session_01_data_availability.md section 2.2 and
+# sessions_02_03_build_plan.md 2.2: EA's own API publishes XX as its unknown
+# country code, which is EA saying it does not know, and is a distinct
+# concept from ZZ, which means our own pipeline failed to resolve a value.
+# XX must never be conflated with or resolved to ZZ. None of these are
 # ISO 3166-1 real countries; is_real_country is False for every one.
 # XK is deliberately absent: it is already used de facto for Kosovo.
 
@@ -9,6 +14,7 @@ pseudo_codes:
   XR: {meaning: "reload or transhipment origin"}
   XL: {meaning: "the literal Liquefied Natural Gas value in IEA GTF exit and entry columns"}
   XN: {meaning: "not elsewhere specified, as used in IEA GTF"}
+  XX: {meaning: "EA API's own unknown country code, distinct from ZZ"}
   ZZ: {meaning: "unknown, error trapping only"}
 
 # Exact, case-insensitive raw-string matches that resolve to a pseudo code

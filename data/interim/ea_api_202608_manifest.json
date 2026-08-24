@@ -24,6 +24,32 @@
       "raw_port_list_entries": 1628,
       "sha256": "1a928616ebf97f11e0c7da958c3b077a38cfe16433b6e5e5930a8e73bb9cdb4a",
       "sub_country_objects": 30
+    },
+    "ea_ct_cargoes.txt": {
+      "asserted_total_records": 1197,
+      "asserted_cargo_type_records": 36,
+      "asserted_cargo_subtype_records": 1161,
+      "byte_count": 118258,
+      "filename": "ea_ct_cargoes.txt",
+      "sha256": "6e755699bf6843ffd626fa20bb900677371ef89235774fcdbb690e57fedf95e1"
+    },
+    "ea_ts_metadata.txt": {
+      "asserted_vocabulary_counts": {
+        "frequency": 11,
+        "category": 24,
+        "category_subtype": 84,
+        "aspect": 33,
+        "aspect_subtype": 108,
+        "lifecycle_stage": 3,
+        "unit": 105,
+        "country_iso": 254,
+        "sub_region": 73,
+        "country": 254,
+        "region": 22
+      },
+      "byte_count": 18258,
+      "filename": "ea_ts_metadata.txt",
+      "sha256": "638f3981d1ac26fa026a630f020ba566257a3e1bf10af48c36f410bd6d37dc56"
     }
   },
   "source_directory": "data/raw/ea_api/202608"

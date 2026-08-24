@@ -1,0 +1,30 @@
+{
+  "files": {
+    "dim_country.parquet": {
+      "byte_count": 24658,
+      "filename": "dim_country.parquet",
+      "sha256": "e7a3a550d8c67a0da0c0bdba6624dd032e349aec8c4df9f32ed1bb5597f73ce1"
+    },
+    "dim_country_adjacency.parquet": {
+      "byte_count": 4266,
+      "filename": "dim_country_adjacency.parquet",
+      "sha256": "575d606f2fec1c5b3560bc96fa38e796fdcacba7ce6fde13eb7303818055db5a"
+    },
+    "dim_demand_node.parquet": {
+      "byte_count": 3615,
+      "filename": "dim_demand_node.parquet",
+      "sha256": "473389d30d0e33e879b99081379f2d91b009d66c147071b0a435fd9643733e95"
+    },
+    "dim_supply_node.parquet": {
+      "byte_count": 2976,
+      "filename": "dim_supply_node.parquet",
+      "sha256": "45d5155c3b37b4b8a7af7d87eb9eacd41837083961299b5f24f892a2218b4f00"
+    },
+    "geo_country_geometry.parquet": {
+      "byte_count": 1013028,
+      "filename": "geo_country_geometry.parquet",
+      "sha256": "e541fd4b6ef9328e819b3e1dac3494c35050fa1fd74e009e72b6992815d9acac"
+    }
+  },
+  "source_directory": "data/geo"
+}
