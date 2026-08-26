@@ -76,9 +76,20 @@ def _resolve_api_key() -> str:
 
 
 def build_request(mapping_id: int, catalogue_path: Path) -> tuple[str, dict[str, str], list[int]]:
-    """Read the mapping's request_string and deduplicated dataset_ids from
-    the pinned mappings catalogue. Returns (path_and_query_without_dataset_id,
-    query_params_dict_with_deduped_dataset_id_as_csv, distinct_dataset_ids).
+    """Read the mapping's request_string from the pinned mappings catalogue,
+    for its date_from/date_to and filename parameters, but query by
+    ``mapping_id`` rather than an explicit ``dataset_id`` list.
+
+    The catalogue's own request_string builds a ``dataset_id`` CSV list,
+    which for a large mapping (e.g. 553, "Long term losses", ~6,000+ ids
+    after dedup) exceeds the server's URL length limit (HTTP 414). The
+    ``/timeseries/`` endpoint accepts ``mapping_id`` directly (confirmed
+    working during this project's API discovery -- see plan 3.2b) and the
+    server performs its own deduplication server-side, so this avoids the
+    URL-length failure entirely rather than chunking requests. distinct_ids
+    is still returned, for the manifest's dataset-id-count field only; it is
+    not sent as a request parameter.
+
     Raises if the mapping_id is not present in the catalogue.
     """
     import json as _json
@@ -93,9 +104,9 @@ def build_request(mapping_id: int, catalogue_path: Path) -> tuple[str, dict[str,
                 query_pairs = parse_qsl(
                     mapping["request_string"].lstrip("?"), keep_blank_values=True
                 )
-                params = dict(query_pairs)
-                params["dataset_id"] = ",".join(str(i) for i in distinct_ids)
-                return "/timeseries/", params, distinct_ids
+                params = {k: v for k, v in query_pairs if k != "dataset_id"}
+                params["mapping_id"] = str(mapping_id)
+                return "/timeseries/pagination/", params, distinct_ids
 
     raise ValueError(f"mapping_id {mapping_id} not found in {catalogue_path}")
 
@@ -119,14 +130,69 @@ def main() -> int:
     path, params, distinct_ids = build_request(args.mapping_id, args.catalogue_path)
     url = f"{args.base_url}{path}"
 
-    response = requests.get(
-        url,
-        params={**params, "api_key": api_key},
-        headers={"accept": "application/json"},
-        timeout=120.0,
-    )
-    response.raise_for_status()
-    payload = response.json()
+    # /timeseries/pagination/ pages results (default records_per_page=5000,
+    # one record per dataset_id). A mapping with more datasets than that
+    # would silently truncate on a single request, so follow pagination.max_pages
+    # from the first page rather than assume one page is everything.
+    all_records: list[dict] = []
+    page = 1
+    max_pages = None
+    while True:
+        try:
+            response = requests.get(
+                url,
+                params={**params, "api_key": api_key, "page": page},
+                headers={"accept": "application/json"},
+                timeout=120.0,
+            )
+            response.raise_for_status()
+        except requests.exceptions.RequestException as exc:
+            # requests' own exception message embeds the full request URL,
+            # api_key included (response.url / exc.request.url). Never let
+            # that reach stdout, a log, or a re-raised exception -- redact
+            # before reporting anything (CLAUDE.md, "credentials": never
+            # printed, logged, or written anywhere).
+            status = getattr(exc.response, "status_code", "unknown")
+            raise RuntimeError(
+                f"EA API request failed for mapping_id={args.mapping_id}: "
+                f"HTTP {status} on {path} page {page} (query redacted). "
+                f"Underlying error type: {type(exc).__name__}."
+            ) from None
+        records = response.json()
+        if not isinstance(records, list):
+            raise RuntimeError(
+                f"Unexpected response shape from {path} for mapping_id="
+                f"{args.mapping_id}: expected a list, got {type(records).__name__}."
+            )
+        all_records.extend(records)
+        if not records:
+            break
+        max_pages = records[0].get("pagination", {}).get("max_pages", max_pages)
+        if max_pages is None or page >= max_pages:
+            break
+        page += 1
+
+    # The pinned mappings catalogue lists each dataset_id twice within a
+    # mapping's own association data (confirmed: every dataset_id in every
+    # mapping's dataset_ids array appears exactly twice in
+    # ea_api_mappings.txt). Querying by mapping_id (rather than an explicit
+    # deduplicated dataset_id CSV, which is what avoided this before the
+    # 414-URL-too-long fix) means the server returns that duplication too --
+    # confirmed live: mapping 5 returned dataset_id 130 twice, identical
+    # records. Deduplicate by dataset_id here, keeping the first occurrence,
+    # rather than let it become a silent PK violation downstream in
+    # fact_gas_balance (dataset_id, year).
+    seen_ids: set = set()
+    deduped_records = []
+    duplicate_count = 0
+    for record in all_records:
+        did = record.get("dataset_id")
+        if did in seen_ids:
+            duplicate_count += 1
+            continue
+        seen_ids.add(did)
+        deduped_records.append(record)
+    payload = deduped_records
 
     out_dir = ROOT / "data" / "raw" / "ea_api" / args.vintage / f"mapping_{args.mapping_id}"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -146,9 +212,17 @@ def main() -> int:
             "retrieved_at": datetime.now(UTC).isoformat(),
             "response_file": response_path.name,
             "byte_count": response_path.stat().st_size,
+            "page_count": page,
+            "raw_record_count": len(all_records),
+            "duplicate_dataset_id_count": duplicate_count,
+            "record_count": len(payload),
         },
     )
-    print(f"Wrote {response_path} and its manifest ({len(distinct_ids)} distinct dataset ids)")
+    print(
+        f"Wrote {response_path} and its manifest "
+        f"({len(payload)} records across {page} page(s), {duplicate_count} duplicate "
+        f"dataset_id record(s) dropped, {len(distinct_ids)} distinct dataset ids expected)"
+    )
     return 0
 
 

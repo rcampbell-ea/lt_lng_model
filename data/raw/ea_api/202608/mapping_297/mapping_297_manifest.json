@@ -1,0 +1,20 @@
+{
+  "byte_count": 361687,
+  "distinct_dataset_id_count": 179,
+  "duplicate_dataset_id_count": 0,
+  "endpoint": "https://api.energyaspects.com/data/timeseries/pagination/",
+  "mapping_id": 297,
+  "page_count": 1,
+  "parameters": {
+    "api_key": "<redacted>",
+    "date_from": "2012-01-01",
+    "date_to": "2079-01-01",
+    "filename": "long-term-gas-suppply",
+    "mapping_id": "297",
+    "tabulate_by": "category"
+  },
+  "raw_record_count": 179,
+  "record_count": 179,
+  "response_file": "response.json",
+  "retrieved_at": "2026-08-26T19:44:37.414081+00:00"
+}

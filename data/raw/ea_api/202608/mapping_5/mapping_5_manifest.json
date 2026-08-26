@@ -1,0 +1,22 @@
+{
+  "byte_count": 372183,
+  "distinct_dataset_id_count": 42,
+  "duplicate_dataset_id_count": 0,
+  "endpoint": "https://api.energyaspects.com/data/timeseries/pagination/",
+  "mapping_id": 5,
+  "page_count": 1,
+  "parameters": {
+    "api_key": "<redacted>",
+    "date_from": "2010-01-01",
+    "date_to": "2029-12-01",
+    "filename": "global-lng-exports",
+    "mapping_id": "5",
+    "sort_by": "asc",
+    "sort_field": "country",
+    "tabulate_by": "region"
+  },
+  "raw_record_count": 42,
+  "record_count": 42,
+  "response_file": "response.json",
+  "retrieved_at": "2026-08-26T19:44:44.365911+00:00"
+}

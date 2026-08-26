@@ -169,9 +169,12 @@ def load_fact_pipe_flow_hist(
 
 
 def load_fact_gas_balance(con: duckdb.DuckDBPyConnection, fact_gas_balance: pd.DataFrame) -> None:
-    """Build plan 3.5. PK is (dataset_id, year): one row per date per
-    dataset once ``ea_series.py`` has already deduplicated dataset_ids on
-    the way in. FK to dim_country is nullable (a region/world aggregate row
+    """Build plan 3.5. PK is (dataset_id, period): one row per native
+    observation date per dataset, not per year -- mappings 5 and 6 ("Global
+    LNG exports/imports") are monthly frequency, so (dataset_id, year) alone
+    collided across a series' twelve months per year (caught against a real
+    pull, see docs/session_03_ingestion.md and ea_series.py's module
+    docstring). FK to dim_country is nullable (a region/world aggregate row
     carries a null country_iso2, which DuckDB's foreign key constraint
     permits without violating it) -- exactly what plan 3.2b describes for
     mapping 314's non-country rows.
@@ -179,10 +182,10 @@ def load_fact_gas_balance(con: duckdb.DuckDBPyConnection, fact_gas_balance: pd.D
     con.register("fact_gas_balance_df", fact_gas_balance)
     con.execute(
         "CREATE TABLE fact_gas_balance ("
-        "country_iso2 VARCHAR, year INTEGER, component VARCHAR, value DOUBLE, "
-        "unit VARCHAR, lifecycle_stage VARCHAR, frequency VARCHAR, dataset_id BIGINT, "
-        "release_date VARCHAR, source VARCHAR, "
-        "PRIMARY KEY (dataset_id, year), "
+        "country_iso2 VARCHAR, period VARCHAR, year INTEGER, component VARCHAR, "
+        "category VARCHAR, value DOUBLE, unit VARCHAR, lifecycle_stage VARCHAR, "
+        "frequency VARCHAR, dataset_id BIGINT, release_date VARCHAR, source VARCHAR, "
+        "PRIMARY KEY (dataset_id, period), "
         "FOREIGN KEY (country_iso2) REFERENCES dim_country (country_iso2))"
     )
     if len(fact_gas_balance):

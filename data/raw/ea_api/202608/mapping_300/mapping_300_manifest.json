@@ -1,0 +1,20 @@
+{
+  "byte_count": 187308,
+  "distinct_dataset_id_count": 78,
+  "duplicate_dataset_id_count": 0,
+  "endpoint": "https://api.energyaspects.com/data/timeseries/pagination/",
+  "mapping_id": 300,
+  "page_count": 1,
+  "parameters": {
+    "api_key": "<redacted>",
+    "date_from": "2005-01-01",
+    "date_to": "2079-01-01",
+    "filename": "long-term-prices",
+    "mapping_id": "300",
+    "tabulate_by": "category"
+  },
+  "raw_record_count": 78,
+  "record_count": 78,
+  "response_file": "response.json",
+  "retrieved_at": "2026-08-26T19:44:43.245993+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "api_key_env_var_used": "MY_EA_API_KEY",
+  "byte_count": 2639576,
+  "endpoint": "https://api.energyaspects.com/oilx/v2/cargotracking/flows/lng",
+  "page_count": 2,
+  "parameters": {
+    "api_key": "<redacted>",
+    "grade_level": "false",
+    "import": "true",
+    "range": "2023-01-01,2026-12-31"
+  },
+  "response_file": "response.json",
+  "retrieved_at": "2026-08-26T19:40:58.150885+00:00",
+  "row_count": 8398
+}

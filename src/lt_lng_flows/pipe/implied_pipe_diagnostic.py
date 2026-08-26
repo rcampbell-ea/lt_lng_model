@@ -33,12 +33,20 @@ def compute_net_gas_position(fact_gas_balance: pd.DataFrame) -> pd.DataFrame:
     ``ea_series.py`` docstring on why components are not yet remapped onto
     the plan 5.2 identity term names). Countries or years missing either
     component are excluded, not zero-filled.
+
+    Filters to ``category == "natural_gas"``: mapping 314 ("Long term total
+    demand") carries "demand" as the ``aspect`` for oil_products, NGLs and
+    liquids too, in kb/d rather than bcm. Without this filter, summing
+    "demand" would mix incompatible units and categories into one number --
+    caught before it could reach the diagnostic against a real pull (see
+    docs/session_03_ingestion.md).
     """
     if fact_gas_balance.empty:
         return pd.DataFrame(columns=["country_iso2", "year", "net_gas_position_bcm"])
 
     relevant = fact_gas_balance[
         fact_gas_balance["component"].isin(["supply", "demand"])
+        & (fact_gas_balance["category"] == "natural_gas")
         & fact_gas_balance["country_iso2"].notnull()
     ]
     pivot = relevant.pivot_table(

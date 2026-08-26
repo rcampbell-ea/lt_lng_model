@@ -4,7 +4,7 @@ ea_series.py
 Session 3, build plan 3.5. ``fact_gas_balance`` from whatever
 ``scripts/pull_ea_series.py`` snapshots exist under
 ``data/raw/ea_api/<vintage>/mapping_<id>/response.json``. Long form:
-``country_iso2``, ``year``, ``component``, ``value``, ``unit``,
+``country_iso2``, ``period``, ``year``, ``component``, ``value``, ``unit``,
 ``lifecycle_stage``, ``dataset_id``, ``release_date``, ``source``.
 
 **Component naming.** ``component`` is read straight from each dataset's own
@@ -23,14 +23,18 @@ Plan 5.2's identity (`net_lng_imports = demand + pipe_exports + ... -
 production - pipe_imports`) is model logic for a later session, not an
 ingestion-time transform; no sign is flipped here.
 
-Yearly resolution: a series' ``data`` object is ``{date: value}`` per plan
-3.2b; this loader takes the year from each date key and, where a series
-reports sub-annual (monthly/quarterly) frequency, does **not** aggregate to
-annual on its own initiative -- annual aggregation of a sub-annual balance
-component is a modelling choice (which months constitute the "year" for a
-forecast series, whether to sum or average) that belongs with whichever
-session builds the balance, not with ingestion. Rows carry their native
-frequency; a caller needing annual-only should filter on it explicitly.
+Native resolution, not collapsed to year. A series' ``data`` object is
+``{date: value}`` per plan 3.2b; this loader keeps each date as its own
+``period`` row rather than aggregating to annual on its own initiative --
+annual aggregation of a sub-annual balance component is a modelling choice
+(which months constitute the "year" for a forecast series, whether to sum or
+average) that belongs with whichever session builds the balance, not with
+ingestion. ``year`` is carried alongside ``period`` as a convenience column
+for annual-only filtering; it is not the primary key. The primary key is
+``(dataset_id, period)`` -- mappings 5 and 6 ("Global LNG exports/imports")
+are monthly frequency, so multiple rows per dataset share a year; using
+``(dataset_id, year)`` as the key silently collided and lost rows until this
+was caught against a real pull (see docs/session_03_ingestion.md).
 """
 
 from __future__ import annotations
@@ -42,8 +46,10 @@ import pandas as pd
 
 FACT_GAS_BALANCE_COLUMNS = [
     "country_iso2",
+    "period",
     "year",
     "component",
+    "category",
     "value",
     "unit",
     "lifecycle_stage",
@@ -71,13 +77,16 @@ def find_ea_series_snapshots(ea_api_raw_root: Path) -> list[Path]:
 
 def read_one_snapshot(path: Path) -> pd.DataFrame:
     """Parse one ``mapping_<id>/response.json`` into long-form
-    ``fact_gas_balance`` rows. Expects the ``/timeseries/`` response shape
-    from plan 3.2b: a list of per-dataset records (or an object carrying
-    them under a ``data``/``results`` key -- both are accepted since the
-    exact envelope was not confirmed live as of this session), each with
-    dataset-level metadata (``dataset_id``, ``country_iso``, ``aspect``,
-    ``unit``, ``frequency``, ``lifecycle_stage``, ``release_date``) and its
-    own ``data``: ``{date: value}`` mapping.
+    ``fact_gas_balance`` rows. Confirmed live response shape (this session,
+    against real pulls -- see docs/session_03_ingestion.md): a list of
+    per-dataset records, each ``{"pagination": {...}, "metadata": {...},
+    "data": {date: value}, "dataset_id": int, "additional_fields": {...}}``.
+    Dataset-level fields (``country_iso``, ``aspect``, ``unit``,
+    ``frequency``, ``lifecycle_stage``, ``release_date``) live under
+    ``metadata``, not at the record's top level; ``dataset_id`` is the one
+    field that is top level. An object-wrapped response (``data``/
+    ``results``/``datasets`` key) is also accepted defensively, in case a
+    future pull ever comes back wrapped.
 
     Raises, naming the file, if a record is missing a required metadata key
     or its ``country_iso`` is present but not two characters -- fail loudly
@@ -100,13 +109,21 @@ def read_one_snapshot(path: Path) -> pd.DataFrame:
     else:
         raise ValueError(f"{path}: unexpected top-level JSON type {type(payload).__name__}")
 
-    required = {"dataset_id", "aspect", "unit", "frequency", "lifecycle_stage"}
+    required_top = {"dataset_id", "metadata"}
+    required_metadata = {"aspect", "category", "unit", "frequency", "lifecycle_stage"}
     rows = []
     for record in records:
-        missing = required - set(record.keys())
-        if missing:
-            raise ValueError(f"{path}: series record missing keys {sorted(missing)}: {record}")
-        country_iso = record.get("country_iso") or None
+        missing_top = required_top - set(record.keys())
+        if missing_top:
+            raise ValueError(f"{path}: series record missing keys {sorted(missing_top)}: {record}")
+        metadata = record["metadata"]
+        missing_meta = required_metadata - set(metadata.keys())
+        if missing_meta:
+            raise ValueError(
+                f"{path}: dataset {record['dataset_id']} metadata missing keys "
+                f"{sorted(missing_meta)}: {metadata}"
+            )
+        country_iso = metadata.get("country_iso") or None
         if country_iso is not None and len(country_iso) != 2:
             raise ValueError(
                 f"{path}: dataset {record['dataset_id']} has country_iso "
@@ -116,18 +133,21 @@ def read_one_snapshot(path: Path) -> pd.DataFrame:
         for date_str, value in series_data.items():
             if value is None:
                 continue
-            year = int(str(date_str)[:4])
+            period = str(date_str)
+            year = int(period[:4])
             rows.append(
                 {
                     "country_iso2": country_iso.upper() if country_iso else None,
+                    "period": period,
                     "year": year,
-                    "component": record["aspect"],
+                    "component": metadata["aspect"],
+                    "category": metadata["category"],
                     "value": float(value),
-                    "unit": record["unit"],
-                    "lifecycle_stage": record["lifecycle_stage"],
-                    "frequency": record["frequency"],
+                    "unit": metadata["unit"],
+                    "lifecycle_stage": metadata["lifecycle_stage"],
+                    "frequency": metadata["frequency"],
                     "dataset_id": record["dataset_id"],
-                    "release_date": record.get("release_date"),
+                    "release_date": metadata.get("release_date"),
                     "source": "ea_api_timeseries",
                 }
             )

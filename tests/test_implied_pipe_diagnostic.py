@@ -16,6 +16,7 @@ def _empty_gas_balance():
             "country_iso2",
             "year",
             "component",
+            "category",
             "value",
             "unit",
             "lifecycle_stage",
@@ -56,18 +57,24 @@ def test_diagnostic_reports_empty_when_both_inputs_missing():
 
 
 def test_diagnostic_computes_net_positions_and_divergence():
+    # The fifth row (FR, demand, category=oil_products) regression-tests the
+    # category filter: mapping 314 carries "demand" as the aspect for
+    # oil_products/NGLs/liquids too, in kb/d, not just natural_gas in bcm.
+    # If compute_net_gas_position summed "demand" without filtering on
+    # category, this row's huge kb/d value would corrupt FR's bcm result.
     gas_balance = pd.DataFrame(
         {
-            "country_iso2": ["FR", "FR", "DE", "DE"],
-            "year": [2025, 2025, 2025, 2025],
-            "component": ["supply", "demand", "supply", "demand"],
-            "value": [10.0, 40.0, 5.0, 80.0],
-            "unit": ["bcm"] * 4,
-            "lifecycle_stage": ["forecast"] * 4,
-            "frequency": ["yearly"] * 4,
-            "dataset_id": [1, 2, 3, 4],
-            "release_date": [None] * 4,
-            "source": ["ea_api_timeseries"] * 4,
+            "country_iso2": ["FR", "FR", "DE", "DE", "FR"],
+            "year": [2025, 2025, 2025, 2025, 2025],
+            "component": ["supply", "demand", "supply", "demand", "demand"],
+            "category": ["natural_gas"] * 4 + ["oil_products"],
+            "value": [10.0, 40.0, 5.0, 80.0, 5000.0],
+            "unit": ["bcm"] * 4 + ["kbbl_d"],
+            "lifecycle_stage": ["forecast"] * 5,
+            "frequency": ["yearly"] * 5,
+            "dataset_id": [1, 2, 3, 4, 5],
+            "release_date": [None] * 5,
+            "source": ["ea_api_timeseries"] * 5,
         }
     )
     lng_baseline = pd.DataFrame(

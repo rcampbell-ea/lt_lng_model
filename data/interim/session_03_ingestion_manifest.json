@@ -1,5 +1,13 @@
 {
-  "ea_series_snapshots_found": [],
+  "ea_series_snapshots_found": [
+    "data\\raw\\ea_api\\202608\\mapping_297\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_300\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_314\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_5\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_545\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_553\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_6\\response.json"
+  ],
   "iea_gtf_file": {
     "Export_GTF_IEA_202606.xlsx": {
       "byte_count": 363236,
@@ -7,7 +15,9 @@
       "sha256": "f566a796cea1df4738c0cb490f78171516052493ad7aca03034a488173462d7a"
     }
   },
-  "oilx_snapshots_found": [],
+  "oilx_snapshots_found": [
+    "data\\raw\\oilx\\202608\\flows_lng\\response.json"
+  ],
   "workbook_files": {
     "202608_LNG_contracts_database.xlsx": {
       "byte_count": 305510,

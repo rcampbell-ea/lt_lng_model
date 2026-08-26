@@ -1,0 +1,19 @@
+{
+  "byte_count": 188017,
+  "distinct_dataset_id_count": 103,
+  "duplicate_dataset_id_count": 0,
+  "endpoint": "https://api.energyaspects.com/data/timeseries/pagination/",
+  "mapping_id": 545,
+  "page_count": 1,
+  "parameters": {
+    "api_key": "<redacted>",
+    "date_from": "2017-01-01",
+    "date_to": "2050-01-01",
+    "filename": "long-term-lng-imports-and-exports",
+    "mapping_id": "545"
+  },
+  "raw_record_count": 103,
+  "record_count": 103,
+  "response_file": "response.json",
+  "retrieved_at": "2026-08-26T19:44:42.337539+00:00"
+}

@@ -96,15 +96,53 @@ def main() -> int:
     params = {
         "range": f"{args.start_date},{args.end_date}",
         "grade_level": "false",
-        "import": args.import_basis,
+        # The API's `import` parameter is boolean (True = ReferenceDate is an
+        # import date, False = export date), not the string "import"/"export"
+        # --import-basis takes on the CLI -- confirmed by the HTTP 422 this
+        # produced when passed as the choice string directly.
+        "import": "true" if args.import_basis == "import" else "false",
         "api_key": api_key,
     }
 
-    response = requests.get(
-        url, params=params, headers={"accept": "application/json"}, timeout=120.0
-    )
-    response.raise_for_status()
-    payload = response.json()
+    # /cargotracking/flows/lng pages results (default page_size 10000). A
+    # multi-year range can exceed one page; per the endpoint's own docs
+    # (plan 3.2c), keep following `token` until it is absent or `data` is
+    # empty, or a multi-year pull silently truncates with no warning.
+    all_rows: list[dict] = []
+    page_params: dict[str, str] = dict(params)
+    page_count = 0
+    while True:
+        try:
+            response = requests.get(
+                url,
+                params=page_params,
+                headers={"accept": "application/json"},
+                timeout=120.0,
+            )
+            response.raise_for_status()
+        except requests.exceptions.RequestException as exc:
+            # requests' own exception message embeds the full request URL,
+            # api_key included. Never let that reach stdout, a log, or a
+            # re-raised exception (CLAUDE.md, "credentials").
+            status = getattr(exc.response, "status_code", "unknown")
+            raise RuntimeError(
+                f"OilX API request failed: HTTP {status} on /cargotracking/flows/lng "
+                f"page {page_count + 1} (query redacted). "
+                f"Underlying error type: {type(exc).__name__}."
+            ) from None
+        page = response.json()
+        page_count += 1
+        rows = page.get("data") or []
+        all_rows.extend(rows)
+        token = page.get("token")
+        if not token or not rows:
+            break
+        # Per the endpoint's docs: when `token` is specified, all other
+        # parameters are ignored, so a continuation request carries only
+        # api_key and token.
+        page_params = {"api_key": api_key, "token": token}
+
+    payload = {"data": all_rows, "success": True, "page_count": page_count}
 
     out_dir = ROOT / "data" / "raw" / "oilx" / args.vintage / "flows_lng"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -121,9 +159,14 @@ def main() -> int:
             "retrieved_at": datetime.now(UTC).isoformat(),
             "response_file": response_path.name,
             "byte_count": response_path.stat().st_size,
+            "page_count": page_count,
+            "row_count": len(all_rows),
         },
     )
-    print(f"Wrote {response_path} and its manifest (key resolved from {key_var_used})")
+    print(
+        f"Wrote {response_path} and its manifest "
+        f"({len(all_rows)} rows across {page_count} page(s), key resolved from {key_var_used})"
+    )
     return 0
 
 
