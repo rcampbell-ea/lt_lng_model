@@ -85,6 +85,164 @@ def load_xwalk_country_alias(
     con.unregister("xwalk_df")
 
 
+def _load_typed_table_with_fk(
+    con: duckdb.DuckDBPyConnection,
+    table_name: str,
+    df: pd.DataFrame,
+    pk_columns: list[str],
+    fk_columns_to_dim_country: list[str],
+) -> None:
+    """DuckDB 1.5.x (pinned in environment.yml) does not support adding a
+    FOREIGN KEY via ALTER TABLE, only PRIMARY KEY (see
+    ``load_dim_country_adjacency``'s comment). Every fact table this session
+    adds needs both, so this declares the full column list, types inferred
+    from the dataframe by way of a throwaway typed empty insert, with PK and
+    FK constraints all present at CREATE TABLE time.
+    """
+    con.register(f"{table_name}_stage_df", df)
+    con.execute(f"CREATE TABLE {table_name}_stage AS SELECT * FROM {table_name}_stage_df")
+    columns_sql = con.execute(
+        "SELECT column_name, data_type FROM duckdb_columns() "
+        f"WHERE table_name = '{table_name}_stage'"
+    ).fetchall()
+    con.unregister(f"{table_name}_stage_df")
+    con.execute(f"DROP TABLE {table_name}_stage")
+
+    col_defs = ", ".join(f'"{name}" {dtype}' for name, dtype in columns_sql)
+    pk_sql = f", PRIMARY KEY ({', '.join(pk_columns)})"
+    fk_sql = "".join(
+        f", FOREIGN KEY ({col}) REFERENCES dim_country (country_iso2)"
+        for col in fk_columns_to_dim_country
+    )
+    con.execute(f"CREATE TABLE {table_name} ({col_defs}{pk_sql}{fk_sql})")
+
+    con.register(f"{table_name}_df", df)
+    if len(df):
+        con.execute(f"INSERT INTO {table_name} SELECT * FROM {table_name}_df")
+    con.unregister(f"{table_name}_df")
+
+
+def load_fact_liq_project(con: duckdb.DuckDBPyConnection, fact_liq_project: pd.DataFrame) -> None:
+    """Session 3, build plan 3.1. Country level only per the Prototype
+    phasing decision: FK to dim_country, no FK to a node table this
+    session."""
+    _load_typed_table_with_fk(
+        con, "fact_liq_project", fact_liq_project, ["liq_project_row_id"], ["country_iso2"]
+    )
+
+
+def load_fact_regas_project(
+    con: duckdb.DuckDBPyConnection, fact_regas_project: pd.DataFrame
+) -> None:
+    _load_typed_table_with_fk(
+        con, "fact_regas_project", fact_regas_project, ["regas_project_row_id"], ["country_iso2"]
+    )
+
+
+def load_fact_lng_contract(con: duckdb.DuckDBPyConnection, fact_lng_contract: pd.DataFrame) -> None:
+    _load_typed_table_with_fk(
+        con,
+        "fact_lng_contract",
+        fact_lng_contract,
+        ["contract_row_id"],
+        ["exporter_iso2", "importer_iso2"],
+    )
+
+
+def load_fact_pipe_flow_hist(
+    con: duckdb.DuckDBPyConnection, fact_pipe_flow_hist: pd.DataFrame
+) -> None:
+    """Build plan 3.3. PK/FK must be declared at CREATE TABLE time (DuckDB
+    1.5.x has no ALTER TABLE ADD FOREIGN KEY support), same pattern as
+    ``load_dim_country_adjacency``."""
+    con.register("fact_pipe_flow_hist_df", fact_pipe_flow_hist)
+    con.execute(
+        "CREATE TABLE fact_pipe_flow_hist ("
+        "origin_iso2 VARCHAR, destination_iso2 VARCHAR, year INTEGER, bcm DOUBLE, "
+        "source VARCHAR, "
+        "PRIMARY KEY (origin_iso2, destination_iso2, year), "
+        "FOREIGN KEY (origin_iso2) REFERENCES dim_country (country_iso2), "
+        "FOREIGN KEY (destination_iso2) REFERENCES dim_country (country_iso2))"
+    )
+    con.execute("INSERT INTO fact_pipe_flow_hist SELECT * FROM fact_pipe_flow_hist_df")
+    con.unregister("fact_pipe_flow_hist_df")
+
+
+def load_fact_gas_balance(con: duckdb.DuckDBPyConnection, fact_gas_balance: pd.DataFrame) -> None:
+    """Build plan 3.5. PK is (dataset_id, year): one row per date per
+    dataset once ``ea_series.py`` has already deduplicated dataset_ids on
+    the way in. FK to dim_country is nullable (a region/world aggregate row
+    carries a null country_iso2, which DuckDB's foreign key constraint
+    permits without violating it) -- exactly what plan 3.2b describes for
+    mapping 314's non-country rows.
+    """
+    con.register("fact_gas_balance_df", fact_gas_balance)
+    con.execute(
+        "CREATE TABLE fact_gas_balance ("
+        "country_iso2 VARCHAR, year INTEGER, component VARCHAR, value DOUBLE, "
+        "unit VARCHAR, lifecycle_stage VARCHAR, frequency VARCHAR, dataset_id BIGINT, "
+        "release_date VARCHAR, source VARCHAR, "
+        "PRIMARY KEY (dataset_id, year), "
+        "FOREIGN KEY (country_iso2) REFERENCES dim_country (country_iso2))"
+    )
+    if len(fact_gas_balance):
+        con.execute("INSERT INTO fact_gas_balance SELECT * FROM fact_gas_balance_df")
+    con.unregister("fact_gas_balance_df")
+
+
+def load_fact_lng_flow_baseline(
+    con: duckdb.DuckDBPyConnection, fact_lng_flow_baseline: pd.DataFrame
+) -> None:
+    """Build plan 3.4c. Country level, ``bcm`` left nullable pending the
+    unit question (see ``oilx_flows.py``)."""
+    con.register("fact_lng_flow_baseline_df", fact_lng_flow_baseline)
+    con.execute(
+        "CREATE TABLE fact_lng_flow_baseline ("
+        "origin_iso2 VARCHAR, destination_iso2 VARCHAR, year INTEGER, bcm DOUBLE, "
+        "quantity_kt DOUBLE, quantity_cbm DOUBLE, quantity_mmbtu DOUBLE, "
+        "source VARCHAR, release_date VARCHAR, "
+        "PRIMARY KEY (origin_iso2, destination_iso2, year, source), "
+        "FOREIGN KEY (origin_iso2) REFERENCES dim_country (country_iso2), "
+        "FOREIGN KEY (destination_iso2) REFERENCES dim_country (country_iso2))"
+    )
+    if len(fact_lng_flow_baseline):
+        con.execute("INSERT INTO fact_lng_flow_baseline SELECT * FROM fact_lng_flow_baseline_df")
+    con.unregister("fact_lng_flow_baseline_df")
+
+
+def load_dim_aggregate(con: duckdb.DuckDBPyConnection, dim_aggregate: pd.DataFrame) -> None:
+    """Build plan 3.7. Empty this session (no LT taxonomy pull yet); schema
+    only, per ``dim_aggregate.py``."""
+    con.register("dim_aggregate_df", dim_aggregate)
+    con.execute(
+        "CREATE TABLE dim_aggregate ("
+        "aggregate_id VARCHAR, aggregate_name VARCHAR, member_country_iso2 VARCHAR, "
+        "source VARCHAR, "
+        "PRIMARY KEY (aggregate_id, member_country_iso2), "
+        "FOREIGN KEY (member_country_iso2) REFERENCES dim_country (country_iso2))"
+    )
+    if len(dim_aggregate):
+        con.execute("INSERT INTO dim_aggregate SELECT * FROM dim_aggregate_df")
+    con.unregister("dim_aggregate_df")
+
+
+def load_dim_country_region_tag(
+    con: duckdb.DuckDBPyConnection, dim_country_region_tag: pd.DataFrame
+) -> None:
+    """Build plan 3.6b. Empty this session (needs the mapping-specific EA
+    series pull); schema only, per ``lt_region.py``."""
+    con.register("dim_country_region_tag_df", dim_country_region_tag)
+    con.execute(
+        "CREATE TABLE dim_country_region_tag ("
+        "country_iso2 VARCHAR, scheme VARCHAR, tag_value VARCHAR, "
+        "PRIMARY KEY (country_iso2, scheme, tag_value), "
+        "FOREIGN KEY (country_iso2) REFERENCES dim_country (country_iso2))"
+    )
+    if len(dim_country_region_tag):
+        con.execute("INSERT INTO dim_country_region_tag SELECT * FROM dim_country_region_tag_df")
+    con.unregister("dim_country_region_tag_df")
+
+
 def assert_foreign_key_enforced(con: duckdb.DuckDBPyConnection) -> None:
     """Build plan 2.8: attempt to insert a fact row carrying an unmapped
     country_iso2 into a throwaway fact table with a declared FK to

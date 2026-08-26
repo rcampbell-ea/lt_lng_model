@@ -64,7 +64,19 @@ Do not let a session resolve either gate by inference. A geocoded port or a
 guessed ISO2 is exactly the kind of plausible wrong value the plan is built to
 keep out.
 
-**Gate C, discovered in session 2: Gibraltar has an LNG role but no geometry.**
+**Gate C, discovered in session 2, CLOSED: Gibraltar has an LNG role but no
+geometry.** Closed without a third network pull or a hand-reviewed coordinate.
+Gibraltar carries no series at all in EA's LT gas supply or demand data
+(mappings 297, 314; checked directly, see `LT_LNG_flows_forecast_plan.md`
+4.3c and `crosswalks/gas_balance_materiality_2026_manifest.json`), so per the
+materiality threshold in 4.3c it needs no LNG or pipe modelling regardless of
+its real regas project in the workbook. `dim_country` keeps GI with the null
+geometry columns below and `role_lng = importer` from the workbook (that fact
+is not deleted), but no session needs to close the geometry gap for it. The
+original two-path closure this gate described is superseded; do not action
+either path.
+
+Original description, retained for context:
 Gibraltar (GI) is a real regas importer in `202608_LNG_regas_projects.xlsx`
 (`workbook_regas`, one row), so `role_lng` is non-`none` for it. The pinned
 Natural Earth Admin 0 Countries 1:50m snapshot does not carve Gibraltar out as
@@ -90,8 +102,19 @@ above, is excluded from `dim_country_adjacency` (see gate D), and any pipe or
 LNG check that depends on its geometry, continent or landlocked flag reports
 GI as not runnable rather than silently passing or failing.
 
-**Gate D, discovered in session 2: Kosovo has geometry but no `dim_country`
-row.** The pinned Natural Earth Admin 0 Countries 1:50m snapshot gives Kosovo
+**Gate D, discovered in session 2, CLOSED: Kosovo has geometry but no
+`dim_country` row.** Closed without adding a row or an ISO exception. Kosovo
+carries `role_lng = none` and `role_pipe = none` from the workbooks and GTF,
+and no series at all in EA's LT gas supply or demand data (mappings 297, 314;
+checked directly, see `LT_LNG_flows_forecast_plan.md` 4.3c and
+`crosswalks/gas_balance_materiality_2026_manifest.json`). It needs no LNG or
+pipe modelling. `dim_country_adjacency` continues to exclude XK as it already
+does (no row to satisfy the foreign key), and that stays correct: no session
+needs to formalise a real-or-pseudo classification for it. If a future GTF
+vintage ever names Kosovo in a border pair, the 3.3 adjacency check fails as
+described below and that reopens this gate; it does not reopen on its own.
+
+Original description, retained for context: The pinned Natural Earth Admin 0 Countries 1:50m snapshot gives Kosovo
 `ISO_A2_EH = 'XK'` and a real polygon. Plan 4.4 reserves `XK` ("avoid XK,
 already used de facto for Kosovo") but never adds a `dim_country` row for it,
 and Kosovo is not in the session 1 ISO 3166-1 snapshot (it has no official ISO
@@ -148,8 +171,9 @@ Rule 8 was no network calls. In session 2 that becomes: **two network pulls are
 permitted, the geo boundary snapshot and the port gazetteer, and only through a
 pull script that writes a hashed manifest.** Both are unauthenticated public
 data, so no credential is involved. Everything after the pulls reads the
-snapshots. Session 3 returns to no network calls at all: the EA pull script it
-writes is run by the operator.
+snapshots. Session 3 returns to no network calls at all: the EA and OilX pull
+scripts it writes (`pull_ea_series.py`, `pull_oilx_flows.py`) are run by the
+operator.
 
 Two additions:
 
@@ -394,14 +418,22 @@ skipped with a reason.
 
 ## 3. Session 3: ingestion
 
-Plan sections 3.1, 3.4, 5.2 and 6, plus `docs/session_01_data_availability.md`
-**and `docs/session_02_geo_master.md` in full**, and section 0 above, gates C,
-D and E specifically: all three were discovered during session 2, not named
-before it, and none is resolved yet. Read them before touching
-`dim_country_adjacency`, `crosswalks/xwalk_project_node_proposed.csv` or
-`crosswalks/dim_port_candidate.csv`. This session turns the pinned snapshots
-into typed fact tables, and writes the one script the operator runs to bring
-EA series data in.
+Plan sections 3.1, 3.2c, 3.4, 4.3c, 5.2, 6 and 7 Layer 0, plus
+`docs/session_01_data_availability.md` **and `docs/session_02_geo_master.md`
+in full**, and section 0 above, gates C and D (closed, see their entries) and
+gate E (still open, see the Prototype phasing note below). This session
+turns the pinned snapshots into typed fact tables, writes the two scripts the
+operator runs to bring EA series and OilX cargo-tracking data in, and gets a
+country-level pipe balance and LNG baseline flowing end to end.
+
+**Prototype phasing (decisions register, `LT_LNG_flows_forecast_plan.md`).**
+This session runs country-level throughout. Node splits (gate E), `dim_port`
+and `fact_route_distance` are **not built this session at any precision** —
+not deferred-with-a-placeholder, simply not attempted. Everything below
+targets `country_iso2` as the join key, not `node_id`. Gate E's crosswalk
+work (`xwalk_project_node.csv`'s split-country `node_id` resolution) is
+deferred along with it; the rest of 3.7's crosswalks are unaffected and
+proceed as specified.
 
 ### Deliverables
 
@@ -480,6 +512,42 @@ the balance in plan 5.2 needs:
 | 300 | Long term prices | netback in plan section 7 |
 | 5, 6 | Global LNG exports, imports | country totals for the backtest |
 
+**3.4b `scripts/pull_oilx_flows.py`, for the operator to run**
+
+Separate API, separate script: base `https://api.energyaspects.com/oilx/v2/`,
+per plan 3.2c, distinct from `MY_EA_API_KEY`'s base and possibly a distinct
+key (confirm the env var name against what's actually set, per A.5's naming
+discipline). Pulls `GET /cargotracking/flows/lng` for the last three full
+years plus current-year nowcast (`range=<start>,<end>`), `grade_level=false`,
+one consistent `import` filter value. Writes the response plus a
+`_manifest.json` to `data/raw/oilx/<vintage>/flows_lng/`. Same rule as 3.4:
+the key is read from the environment, never printed, and the session does
+not run the script.
+
+**3.4c `fact_lng_flow_baseline` from whatever OilX snapshot exists**
+
+Country level: `origin_iso2`, `destination_iso2`, `year`, `bcm`, `source`,
+`release_date`. This is the Layer 0 seed matrix from plan 7, at country
+granularity per the Prototype phasing decision — no node ids. If no OilX
+snapshot exists yet because the operator has not run 3.4b, build the loader,
+test it against a fixture, and report the table as empty pending the pull,
+same discipline as 3.5.
+
+**3.4d Implied-pipe diagnostic**
+
+Per country per year: `net_gas_position` (from `fact_gas_balance`'s supply
+and demand components) minus `net_lng_position` (from
+`fact_lng_flow_baseline`, exports minus imports) gives an implied net pipe
+position. Report it against `fact_pipe_flow_hist` (GTF) where GTF has
+coverage. This is a diagnostic for the session report, not a fact table: it
+folds in own-use, losses and storage movements uncorrected, and it will
+diverge from GTF for countries with pipe corridors GTF doesn't cover (Russia
+into China, notably) and for LNG-heavy importers where mapping 297's
+marketed-vs-gross ambiguity (open question, 3.6) amplifies. Report the
+divergence per country, do not treat close agreement as validation of
+anything beyond order of magnitude, and do not treat this diagnostic as a
+source `fact_pipe_flow_hist` can be built from.
+
 **3.5 `fact_gas_balance` from whatever EA snapshots exist**
 
 Long form: `country_iso2`, `year`, `component`, `value`, `unit`,
@@ -539,41 +607,57 @@ against it. Two facts in it matter: `Korea` is KR, not `South_Korea`, so plan
 map to a distinct pseudo code and never to ZZ, because `XX` is EA saying it does
 not know while ZZ in our output is a bug.
 
-`xwalk_project_node.csv` for the four split countries, using the EA area
-evidence from session 1. **This is gate E, section 0**:
-`crosswalks/xwalk_project_node_proposed.csv` from session 2 already resolves
-`country_iso2` and `port_role` for every project row and already leaves
-`node_id` empty for the four split countries (`method =
-unresolved_split_country`); build on it rather than starting over, and use
-`crosswalks/xwalk_area_node_proposed.csv` as the evidence source it was
-always meant to be. `xwalk_hub_country.csv`. Proposals with confidence flags,
-not applied. Same rules as session 1: exact matches only, unresolved left
-empty, no fuzzy matching.
+**Gate E, deferred, not resolved this session.** Per the Prototype phasing
+decision, `xwalk_project_node.csv`'s split-country `node_id` resolution is
+not attempted this session. `crosswalks/xwalk_project_node_proposed.csv` from
+session 2 stays as session 2 left it (`country_iso2` and `port_role`
+resolved, `node_id` empty for the four split countries, `method =
+unresolved_split_country`); do not build on it and do not start it over.
+`crosswalks/xwalk_area_node_proposed.csv` stays available as evidence for
+whichever future session resumes gate E. `xwalk_hub_country.csv` is
+unaffected by the phasing decision (it maps hubs to importers for the
+netback, not to split-country nodes) and proceeds as originally specified:
+proposals with confidence flags, not applied, exact matches only, unresolved
+left empty, no fuzzy matching.
 
 `dim_aggregate` per plan 4.4: LT dataset aggregates such as EU, Other Europe
 and World are not countries. Create the table with explicit member lists taken
 from the LT taxonomy in the pulled metadata. If the pull has not happened,
-create the schema and leave the member lists empty, flagged.
+create the schema and leave the member lists empty, flagged. The Europe
+aggregate named in the decisions register (candidate demand-block node for
+the freight/allocation layer) is a separate, later decision from this
+table: `dim_aggregate` here is EA's own published LT aggregates, taken as
+given; the Europe demand-block node is this project's own construct, not
+built until the allocation layer needs it and its exact membership is
+signed off. Do not conflate the two or use one to answer the other.
 
 **3.8 `docs/session_03_ingestion.md`**
 
-Row counts against every assertion in 3.1, the GTF adjacency violations if any,
-what the diff module reports, what is empty pending the pull, and the six
-answers or the reason each is still open.
+Row counts against every assertion in 3.1, the GTF adjacency violations if
+any, what the diff module reports, what is empty pending either pull, the
+implied-pipe diagnostic per country against GTF where it has coverage, and
+the six to eight answers (see 3.6, and the note on the availability doc's
+actual question count) or the reason each is still open.
 
 ### Do not
 
-- Call the EA API. Write the script, state the command, stop.
+- Call the EA API or the OilX API. Write both scripts, state both commands, stop.
 - Expand contracts annually. Session 8.
 - Model anything: no capacity envelope, no allocation, no balance forecast.
 - Fill a missing balance component with an assumption.
+- Build `dim_port`, `fact_route_distance`, or any node-level table. Country
+  level only, per the Prototype phasing decision.
+- Resolve gate E's split-country `node_id`s, or pick a membership for the
+  Europe aggregate. Both stay open, recorded, not decided by this session.
 - Start session 4.
 
 ### Gate
 
 `verify_env` exits 0, `pytest` passes, every row count assertion in 3.1 holds,
-the GTF adjacency check passes or lists its violations, and the diff module has
-a passing test against a synthetic second vintage.
+the GTF adjacency check passes or lists its violations, the diff module has a
+passing test against a synthetic second vintage, and the implied-pipe
+diagnostic runs and reports (empty-pending-pull is an acceptable report, a
+silent skip is not).
 
 ## 4. Starting prompt for session 2
 
@@ -650,18 +734,22 @@ Run after session 2 has passed its gate.
 
 ```
 Read CLAUDE.md in full. Read docs/sessions_02_03_build_plan.md in full,
-section 0 gates C, D and E specifically. Read sections 3.1, 3.4, 5.2 and 6 of
-docs/LT_LNG_flows_forecast_plan.md, and read docs/session_01_data_availability.md
-and docs/session_02_geo_master.md.
+section 0 gates C and D (closed) and gate E (deferred), and the Prototype
+phasing note at the top of section 3. Read sections 3.1, 3.2c, 3.4, 4.3c,
+5.2, 6 and 7 Layer 0 of docs/LT_LNG_flows_forecast_plan.md, and read
+docs/session_01_data_availability.md and docs/session_02_geo_master.md.
 
 Your task is session 3 as specified in section 3 of the sessions 02 and 03
-build plan: ingestion. Do not start session 4.
+build plan: ingestion, country level only. Do not start session 4.
 
-Deliverables are the nine items in section 3, and nothing else.
+Deliverables are the items in section 3, and nothing else. This session runs
+country-level throughout: no node splits, no dim_port, no fact_route_distance,
+not even at reduced precision.
 
 Hard constraints:
-- No network calls at all. You write scripts/pull_ea_series.py and state the
-  commands to run. You do not run it. The operator does.
+- No network calls at all. You write scripts/pull_ea_series.py and
+  scripts/pull_oilx_flows.py and state the commands to run. You do not run
+  either. The operator does.
 - Assert the row counts and distributions in 3.1 against plan 3.1. A mismatch
   raises and names the file, the sheet and both numbers.
 - Trim workbooks on all-null rows. Never trust the sheet dimension, which
@@ -674,21 +762,34 @@ Hard constraints:
   why it is currently excluded from dim_country_adjacency; a future GTF
   vintage naming Kosovo should fail this check until gate D closes, not be
   silently absorbed.
-- Gate E: crosswalks/xwalk_project_node_proposed.csv from session 2 already
-  resolves country_iso2 and port_role per project; build the split-country
-  node assignment on top of it using crosswalks/xwalk_area_node_proposed.csv
-  as evidence, do not start the crosswalk over.
-- Gates C (Gibraltar has an LNG role but no geometry at 1:50m) and D are not
-  this session's to resolve; report their status, do not attempt a fix.
+- Gate E is deferred, not attempted. Do not build on
+  crosswalks/xwalk_project_node_proposed.csv's split-country node_id gap this
+  session; leave it exactly as session 2 left it.
+- Gates C and D are closed (see section 0): both jurisdictions carry no LT
+  supply or demand series at all and need no modelling. Nothing to action.
 - workbook_diff.py must have a passing test against a synthetic second vintage,
   and must report no prior vintage found as a result rather than being skipped.
-- If an EA snapshot does not exist yet, build and test the loader and report
-  the table as empty pending the pull. Do not fabricate a balance.
-- Answer the six questions in session_01_data_availability.md section 6 from
-  series metadata only. Where the metadata does not settle one, say so and name
-  what would. Do not infer a definition from a series name.
-- Crosswalks in 3.7 are proposals with confidence flags. Exact matches only,
-  unresolved left empty, no fuzzy matching, not applied.
+- If an EA snapshot or an OilX snapshot does not exist yet, build and test
+  each loader and report its table as empty pending the pull. Do not
+  fabricate a balance or a flow.
+- fact_lng_flow_baseline is country-to-country (origin_iso2, destination_iso2),
+  built from the OilX pull once it exists. Compute the implied-pipe diagnostic
+  (net_gas minus net_lng per country) and report it against fact_pipe_flow_hist
+  where GTF has coverage; report divergence, do not smooth it, and do not treat
+  it as a substitute for fact_pipe_flow_hist.
+- Answer the open questions in session_01_data_availability.md section 6 from
+  series metadata only (the section currently has more than six items; read it
+  fresh rather than assuming the count). Where the metadata does not settle
+  one, say so and name what would. Do not infer a definition from a series
+  name.
+- Crosswalks in 3.7 are proposals with confidence flags, except gate E's
+  which is deferred entirely. Exact matches only, unresolved left empty, no
+  fuzzy matching, not applied.
+- dim_aggregate is EA's own published LT aggregates (EU, Other Europe, World),
+  taken as given from the pulled metadata. It is not the same thing as the
+  Europe demand-block node in the decisions register, which is a separate,
+  later, unresolved decision — do not build it and do not use dim_aggregate
+  to answer it.
 - Do not expand contracts annually. Do not model anything.
 - lt_region is derived from the LT demand series per plan 4.3b and tested to be
   a partition. If it is not a partition, stop and list the offenders. Never fall
@@ -701,13 +802,15 @@ Hard constraints:
 - ASCII lower snake case throughout, ISO codes uppercase. Paths via pathlib.
 
 The gate: verify_env exits 0, pytest passes, every row count assertion in 3.1
-holds, the GTF adjacency check passes or lists its violations, and the diff test
-passes.
+holds, the GTF adjacency check passes or lists its violations, the diff test
+passes, and the implied-pipe diagnostic runs and reports (empty-pending-pull
+counts as reporting; a silent skip does not).
 
 Report the row counts against every assertion, the GTF adjacency violations,
-what the diff module reports, what is empty pending the pull, the six answers or
-the reason each is still open, anything you deviated from and why, and anything
-you could not resolve. Report unknowns as unknown.
+what the diff module reports, what is empty pending either pull, the
+implied-pipe diagnostic per country against GTF, the open questions answered
+or the reason each is still open, anything you deviated from and why, and
+anything you could not resolve. Report unknowns as unknown.
 ```
 
 ## 6. What comes after
@@ -715,20 +818,24 @@ you could not resolve. Report unknowns as unknown.
 Session 4 is pipeline capacity and projects, `fact_pipe_capacity` and
 `config/pipeline_projects.yaml`. Plan section 11 flags it as the stage most
 likely to need external data and your judgement, and notes it can run in
-parallel with the geo build since it is largely independent.
+parallel with the geo build since it is largely independent. Per the
+Prototype phasing decision, session 4 onward also runs country-level until a
+country-level baseline output justifies node-level work.
 
-Two things will be blocking by then, and both are worth starting now rather
-than discovering later:
+**Port coordinates, gate B: no longer blocking the near-term path.** Without
+them there is no `fact_route_distance`, and without that there is no
+netback allocation in plan section 7 — but the netback allocation is itself
+deferred behind the country-level v0 prototype now, so gate B is not
+time-critical the way it looked before this phasing decision. Revisit once
+node-level work resumes.
 
-**Port coordinates.** Gate B. Without them there is no `fact_route_distance`,
-and without that there is no netback allocation in plan section 7. EA does not
-publish coordinates, so this will not resolve itself: it is roughly 120 rows
-that either match a public gazetteer exactly or get filled by hand. Session 2
-reports the exact match rate, and that number decides which. Worth doing while
-session 3 runs, since session 4 onwards assumes it.
-
-**The licence gaps.** `OilX flows`, `US LNG exports by terminal` and
-`Australian LNG exports by terminal` came back unlicensed. They are the only
-sources that would validate the node splits and supply a realised bilateral
-matrix for the backtest in plan 8 check 14. Whether that is a subscription
-boundary or a redistribution one changes what session 10 can do at all.
+**The licence gap note from session 1 needs correcting, not carrying
+forward.** `docs/session_01_data_availability.md` recorded OilX flows as
+unlicensed. That is no longer accurate: `/cargotracking/flows/lng` was
+queried live and successfully during this planning round (2,125 rows, 2025,
+42 origin and 55 destination countries), documented in plan 3.2c. Whether
+that reflects a subscription change since session 1 or an error in session
+1's finding is unconfirmed, but the API access itself is not the blocker it
+was recorded as. `US LNG exports by terminal` and `Australian LNG exports by
+terminal` were not re-tested and their licence status stands as session 1
+recorded it.

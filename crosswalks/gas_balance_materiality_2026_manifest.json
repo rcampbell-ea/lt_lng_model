@@ -1,0 +1,28 @@
+{
+  "source": "EA Data Service API, /timeseries/ endpoint",
+  "mapping_ids": {
+    "297": "Long term gas supply",
+    "314": "Long term total demand, filtered to category=natural_gas (314 also carries oil_products, NGLs, liquids for the same countries; those are out of scope here)"
+  },
+  "query": "mapping_id={297|314}[&category=natural_gas]&date_from=2026-01-01&date_to=2026-12-31",
+  "vintage_queried": "2026-08-26",
+  "series_release_date": "2026-06-12T08:10:00Z",
+  "forecast_year_used": 2026,
+  "unit": "bcm",
+  "scope": "country-level rows only (country_iso populated); region and world aggregate rows excluded",
+  "row_counts": {
+    "supply_countries": 170,
+    "demand_countries": 80,
+    "union_with_nonzero_net": 172
+  },
+  "method": "net_bcm = supply_bcm - demand_bcm per country_iso2, ranked descending; top 25 positive (net-long) and top 25 negative (net-short) tagged as material",
+  "coverage": {
+    "top25_net_long_share_of_net_long_pool": 0.963,
+    "top25_net_short_share_of_net_short_pool": 0.931
+  },
+  "caveat": "Single forecast year (2026), not checked for rank stability across the full 2025-2050 horizon. Accepted as sufficient for a node/port/geometry materiality threshold, not for the balance itself. See LT_LNG_flows_forecast_plan.md 4.3c.",
+  "not_in_series": {
+    "note": "Checked directly and absent from both mapping 297 and 314 country-level rows",
+    "countries": ["GI", "XK"]
+  }
+}

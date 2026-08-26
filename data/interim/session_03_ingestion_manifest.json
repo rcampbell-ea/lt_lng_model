@@ -1,0 +1,29 @@
+{
+  "ea_series_snapshots_found": [],
+  "iea_gtf_file": {
+    "Export_GTF_IEA_202606.xlsx": {
+      "byte_count": 363236,
+      "filename": "Export_GTF_IEA_202606.xlsx",
+      "sha256": "f566a796cea1df4738c0cb490f78171516052493ad7aca03034a488173462d7a"
+    }
+  },
+  "oilx_snapshots_found": [],
+  "workbook_files": {
+    "202608_LNG_contracts_database.xlsx": {
+      "byte_count": 305510,
+      "filename": "202608_LNG_contracts_database.xlsx",
+      "sha256": "80a74470819b37fb66748ef0ed2afc7dfcd417ae61db7facb8290438e4faab10"
+    },
+    "202608_LNG_liquefaction_projects.xlsx": {
+      "byte_count": 2529817,
+      "filename": "202608_LNG_liquefaction_projects.xlsx",
+      "sha256": "64b52eaa747eedef4ef159fc0d241c0d7fc252059877c3c029f0604088284cbe"
+    },
+    "202608_LNG_regas_projects.xlsx": {
+      "byte_count": 2500071,
+      "filename": "202608_LNG_regas_projects.xlsx",
+      "sha256": "193f8416bf0d6926aee2b1596423a6f265878850300c24352ca6991db8e7f1c7"
+    }
+  },
+  "workbook_vintage": "202608"
+}

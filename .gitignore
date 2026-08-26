@@ -7,6 +7,8 @@ data/**
 docs/*
 !docs/sessions_02_03_build_plan.md
 !docs/session_02_geo_master.md
+!docs/session_03_ingestion.md
+!docs/session_03_definitions.md
 .idea/
 __pycache__/
 *.pyc

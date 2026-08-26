@@ -1,0 +1,59 @@
+# Session 3 gate: ingestion (sessions_02_03_build_plan.md section 3).
+# Every numeric value used by the session 3 build and its validation checks
+# lives here, never inline in code (CLAUDE.md, "numbers, failure and
+# provenance").
+
+# Build plan 3.1 / plan section 3.1: row counts and distributions to assert
+# against the pinned workbook vintage, so a silent parse failure is caught
+# rather than propagating a short table downstream.
+workbook_row_counts:
+  liquefaction:
+    sheet: "Global Liquefaction Database"
+    expected_rows: 617
+    expected_countries: 39
+  regas:
+    sheet: "Global Regas Database"
+    expected_rows: 615
+    expected_countries: 78
+  contracts:
+    sheet: "Global LNG Contract Database"
+    expected_rows: 1074
+    expected_columns: 27
+    header_row: 3
+
+contract_distributions:
+  status:
+    Current: 512
+    Future: 356
+    Expired: 206
+  delivery_type:
+    DES: 525
+    FOB: 474
+    DES/FOB: 48
+    "-": 26
+    Undeclared: 1
+  export_country:
+    distinct_values: 31
+    Portfolio: 204
+  import_country:
+    distinct_values: 61
+    Multiple: 305
+
+# IEA Gas Trade Flows export (build plan 3.4/3.3): 1 million cubic metres
+# (Mm3) monthly total per border point column. 1 bcm = 1000 Mm3 at the same
+# reference conditions (15 degrees C, 760 mm Hg per plan 3.4), so this is a
+# pure unit-scale conversion, not the Mt-to-bcm energy factor from the
+# decisions register (that factor concerns LNG mass, not pipe volume, and is
+# not used anywhere in this session).
+gtf_unit_conversion:
+  mm3_to_bcm: 0.001
+  expected_row_count: 267
+  expected_exit_value_count: 40
+  expected_entry_value_count: 41
+
+# Build plan 3.4d: implied-pipe diagnostic tolerance is informational only
+# (the diagnostic is reported, never used to smooth or clamp a value per
+# plan 3.4d and CLAUDE.md), but the report needs a fixed threshold to flag
+# "large" divergence consistently rather than an ad hoc inline number.
+implied_pipe_diagnostic:
+  large_divergence_bcm: 5.0
