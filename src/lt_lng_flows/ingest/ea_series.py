@@ -40,10 +40,30 @@ was caught against a real pull (see docs/session_03_ingestion.md).
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import pandas as pd
 
+# Session 5, sessions_05_07_build_plan.md 4.1.A / session_05 task step 1: the
+# API returns 15 metadata fields per dataset (confirmed against the pinned
+# 202608 snapshots: aspect, aspect_subtype, category, category_subtype,
+# country, country_iso, description, forecast_start_date, frequency,
+# lifecycle_stage, region, release_date, source, sub_region, unit), plus the
+# top-level dataset_id. This loader previously kept six. Every field the
+# downstream session 5 build actually queries -- aspect_subtype (open
+# question 1/pipeline flag), category_subtype (the only field distinguishing
+# an LNG net_imports row, mapping 545, from a total-gas one, mapping 297),
+# region/sub_region (lt_region derivation), description and
+# forecast_start_date -- is promoted to a typed column here. Nothing is
+# dropped: ``metadata_json`` carries the complete raw metadata dict
+# byte-for-byte, so a field this loader does not yet type is never lost.
+# ``mapping_id`` is not a metadata field at all -- it is not present anywhere
+# in the response payload (confirmed against mapping_297/response.json) --
+# it is recovered from the pinned snapshot's own directory name
+# (``mapping_<id>/response.json``), which is how every pull script and every
+# session doc names a mapping. Left null if a path does not follow that
+# convention (e.g. a test fixture writing directly to a bare tmp_path).
 FACT_GAS_BALANCE_COLUMNS = [
     "country_iso2",
     "period",
@@ -55,9 +75,33 @@ FACT_GAS_BALANCE_COLUMNS = [
     "lifecycle_stage",
     "frequency",
     "dataset_id",
+    "mapping_id",
+    "aspect_subtype",
+    "category_subtype",
+    "region",
+    "sub_region",
+    "description",
+    "forecast_start_date",
     "release_date",
     "source",
+    "metadata_json",
 ]
+
+_MAPPING_DIR_RE = re.compile(r"^mapping_(\d+)$")
+
+
+def _mapping_id_from_path(path: Path) -> int | None:
+    match = _MAPPING_DIR_RE.match(path.parent.name)
+    return int(match.group(1)) if match else None
+
+
+def _blank_to_null(value):
+    """The API uses ``""`` for "not applicable" on optional metadata fields
+    (e.g. ``aspect_subtype`` on a mapping 297 row) rather than omitting the
+    key. Stored as null, not as an empty string, so it reads the same as any
+    other missing value downstream and is never mistaken for a real, blank
+    category."""
+    return value if value not in (None, "") else None
 
 
 def _empty_fact_gas_balance() -> pd.DataFrame:
@@ -129,6 +173,8 @@ def read_one_snapshot(path: Path) -> pd.DataFrame:
                 f"{path}: dataset {record['dataset_id']} has country_iso "
                 f"{country_iso!r}, expected two characters or null (region/world aggregate)"
             )
+        mapping_id = _mapping_id_from_path(path)
+        metadata_json = json.dumps(metadata, sort_keys=True)
         series_data = record.get("data", {})
         for date_str, value in series_data.items():
             if value is None:
@@ -147,8 +193,16 @@ def read_one_snapshot(path: Path) -> pd.DataFrame:
                     "lifecycle_stage": metadata["lifecycle_stage"],
                     "frequency": metadata["frequency"],
                     "dataset_id": record["dataset_id"],
+                    "mapping_id": mapping_id,
+                    "aspect_subtype": _blank_to_null(metadata.get("aspect_subtype")),
+                    "category_subtype": _blank_to_null(metadata.get("category_subtype")),
+                    "region": _blank_to_null(metadata.get("region")),
+                    "sub_region": _blank_to_null(metadata.get("sub_region")),
+                    "description": metadata.get("description"),
+                    "forecast_start_date": metadata.get("forecast_start_date"),
                     "release_date": metadata.get("release_date"),
                     "source": "ea_api_timeseries",
+                    "metadata_json": metadata_json,
                 }
             )
     return pd.DataFrame(rows, columns=FACT_GAS_BALANCE_COLUMNS)

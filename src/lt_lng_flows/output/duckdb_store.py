@@ -184,7 +184,10 @@ def load_fact_gas_balance(con: duckdb.DuckDBPyConnection, fact_gas_balance: pd.D
         "CREATE TABLE fact_gas_balance ("
         "country_iso2 VARCHAR, period VARCHAR, year INTEGER, component VARCHAR, "
         "category VARCHAR, value DOUBLE, unit VARCHAR, lifecycle_stage VARCHAR, "
-        "frequency VARCHAR, dataset_id BIGINT, release_date VARCHAR, source VARCHAR, "
+        "frequency VARCHAR, dataset_id BIGINT, mapping_id BIGINT, "
+        "aspect_subtype VARCHAR, category_subtype VARCHAR, region VARCHAR, "
+        "sub_region VARCHAR, description VARCHAR, forecast_start_date VARCHAR, "
+        "release_date VARCHAR, source VARCHAR, metadata_json VARCHAR, "
         "PRIMARY KEY (dataset_id, period), "
         "FOREIGN KEY (country_iso2) REFERENCES dim_country (country_iso2))"
     )
@@ -203,7 +206,7 @@ def load_fact_lng_flow_baseline(
         "CREATE TABLE fact_lng_flow_baseline ("
         "origin_iso2 VARCHAR, destination_iso2 VARCHAR, year INTEGER, bcm DOUBLE, "
         "quantity_kt DOUBLE, quantity_cbm DOUBLE, quantity_mmbtu DOUBLE, "
-        "source VARCHAR, release_date VARCHAR, "
+        "source VARCHAR, release_date VARCHAR, raw_records_json VARCHAR, "
         "PRIMARY KEY (origin_iso2, destination_iso2, year, source), "
         "FOREIGN KEY (origin_iso2) REFERENCES dim_country (country_iso2), "
         "FOREIGN KEY (destination_iso2) REFERENCES dim_country (country_iso2))"
@@ -244,6 +247,28 @@ def load_dim_country_region_tag(
     if len(dim_country_region_tag):
         con.execute("INSERT INTO dim_country_region_tag SELECT * FROM dim_country_region_tag_df")
     con.unregister("dim_country_region_tag_df")
+
+
+def load_fact_net_gas_position(
+    con: duckdb.DuckDBPyConnection, fact_net_gas_position: pd.DataFrame
+) -> None:
+    """Session 5 step 4. Supply (mapping 297) minus total demand (mapping
+    314), per (``country_iso2``, ``year``). ``supply_bcm``/``demand_bcm`` are
+    nullable: a country present in one mapping and not the other carries a
+    null on the missing side and a null ``net_gas_position_bcm``, never a
+    fabricated zero (CLAUDE.md, "a null beats a plausible invented number")."""
+    con.register("fact_net_gas_position_df", fact_net_gas_position)
+    con.execute(
+        "CREATE TABLE fact_net_gas_position ("
+        "country_iso2 VARCHAR, year INTEGER, supply_bcm DOUBLE, demand_bcm DOUBLE, "
+        "net_gas_position_bcm DOUBLE, has_supply BOOLEAN, has_demand BOOLEAN, "
+        "source VARCHAR, "
+        "PRIMARY KEY (country_iso2, year), "
+        "FOREIGN KEY (country_iso2) REFERENCES dim_country (country_iso2))"
+    )
+    if len(fact_net_gas_position):
+        con.execute("INSERT INTO fact_net_gas_position SELECT * FROM fact_net_gas_position_df")
+    con.unregister("fact_net_gas_position_df")
 
 
 def assert_foreign_key_enforced(con: duckdb.DuckDBPyConnection) -> None:

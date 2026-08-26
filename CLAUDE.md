@@ -80,23 +80,38 @@ needs, not by what is convenient.
    EA client API, use the configured EA connector if one is available; if not,
    add `tools/ea_api_mcp_launcher.py` on the same pattern as the Shooju
    launcher. This is the path session 1 discovery runs on.
-2. **Pull scripts, for anything that lands on disk.** `scripts/pull_*.py`
-   write the raw response plus a manifest recording endpoint, parameters,
-   timestamp and content hash to `data/raw/<source>/<vintage>/`. The script is
-   the reproducible unit. Whoever runs it, operator or session, the artefact on
-   disk is the contract.
-3. **Pinned snapshots, for everything else.** All geo, pipe, model, validate
-   and output code reads only `data/raw` and `data/interim`. No live external
-   call at model runtime, ever. Reruns are reproducible because the inputs are
-   fixed and hashed.
+2. **Direct queries, for anything you need now.** Call the API and write what
+   comes back wherever it is useful, including straight to `data/scratch/`
+   with no ceremony. A pull script is the right shape once a payload is a
+   standing input the build depends on, and `scripts/pull_*.py` exists for
+   that - but it is not a gate you have to pass before fetching something.
+   Do not write a script to answer a question you could answer with a query.
+3. **Pinned snapshots, as the default for build inputs.** Geo, pipe, model,
+   validate and output code normally reads `data/raw` and `data/interim`,
+   because a run whose inputs are fixed and hashed can be re-run and explained.
+   A live call at model runtime is allowed where it is the sensible thing to
+   do. The one requirement that survives: whatever a run fetched live gets
+   recorded in that run's manifest - endpoint, parameters, timestamp - so the
+   numbers stay explainable afterwards. Recording it is cheap; not being able
+   to account for a published figure is not.
 
-**When a session cannot make an authenticated call itself.** It happens, and it
-is not a blocker. Do not stall, do not ask for the key, do not argue with the
-constraint, and do not add a plan doc paragraph attempting to lift it. Do this
-instead: use path 1 if a tool exists; otherwise write or extend the pull script
-under path 2, state the exact command to run, and continue against the snapshot
-once it lands. Record in the session note which path was used and what could not
-be reached, so the gap is visible rather than inferred later.
+**Live API access is available to the session, and is the normal path.** A
+local Claude Code session with the repository's `.env` on the machine calls the
+EA Data Service REST API directly. Session 4 did exactly that: the endpoint map
+in plan 3.2b and the materiality ranking in plan 4.3c both came out of live
+queries, not out of an operator-run script. Query directly when discovery needs
+it, and do not wait to be handed a snapshot.
+
+Fetch what you need, when you need it, and write it where it is useful. Turn a
+query into a pull script when the payload becomes a standing input the build
+depends on, not before. The one thing that survives from the older, stricter
+rule is record-keeping: a run records what it fetched live, so a number can be
+accounted for later. That is an entry in a manifest, not a gate.
+
+If a call genuinely fails - key missing, endpoint closed, rate limited - name
+the call and what it returned, continue against whatever is already pinned, and
+record the gap. Do not stall, and do not fabricate a number in place of one you
+could not fetch.
 
 ## Environment and gates
 

@@ -1,0 +1,16 @@
+# Session 5: net gas position and the implied pipe diagnostic against
+# mapping 545. Every numeric value the session 5 build uses lives here,
+# never inline in code (CLAUDE.md, "numbers, failure and provenance").
+# The 2025-2050 horizon itself is not duplicated here -- it already lives in
+# config/model_config.yaml (horizon.start_year/end_year) and build_session5.py
+# reads it from there, one source of truth.
+
+implied_pipe_vs_mapping545:
+  # A country whose |implied pipe term| falls at or below this is treated as
+  # "already LNG-only": its net gas position is already a usable LNG number,
+  # not a bug or a rounding artefact. Informational threshold only, per the
+  # session 5 task -- never used to clamp, zero out or otherwise alter a
+  # computed value.
+  near_zero_threshold_bcm: 1.0
+  # How many countries the catch-up doc lists by absolute implied pipe term.
+  report_top_n_countries: 20

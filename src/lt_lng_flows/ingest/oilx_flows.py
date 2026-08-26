@@ -34,6 +34,20 @@ from pathlib import Path
 
 import pandas as pd
 
+# Session 5, session_05 task step 1: the cargo-tracking flow record carries
+# more fields than this loader mapped (confirmed against the pinned
+# data/raw/oilx/202608/flows_lng/response.json: OriginCountryCode,
+# DestinationCountryCode, ReferenceDate, QuantityKT, QuantityCBM,
+# QuantityMMBtu, OriginSubCountryID, DestinationSubCountryID, Import --
+# ``Deleted`` was mapped but does not appear on any record in the pinned
+# snapshot). ``OriginSubCountryID``/``DestinationSubCountryID``/``Import``
+# are not promoted to typed columns because nothing downstream this session
+# queries them and the output grain (country-pair-year) does not have a
+# single well-defined sub-country value to promote them to -- but they are
+# never dropped: ``raw_records_json`` on the aggregated row carries the
+# complete list of raw per-cargo records (byte for byte) that fed it, so a
+# later session that needs sub-country detail (gate E) reads it from here
+# rather than re-pulling.
 FACT_LNG_FLOW_BASELINE_COLUMNS = [
     "origin_iso2",
     "destination_iso2",
@@ -44,6 +58,7 @@ FACT_LNG_FLOW_BASELINE_COLUMNS = [
     "quantity_mmbtu",
     "source",
     "release_date",
+    "raw_records_json",
 ]
 
 _FIELD_MAP = {
@@ -119,9 +134,13 @@ def read_one_snapshot(path: Path) -> pd.DataFrame:
                 "quantity_mmbtu": mapped["quantity_mmbtu"],
                 "source": "oilx_cargotracking_flows_lng",
                 "release_date": None,
+                # Full raw record, byte for byte, including the fields this
+                # loader does not type (OriginSubCountryID,
+                # DestinationSubCountryID, Import) -- see module docstring.
+                "raw_record": record,
             }
         )
-    df = pd.DataFrame(rows, columns=FACT_LNG_FLOW_BASELINE_COLUMNS)
+    df = pd.DataFrame(rows, columns=[*FACT_LNG_FLOW_BASELINE_COLUMNS[:-1], "raw_record"])
     if df.empty:
         return df
 
@@ -129,6 +148,10 @@ def read_one_snapshot(path: Path) -> pd.DataFrame:
         quantity_kt=("quantity_kt", "sum"),
         quantity_cbm=("quantity_cbm", "sum"),
         quantity_mmbtu=("quantity_mmbtu", "sum"),
+        raw_records_json=(
+            "raw_record",
+            lambda s: json.dumps(list(s), sort_keys=False, default=str),
+        ),
     )
     agg["bcm"] = None
     agg["release_date"] = None

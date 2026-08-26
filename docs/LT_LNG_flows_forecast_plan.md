@@ -106,7 +106,7 @@ To be catalogued in session 1, with series identifiers documented as they are co
 4. Ship tracking data. Two uses beyond the baseline: identifying reload and transhipment cargoes for the net basis conversion, and calibrating the destination choice model in the LNG allocation on observed diversion behaviour rather than on assumption.
 5. LT hub price forecasts, for the netback.
 
-Access: the org registry has a `Shooju` connector and an `energyaspects dev` connector. Neither is enabled in this chat, so neither is usable until toggled on in the chat's connector settings. The API reference at developer.energyaspects.com is closed to automated fetching by URL, but its individual doc pages can be pasted in directly, and were: see 3.2b for the endpoint map that came out of that.
+Access: the org registry has a `Shooju` connector and an `energyaspects dev` connector. Neither is enabled in this chat, so neither is usable until toggled on in the chat's connector settings. The API reference at developer.energyaspects.com is closed to automated fetching by URL, but its individual doc pages can be pasted in directly, and were: see 3.2b for the endpoint map that came out of that. The API itself is a different matter and is directly callable by the session with the key from `.env` - session 4 queried it live throughout. Neither connector being enabled is therefore not a blocker on the REST API, only on Shooju.
 
 ### 3.2b EA Data Service REST API: endpoint map and the workflow that avoids re-discovery
 
@@ -414,7 +414,7 @@ LT dataset aggregates such as EU, Other Europe or World are not countries either
 Public geographic layers change without notice, and a boundary or field rename appearing mid project would move forecast numbers with no visible cause.
 
 - Pull each source once into `data/geo/raw/`, recording source URL, query parameters, retrieval timestamp and payload sha256 in a manifest.
-- The model reads only the pinned snapshot. No live service calls at runtime, so the pipeline is reproducible and runs offline.
+- The model normally reads the pinned snapshot, which is what lets a run be re-run and explained, and it is the right default for a published forecast. Live service calls at runtime are permitted where they are the sensible thing to do; a run that makes one records endpoint, parameters and timestamp in its manifest, so the output stays accountable even though it is no longer reproducible offline.
 - Refreshing is an explicit versioned act: bump `geo_master_version`, regenerate, diff country list, centroids, adjacency and node assignments against the previous version, review the diff.
 - Alias and node crosswalks are CSV in the repo, so their history is reviewable in ordinary diffs.
 
@@ -635,7 +635,7 @@ Every run produces a report that fails loudly rather than warning quietly. Beyon
 
 **Reproducibility**
 
-15. Fixed seed, no wall clock dependency, run manifest recording input hashes, workbook vintage, geo master version, API pull timestamps and config version.
+15. Fixed seed, no wall clock dependency, run manifest recording input hashes, workbook vintage, geo master version, API pull timestamps and config version. Where a run fetched anything live rather than from a pinned snapshot, the manifest records the endpoint, the parameters and the timestamp, and the run is flagged as not reproducible offline. That flag is a fact about the run, not a failure.
 
 ## 9. Architecture and repository shape
 
@@ -703,36 +703,39 @@ One self contained HTML file, Plotly plus inline CSS and JS, EA branded, no map:
 ## 11. Session sequence
 
 0. **Environment.** Create the project folder and the conda environment, wire up the Shooju MCP launcher, and pass the verification gate. Runs locally in Claude Code, not in Cowork, because it needs a shell on the machine that holds the credentials. Specification in Appendix A. Gate: `python scripts/verify_env.py` exits 0 and `pytest` passes.
-1. **API discovery.** Authenticate, catalogue LT balance components and their exact definitions, pipeline trade granularity, bilateral LNG flows, ship tracking, hub prices, freight assumptions. Deliverable: a data availability and definitions note. No modelling. Runs locally through the Shooju MCP server, or in Cowork if the org Shooju and energyaspects connectors are enabled in the chat.
+1. **API discovery.** Authenticate, catalogue LT balance components and their exact definitions, pipeline trade granularity, bilateral LNG flows, ship tracking, hub prices, freight assumptions. Deliverable: a data availability and definitions note. No modelling. The session queries the EA REST API directly with the key from `.env`; Shooju goes through the MCP server per A.6.
 2. **Geo master.** `dim_country`, nodes, ports, adjacency, alias crosswalk, route distances, pinned snapshots, geo test suite. Deliverable: master plus a coverage report showing every raw country string in every source resolving to a code.
 3. **Ingestion.** Workbook readers with vintage pinning and the month on month diff, API pulls, LT balance tables, remaining crosswalks with proposed matches for sign off.
-4. **Pipeline capacity and projects.** Assemble `fact_pipe_capacity` and `pipeline_projects.yaml`. This is the stage most likely to need external data and your judgement.
-5. **Pipeline forecast and gas balance.** P0 to P5, producing the pipe matrix and the derived LNG call, with the divergence report against the LT LNG series. Review gate: the LNG allocation should not be built on a pipe view that has not been looked at.
-6. **LNG baseline.** Seed matrix, gross to net reload conversion, shrinkage term.
-7. **LNG capacity envelope.** Status weights, ramps, node level bounds.
-8. **Contract stack.** Annual expansion, layer 2 floors, layer 3 priors.
-9. **Allocation and balancing.** Netback with tracking calibrated temperature, bounded RAS, provenance tagging.
-10. **Validation and backtest.**
-11. **HTML view.**
-12. Later phase: Shooju write back under an agreed series ID convention, targeting mapping 545's 103-series grain (net_exports/net_imports per country, replacing that incumbent forecast) -- see 10 and the decisions register.
+4. **Discovery and re-scoping.** DONE. No build script, which is why there is no `build_session4.py`; the gap in the sequence is the record of it. Outputs: the endpoint map in 3.2b, the OilX API note in 3.2c, the region derivation rule in 4.3b, the materiality threshold in 4.3c and `crosswalks/gas_balance_materiality_2026.csv`, the mapping 545 write-back target in 10, and all eight API pulls landed and pinned.
+5. **Catch-up and definitions.** Land session 4's decisions in the code, fix the eight named defects in `docs/sessions_05_07_build_plan.md` section 4, and close open questions 1 to 4 from series metadata. Deliverable: `build_session5.py` and `docs/session_05_catchup.md`.
+6. **Balance layer.** Units and conversions module, reference condition settled per Appendix B.4, `fact_lt_balance`, `fact_lng_benchmark`, the four judgement config files made readable.
+7. **First derived LNG call at the 545 grain.** Country-level net pipe positions, the 5.2 identity, global closure, the divergence panel against mapping 545, and one HTML page. This is the first showable deliverable.
+8. **LNG baseline.** Seed matrix, gross to net reload conversion, shrinkage term. Blocked on the OilX volume unit.
+9. **LNG capacity envelope and contract stack.** Status weights, ramps, annual contract expansion, layer 2 floors, layer 3 priors, `xwalk_contract_liqproject` for sign off.
+10. **Allocation and balancing.** Netback with tracking calibrated temperature, bounded RAS, provenance tagging.
+11. **Validation and backtest.**
+12. **HTML view**, full, including the bilateral matrix.
+13. Later phase: Shooju write back under an agreed series ID convention, targeting mapping 545's 103-series grain (net_exports/net_imports per country, replacing that incumbent forecast) -- see 10 and the decisions register.
 
-Sessions 1 and 2 can run in parallel with 4, since the pipeline capacity assembly is mostly independent of the geo build.
+**Deferred to the refinement phase:** the bilateral pipeline matrix, meaning `fact_pipe_capacity`, `dim_pipe_route`, `fact_pipe_contract` and method steps P1 to P4. The 5.2 identity needs only country-level `pipe_imports` and `pipe_exports`, not a matrix, so session 7 derives the LNG call without one. This was stage 4 in the earlier numbering and is the most expensive unbuilt thing in the plan. Proposed in `docs/sessions_05_07_build_plan.md` section 3 and pending sign off on question 1 of its section 9; if rejected, it returns ahead of session 7 and adds two to three weeks.
 
-**v0 target:** sessions 3 and 5 through 7 run country-level only, per the
+**v0 target:** sessions 3 and 5 through 9 run country-level only, per the
 Prototype phasing decision in section 2. Session 2's node and port
 deliverables stay built (already done, not wasted) but stay unused by the
 model until a later session's country-level baseline output justifies
 drawing on them.
 
-**Session 3 status:** passed its gate country-level, per
+**Sessions 3 and 4 status:** session 3 passed its gate country-level, per
 `docs/session_03_ingestion.md`. Workbook fact tables, `fact_pipe_flow_hist`
 (GTF), the workbook diff module, both pull scripts, and the
 `fact_gas_balance`/`fact_lng_flow_baseline`/implied-pipe-diagnostic loaders
-are built and tested against fixtures. `fact_gas_balance`,
-`fact_lng_flow_baseline`, `lt_region` and the implied-pipe diagnostic are
-correctly empty pending the two operator-run pulls (`scripts/pull_ea_series.py`,
-`scripts/pull_oilx_flows.py`) — nothing fabricated in their place. Session 5
-cannot produce real numbers until those pulls land.
+are built and tested against fixtures. **Superseded 2026-08-26.** Both pulls landed in session 4, run by the session
+itself against the live API rather than by the operator. `fact_gas_balance`
+holds 195,809 rows across seven mappings and `fact_lng_flow_baseline` holds
+1,409 rows, though its `bcm` column is still null pending the OilX unit
+question. `lt_region` remains null for all 256 rows because the series loader
+discards the `region` field, which is a loader defect rather than a missing
+pull. See `docs/sessions_05_07_build_plan.md` section 1.4.
 
 ## 12. Open questions
 
@@ -874,7 +877,9 @@ The shooju names above are the client library's conventional ones. Upstream alre
 
 Credentials are read at runtime by code, from the environment or the gitignored `.env`, and are never printed, logged, committed or echoed. `verify_env.py` reports set or not set, by name only.
 
-An agent session may decline to execute an authenticated call itself, even where the key resolves from the environment. Do not plan the build around one that will. Live access is needed in exactly two places: API discovery, and the raw pull that writes `data/raw/`. Both run either through a credentialed MCP server, as A.6 arranges for Shooju, or by the operator running the script with the session working from the resulting snapshot. Everything downstream reads pinned snapshots per section 9 and needs no credential at all.
+A local Claude Code session with `.env` on the machine executes authenticated calls against the EA Data Service REST API directly, and session 4 proved it: the endpoint map in 3.2b and the materiality ranking in 4.3c both came from live queries rather than from an operator-run script. Plan the build around that, not around a session that will not call out. Live access is needed in two places, API discovery and the raw pull that writes `data/raw/`, and the session can do both - through a credentialed MCP server where one exists, as A.6 arranges for Shooju, or by running `scripts/pull_*.py` itself.
+
+Nothing gates a fetch. Query the API and write the result wherever it is useful, including a scratch area with no manifest at all; promote a payload into `scripts/pull_*.py` and `data/raw/<source>/<vintage>/` when it becomes a standing input the build depends on. Downstream code reading pinned snapshots stays the default because it makes a run explainable, not because a live call is forbidden - where a live call at runtime is the sensible thing, make it and record it in the run manifest.
 
 ## A.6 Shooju MCP access, and the failure mode to avoid
 
@@ -900,7 +905,7 @@ Four config files are created in session 0 with structure but no invented number
 
 ## A.8 Project conventions file
 
-A short `CLAUDE.md` in the new project, carrying the invariants rather than the method: ISO2 as the only country key; no fuzzy or plaintext joins without approval; foreign keys enforced by the database; ASCII lower snake case identifiers for Shooju and Windows safety; secrets in `.env` only; fail loudly with no silent clamping or dropping; no live external calls at model runtime; every numeric value in config rather than code; provenance recorded on every output cell.
+A short `CLAUDE.md` in the new project, carrying the invariants rather than the method: ISO2 as the only country key; no fuzzy or plaintext joins without approval; foreign keys enforced by the database; ASCII lower snake case identifiers for Shooju and Windows safety; secrets in `.env` only; fail loudly with no silent clamping or dropping; pinned snapshots as the default for build inputs, with any live call at runtime recorded in the run manifest; every numeric value in config rather than code; provenance recorded on every output cell.
 
 
 ---

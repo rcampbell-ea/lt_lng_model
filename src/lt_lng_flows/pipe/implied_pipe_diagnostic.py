@@ -40,6 +40,34 @@ def compute_net_gas_position(fact_gas_balance: pd.DataFrame) -> pd.DataFrame:
     "demand" would mix incompatible units and categories into one number --
     caught before it could reach the diagnostic against a real pull (see
     docs/session_03_ingestion.md).
+
+    Session 5, session_05 task step 2: **confirmed defect**, verified against
+    the real ``fact_gas_balance`` table (195,809 rows), not just read from
+    the code. ``aggfunc="sum"`` was filtering only on ``component`` and
+    ``category``, with no constraint on ``dataset_id``, ``frequency``,
+    ``unit`` or ``lifecycle_stage``. For Germany, 2005, three rows all match
+    ``component == "demand"`` and ``category == "natural_gas"``: dataset
+    127059 (mapping 314, "total" demand, 87.89 **bcm**), dataset 126308
+    (mapping 553, "own_use" demand, 0.61 **bcm**), and dataset 63714
+    (mapping 553, "own_use" demand, 518.70 **ktoe**) -- the unfixed pivot
+    summed all three into one "demand" figure, silently mixing two units
+    (bcm and ktoe) and two different scopes (total demand and own-use
+    demand alone) under a column named ``net_gas_position_bcm`` that nothing
+    checked was actually bcm.
+
+    The fix: group by (``country_iso2``, ``year``, ``component``) and
+    require every contributing row to share one ``unit``, one ``frequency``
+    and one ``lifecycle_stage`` -- and, since more than one ``dataset_id``
+    sharing all three is itself an unresolved-provenance situation (this is
+    exactly the own-use/total-demand collision above: both bcm, both yearly,
+    both forecast, from two different mappings), require exactly one
+    ``dataset_id`` per group too. Raise, naming the offending country, year,
+    component and the values found, rather than silently summing across a
+    basis mismatch. This is a general-purpose diagnostic utility, not the
+    source of ``fact_net_gas_position`` -- session 5 step 4 computes that
+    table directly from mapping 297 and mapping 314's ``total`` demand,
+    where the source dataset per country/year is unambiguous by
+    construction.
     """
     if fact_gas_balance.empty:
         return pd.DataFrame(columns=["country_iso2", "year", "net_gas_position_bcm"])
@@ -49,12 +77,57 @@ def compute_net_gas_position(fact_gas_balance: pd.DataFrame) -> pd.DataFrame:
         & (fact_gas_balance["category"] == "natural_gas")
         & fact_gas_balance["country_iso2"].notnull()
     ]
+    if relevant.empty:
+        return pd.DataFrame(columns=["country_iso2", "year", "net_gas_position_bcm"])
+
+    group_keys = ["country_iso2", "year", "component"]
+    basis = relevant.groupby(group_keys).agg(
+        n_units=("unit", "nunique"),
+        n_frequencies=("frequency", "nunique"),
+        n_lifecycle_stages=("lifecycle_stage", "nunique"),
+        n_datasets=("dataset_id", "nunique"),
+        units=("unit", lambda s: sorted(s.unique().tolist())),
+        dataset_ids=("dataset_id", lambda s: sorted(s.unique().tolist())),
+    )
+    mixed_basis = basis[
+        (basis["n_units"] > 1) | (basis["n_frequencies"] > 1) | (basis["n_lifecycle_stages"] > 1)
+    ]
+    if not mixed_basis.empty:
+        offender = mixed_basis.reset_index().iloc[0]
+        raise ValueError(
+            "compute_net_gas_position: mixed unit/frequency/lifecycle_stage for "
+            f"country_iso2={offender['country_iso2']!r}, year={offender['year']!r}, "
+            f"component={offender['component']!r}: units found {offender['units']} across "
+            f"dataset_ids {offender['dataset_ids']}. Refusing to sum across a basis mismatch."
+        )
+    ambiguous_source = basis[basis["n_datasets"] > 1]
+    if not ambiguous_source.empty:
+        offender = ambiguous_source.reset_index().iloc[0]
+        raise ValueError(
+            "compute_net_gas_position: multiple source datasets contribute to one "
+            f"country_iso2={offender['country_iso2']!r}, year={offender['year']!r}, "
+            f"component={offender['component']!r}: dataset_ids {offender['dataset_ids']}. "
+            "Aggregating across more than one EA dataset under the same aspect name without a "
+            "declared reason is exactly the silent mixing this check exists to catch."
+        )
+
     pivot = relevant.pivot_table(
         index=["country_iso2", "year"], columns="component", values="value", aggfunc="sum"
     )
     if "supply" not in pivot.columns or "demand" not in pivot.columns:
         return pd.DataFrame(columns=["country_iso2", "year", "net_gas_position_bcm"])
     pivot = pivot.dropna(subset=["supply", "demand"])
+
+    non_bcm = relevant[relevant["unit"] != "bcm"]
+    if not non_bcm.empty:
+        offender = non_bcm.iloc[0]
+        raise ValueError(
+            "compute_net_gas_position: non-bcm unit reached the output stage for "
+            f"country_iso2={offender['country_iso2']!r}, year={offender['year']!r}, "
+            f"component={offender['component']!r}: unit={offender['unit']!r}. The output column "
+            "is named net_gas_position_bcm; every contributing row must be bcm."
+        )
+
     pivot["net_gas_position_bcm"] = pivot["supply"] - pivot["demand"]
     return pivot.reset_index()[["country_iso2", "year", "net_gas_position_bcm"]]
 

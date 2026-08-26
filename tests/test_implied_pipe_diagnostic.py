@@ -118,6 +118,58 @@ def test_diagnostic_computes_net_positions_and_divergence():
     assert bool(fr_row["is_large_divergence"]) is True
 
 
+def test_compute_net_gas_position_raises_on_mixed_unit_same_component():
+    """Session 5 step 2 regression: reproduces the real defect found against
+    fact_gas_balance for Germany, 2005 -- mapping 314's "total" demand (bcm)
+    and mapping 553's "own_use" demand, published in both bcm and ktoe for
+    the same country/year, all carry component="demand", category=
+    "natural_gas". Before the fix, aggfunc="sum" silently summed all three,
+    mixing bcm and ktoe. After the fix this must raise rather than return a
+    number.
+    """
+    gas_balance = pd.DataFrame(
+        {
+            "country_iso2": ["DE", "DE", "DE", "DE"],
+            "year": [2005, 2005, 2005, 2005],
+            "component": ["supply", "demand", "demand", "demand"],
+            "category": ["natural_gas"] * 4,
+            "value": [10.0, 87.893115, 0.613622, 518.7],
+            "unit": ["bcm", "bcm", "bcm", "ktoe"],
+            "lifecycle_stage": ["forecast"] * 4,
+            "frequency": ["yearly"] * 4,
+            "dataset_id": [1, 127059, 126308, 63714],
+            "release_date": [None] * 4,
+            "source": ["ea_api_timeseries"] * 4,
+        }
+    )
+    with pytest.raises(ValueError, match="mixed unit"):
+        ipd.compute_net_gas_position(gas_balance)
+
+
+def test_compute_net_gas_position_raises_on_ambiguous_same_unit_sources():
+    """Two datasets, same unit/frequency/lifecycle_stage, both component
+    "demand": still ambiguous (which one is *the* demand figure?), so this
+    must raise too, not silently sum bcm + bcm from two different mappings.
+    """
+    gas_balance = pd.DataFrame(
+        {
+            "country_iso2": ["DE", "DE", "DE"],
+            "year": [2005, 2005, 2005],
+            "component": ["supply", "demand", "demand"],
+            "category": ["natural_gas"] * 3,
+            "value": [10.0, 87.893115, 0.613622],
+            "unit": ["bcm"] * 3,
+            "lifecycle_stage": ["forecast"] * 3,
+            "frequency": ["yearly"] * 3,
+            "dataset_id": [1, 127059, 126308],
+            "release_date": [None] * 3,
+            "source": ["ea_api_timeseries"] * 3,
+        }
+    )
+    with pytest.raises(ValueError, match="multiple source datasets"):
+        ipd.compute_net_gas_position(gas_balance)
+
+
 def test_compute_net_lng_position_empty_when_bcm_all_null():
     lng_baseline = pd.DataFrame(
         {
