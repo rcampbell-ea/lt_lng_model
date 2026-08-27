@@ -1,0 +1,23 @@
+# Session 6: surplus/deficit table (EA supply minus EA demand) plus the
+# known-split components (pipe, LNG) placed beside it. Every numeric value
+# the session 6 build uses lives here, never inline in code (CLAUDE.md,
+# "numbers, failure and provenance"). The horizon itself is NOT read from
+# config/model_config.yaml this session -- the task is to establish how far
+# back mappings 297 and 314 actually carry data and rebuild over all of it,
+# so the span is derived from the pinned data, not from the 2025-2050 model
+# horizon used by session 5.
+
+net_pipe_position:
+  # A country-year built from fewer than this many distinct observed months
+  # in the underlying IEA GTF border-point file is excluded from
+  # net_pipe_bcm (set null), never zero-filled. months_observed is still
+  # recorded so the incompleteness is visible.
+  min_months_observed: 12
+  # The Netherlands' own GTF publication stopped in January 2019 (plan
+  # section 3, "Netherlands publication discontinued from January 2019").
+  # Residual rows exist in the raw file from the other side of some
+  # corridors after that date, which can pass the months_observed>=12 test
+  # without NL's own series being complete -- this is a hard, named
+  # exclusion, not something the months count alone catches.
+  netherlands_iso2: "NL"
+  netherlands_excluded_from_year: 2019

@@ -1,0 +1,26 @@
+{
+  "ea_series_snapshots_used": [
+    "data\\raw\\ea_api\\202608\\mapping_297\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_300\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_314\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_5\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_545\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_553\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_6\\response.json"
+  ],
+  "horizon": {
+    "end_year": 2050,
+    "start_year": 2025
+  },
+  "mapping_545_series_inventory": {
+    "n_export_series": 52,
+    "n_export_zero": 28,
+    "n_import_series": 50,
+    "n_import_zero": 11,
+    "nwe_rows_excluded": 34
+  },
+  "oilx_snapshots_used": [
+    "data\\raw\\oilx\\202608\\flows_lng\\response.json"
+  ],
+  "step2_defect_confirmed": true
+}

@@ -252,16 +252,25 @@ def load_dim_country_region_tag(
 def load_fact_net_gas_position(
     con: duckdb.DuckDBPyConnection, fact_net_gas_position: pd.DataFrame
 ) -> None:
-    """Session 5 step 4. Supply (mapping 297) minus total demand (mapping
-    314), per (``country_iso2``, ``year``). ``supply_bcm``/``demand_bcm`` are
-    nullable: a country present in one mapping and not the other carries a
-    null on the missing side and a null ``net_gas_position_bcm``, never a
-    fabricated zero (CLAUDE.md, "a null beats a plausible invented number")."""
+    """Session 6. Supply (mapping 297) minus total demand (mapping 314), per
+    (``country_iso2``, ``year``), over the full span both mappings actually
+    carry data for -- widened from session 5's 2025-2050 slice.
+    ``surplus_deficit_bcm`` (renamed from session 5's
+    ``net_gas_position_bcm``) is supply minus demand only; ``missing_side``
+    names which side (if any) is absent for that row instead of session 5's
+    two boolean flags. ``net_pipe_bcm``/``months_observed`` (IEA GTF,
+    European coverage only) and ``lng_net_bcm`` (mapping 545) sit beside the
+    surplus/deficit figure as separately-sourced columns, per the session 6
+    task -- never summed against it, never reconciled. All four numeric
+    columns are nullable: a country/mapping/period combination with no
+    coverage carries a null there, never a fabricated zero (CLAUDE.md, "a
+    null beats a plausible invented number")."""
     con.register("fact_net_gas_position_df", fact_net_gas_position)
     con.execute(
         "CREATE TABLE fact_net_gas_position ("
         "country_iso2 VARCHAR, year INTEGER, supply_bcm DOUBLE, demand_bcm DOUBLE, "
-        "net_gas_position_bcm DOUBLE, has_supply BOOLEAN, has_demand BOOLEAN, "
+        "surplus_deficit_bcm DOUBLE, missing_side VARCHAR, "
+        "net_pipe_bcm DOUBLE, months_observed INTEGER, lng_net_bcm DOUBLE, "
         "source VARCHAR, "
         "PRIMARY KEY (country_iso2, year), "
         "FOREIGN KEY (country_iso2) REFERENCES dim_country (country_iso2))"

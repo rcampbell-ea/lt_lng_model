@@ -1,0 +1,19 @@
+{
+  "ea_series_snapshots_used": [
+    "data\\raw\\ea_api\\202608\\mapping_297\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_300\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_314\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_5\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_545\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_553\\response.json",
+    "data\\raw\\ea_api\\202608\\mapping_6\\response.json"
+  ],
+  "iea_gtf_path": "data\\raw\\iea_gtf\\Export_GTF_IEA_202606.xlsx",
+  "oilx_snapshots_used": [
+    "data\\raw\\oilx\\202608\\flows_lng\\response.json"
+  ],
+  "span": {
+    "year_max": 2050,
+    "year_min": 2005
+  }
+}
