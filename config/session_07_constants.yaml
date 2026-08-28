@@ -1,0 +1,24 @@
+# Session 7: net pipe flow timeseries. Every numeric value the session 7
+# build uses lives here, never inline in code (CLAUDE.md, "numbers, failure
+# and provenance").
+
+horizon:
+  start: 2025
+  end: 2050
+  history_start: 2008 # only populated for corridors GTF actually measures
+
+# A GTF-measured corridor whose last observed year is older than this is
+# "stale": excluded from continuation entirely (see
+# pipe_flow_forecast.project_measured_corridors) rather than flat-projected
+# from a value that may no longer reflect current reality. Set one year
+# before the horizon starts, so a corridor that stopped reporting even one
+# full year short of the model's own starting point is treated as a named
+# gap, not silently carried forward.
+stale_year_threshold: 2024
+
+# The residual-at-stake ranking (docs/session_07_pipe_assumptions.md, "the
+# list of corridors awaiting an analyst number") reads each undecided
+# corridor's touching countries' surplus_deficit_bcm from session 6's
+# fact_net_gas_position at this year, as the stand-in for "how much rides on
+# this number."
+residual_ranking_year: 2030

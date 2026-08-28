@@ -280,6 +280,27 @@ def load_fact_net_gas_position(
     con.unregister("fact_net_gas_position_df")
 
 
+def load_fact_pipe_net_position(
+    con: duckdb.DuckDBPyConnection, fact_pipe_net_position: pd.DataFrame
+) -> None:
+    """Session 7. Net pipe bcm per (``country_iso2``, ``year``), same grain
+    as ``fact_net_gas_position`` so the two join directly. ``net_pipe_bcm``
+    is nullable: a country/year whose corridors include a named but
+    undecided flow carries a null there, never a fabricated zero (CLAUDE.md,
+    "a null beats a plausible invented number"). ``basis`` is one of
+    'measured', 'assumed', 'explicit_zero' or 'undecided'."""
+    con.register("fact_pipe_net_position_df", fact_pipe_net_position)
+    con.execute(
+        "CREATE TABLE fact_pipe_net_position ("
+        "country_iso2 VARCHAR, year INTEGER, net_pipe_bcm DOUBLE, basis VARCHAR, "
+        "PRIMARY KEY (country_iso2, year), "
+        "FOREIGN KEY (country_iso2) REFERENCES dim_country (country_iso2))"
+    )
+    if len(fact_pipe_net_position):
+        con.execute("INSERT INTO fact_pipe_net_position SELECT * FROM fact_pipe_net_position_df")
+    con.unregister("fact_pipe_net_position_df")
+
+
 def assert_foreign_key_enforced(con: duckdb.DuckDBPyConnection) -> None:
     """Build plan 2.8: attempt to insert a fact row carrying an unmapped
     country_iso2 into a throwaway fact table with a declared FK to

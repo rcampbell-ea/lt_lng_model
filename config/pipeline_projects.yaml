@@ -1,81 +1,145 @@
 # One entry per prospective pipeline project in the central case, per
-# Appendix A.7. Capacity, start year, ramp, availability and source are all
-# null pending house view or a cited source — an invented number here is
-# worse than a null, because a null gets questioned. Seeded with the
-# projects named in section 5.1 as large enough to move the LNG call.
+# Appendix A.7 and session 7 STEP 4. Origin and destination are facts,
+# researched and filled in this session. Flow, start year and source are
+# left null for the analyst -- an invented number here is worse than a
+# null, because a null gets questioned. Not netted into
+# fact_pipe_net_position until an analyst supplies flow_bcma and
+# start_year: a project without a stated start date has no defensible year
+# to begin contributing, so the central case simply does not include it yet
+# (same convention this file already used when it was an all-null stub).
 
 owner: null  # named sign-off owner, per open question 8
 
 projects:
   - name: Power of Siberia 2
-    origin_iso2: null
-    destination_iso2: null
-    capacity_bcma: null
-    commissioning_year: null
-    ramp_months: null
-    availability_factor: null
+    origin_iso2: RU
+    destination_iso2: CN
+    transit_iso2: [MN]
+    flow_bcma: null
+    start_year: null
     source: null
+    note: >
+      Memorandum signed September 2025; route "understanding" reached at a
+      May 2026 Russia-China summit; Mongolia states technical/economic
+      studies are complete. Financing scheme still undetermined as of mid
+      2026; no construction start date confirmed. Design capacity discussed
+      in reporting is 50 bcm/yr.
 
   - name: Central Asia to China line D
-    origin_iso2: null
-    destination_iso2: null
-    capacity_bcma: null
-    commissioning_year: null
-    ramp_months: null
-    availability_factor: null
+    origin_iso2: TM
+    destination_iso2: CN
+    transit_iso2: [UZ, TJ, KG]
+    flow_bcma: null
+    start_year: null
     source: null
+    note: >
+      Fourth line (Line D) of the existing Central Asia-China gas pipeline
+      system (Lines A/B/C already flow and are the STEP 2 TM-CN corridor in
+      pipeline_flows.yaml). Construction stalled on pricing disputes among
+      transit states; Turkmengaz has referenced a "fourth phase" of
+      Galkynysh field development from early 2026 that would include Line D,
+      but no firm in-service date is confirmed. Reported design capacity
+      25-30 bcm/yr.
 
   - name: TANAP and TAP expansion
-    origin_iso2: null
-    destination_iso2: null
-    capacity_bcma: null
-    commissioning_year: null
-    ramp_months: null
-    availability_factor: null
+    origin_iso2: AZ
+    destination_iso2: TR
+    flow_bcma: null
+    start_year: null
     source: null
+    note: >
+      AZ-TR (TANAP) leg only; the onward TAP leg into Greece/Albania/Italy
+      is a separate, further capacity add on the same Shah Deniz gas and is
+      not modelled as its own row. TANAP Phase 2 would take capacity from
+      16.2 to 24 bcm/yr, Phase 3 to 31 bcm/yr; as of mid 2024 TANAP remained
+      at 16.2 bcm/yr, so the originally reported 2026 target for full
+      Phase 3 capacity appears not to have been met. TAP's own first
+      expansion tranche (+1.2 bcm/yr) began from the start of 2026, with a
+      stated aim to double TAP's total capacity to ~20 bcm/yr by 2027.
 
   - name: TAPI
-    origin_iso2: null
-    destination_iso2: null
-    capacity_bcma: null
-    commissioning_year: null
-    ramp_months: null
-    availability_factor: null
+    origin_iso2: TM
+    destination_iso2: IN
+    transit_iso2: [AF, PK]
+    flow_bcma: null
+    start_year: null
     source: null
+    note: >
+      Full chain is Turkmenistan (Galkynysh field) -> Afghanistan ->
+      Pakistan -> India; modelled here as a single TM-IN pair per this
+      file's one-row-per-project convention, since India is TAPI's largest
+      contracted offtake and the country this session's task is concerned
+      with -- Pakistan's own contracted share is a further, unmodelled
+      allocation of the same project, not a separate row. The
+      Turkmenistan-Afghanistan (Serhetabat-Herat) section is reported
+      inaugurated October 2025, with Afghan-section work resumed officially
+      September 2024. The Pakistan and India sections have no confirmed
+      construction progress; security conditions in Afghanistan remain the
+      primary stated obstacle to the full four-country line.
 
   - name: East Med
-    origin_iso2: null
-    destination_iso2: null
-    capacity_bcma: null
-    commissioning_year: null
-    ramp_months: null
-    availability_factor: null
+    origin_iso2: IL
+    destination_iso2: GR
+    transit_iso2: [CY]
+    flow_bcma: null
+    start_year: null
     source: null
+    note: >
+      Israel/Cyprus to Greece, with a further proposed extension to Italy
+      not modelled as its own row. Effectively shelved: the US withdrew
+      support in January 2022 over cost (6bn+ EUR), deep-water technical
+      difficulty (3,000m), and Turkish objections to the route's EEZ
+      claims. No final investment decision exists as of mid 2026, despite
+      periodic revival talk among Israel, Greece and Cyprus.
 
   - name: Nigeria to Morocco
-    origin_iso2: null
-    destination_iso2: null
-    capacity_bcma: null
-    commissioning_year: null
-    ramp_months: null
-    availability_factor: null
+    origin_iso2: NG
+    destination_iso2: MA
+    flow_bcma: null
+    start_year: null
     source: null
+    note: >
+      African Atlantic Gas Pipeline (offshore/onshore hybrid route along the
+      West African coast, ultimately intended to reach Europe). An
+      intergovernmental agreement was signed at an ECOWAS summit in July
+      2026; a Morocco-based project company (ONHYM/NNPC joint venture) is
+      being set up, with funding interest from the UAE, EIB, Islamic
+      Development Bank and OPEC Fund. FID targeted Q4 2026; first gas from
+      initial segments targeted 2031. Reported design capacity ~30 bcm/yr
+      over ~6,900 km.
 
   - name: Argentina into Brazil
-    origin_iso2: null
-    destination_iso2: null
-    capacity_bcma: null
-    commissioning_year: null
-    ramp_months: null
-    availability_factor: null
+    origin_iso2: AR
+    destination_iso2: BR
+    transit_iso2: [PY]
+    flow_bcma: null
+    start_year: null
     source: null
+    note: >
+      Vaca Muerta export pipeline into Brazil; the leading proposal (the
+      "Bioceanic Gas Pipeline") is trilateral with Paraguay as transit.
+      Planning/proposal stage only, no FID -- competing with Argentina's own
+      floating LNG export projects (e.g. Southern Energy FLNG, first unit
+      due summer 2027) as the preferred route to monetise Vaca Muerta
+      surplus. No confirmed construction timeline.
 
   - name: Russia into Europe restoration
-    origin_iso2: null
-    destination_iso2: null
-    capacity_bcma: null
-    commissioning_year: null
-    ramp_months: null
-    availability_factor: null
+    origin_iso2: RU
+    destination_iso2: DE
+    flow_bcma: null
+    start_year: null
     source: null
-    note: explicit entry so the central case has to state a position rather than leave one implicit, per Appendix A.7
+    note: >
+      Explicit entry so the central case has to state a position rather
+      than leave one implicit, per Appendix A.7. DE (Nord Stream's
+      destination) is used as the representative pair; three routes are
+      discussed in reporting rather than one settled project -- direct
+      Ukraine transit (stopped entirely 1 January 2025, and any restoration
+      is generally tied by analysts to a broader peace settlement),
+      TurkStream (already flowing and rising -- captured as the existing
+      RU-TR corridor in pipeline_flows.yaml, not this entry), and Nord
+      Stream (one line reportedly still physically intact after the 2022
+      sabotage, with reported US-Russia discussions in March 2025 on a
+      restart of up to ~27.5 bcm/yr). This entry represents a hypothetical
+      incremental restoration beyond what fact_pipe_flow_hist already
+      measures, not any one of the three routes specifically.
