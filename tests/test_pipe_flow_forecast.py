@@ -289,6 +289,55 @@ def test_net_country_position_explicit_zero_for_untouched_country_on_zero_list()
     assert jp["basis"] == "explicit_zero"
 
 
+def test_validate_analyst_provenance_passes_on_fully_null_corridor():
+    corridors = [
+        {
+            "origin_iso2": "UZ",
+            "destination_iso2": "CN",
+            "current_flow_bcma": None,
+            "basis_year": None,
+            "continuation": None,
+            "source": None,
+            "entered_by": None,
+            "entered_on": None,
+        }
+    ]
+    pff.validate_analyst_provenance(corridors)  # must not raise
+
+
+def test_validate_analyst_provenance_raises_on_populated_field_without_entered_by():
+    corridors = [
+        {
+            "origin_iso2": "CA",
+            "destination_iso2": "US",
+            "current_flow_bcma": 249.0,
+            "basis_year": 2024,
+            "continuation": {"path": "flat"},
+            "source": None,
+            "entered_by": None,
+            "entered_on": None,
+        }
+    ]
+    with pytest.raises(ValueError, match="entered_by and entered_on"):
+        pff.validate_analyst_provenance(corridors)
+
+
+def test_validate_analyst_provenance_passes_when_entered_by_and_entered_on_set():
+    corridors = [
+        {
+            "origin_iso2": "CA",
+            "destination_iso2": "US",
+            "current_flow_bcma": 249.0,
+            "basis_year": 2024,
+            "continuation": {"path": "flat"},
+            "source": "analyst note",
+            "entered_by": "j.smith",
+            "entered_on": "2026-08-27",
+        }
+    ]
+    pff.validate_analyst_provenance(corridors)  # must not raise
+
+
 def test_net_country_position_raises_on_untouched_country_not_in_zero_list():
     corridors = pd.DataFrame([_corridor_row("AT", "DE", 2025, 10.0, "measured")])
     with pytest.raises(ValueError, match="no corridor"):

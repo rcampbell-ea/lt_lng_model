@@ -242,6 +242,39 @@ def project_assumed_corridors(
     return out, undecided
 
 
+_ANALYST_ONLY_FIELDS = ("current_flow_bcma", "basis_year", "continuation", "source")
+
+
+def validate_analyst_provenance(corridors_assumed: list[dict]) -> None:
+    """Session 8, STEP 3. Raises on the first corridor that carries any of
+    ``_ANALYST_ONLY_FIELDS`` populated (a non-null scalar, or a
+    ``continuation`` dict that is not simply ``{"path": "undecided"}``/None)
+    without a matching ``entered_by`` and ``entered_on`` on that same
+    corridor. A value with no name and no date attached to it is exactly how
+    the CA-US 249 bcma number happened -- a self-reported source note stood
+    in for provenance and was never checked. This is a schema gate, not a
+    content check: it says nothing about whether a value is *right*, only
+    that no one can populate one anonymously and undated again.
+    """
+    for corridor in corridors_assumed:
+        continuation = corridor.get("continuation")
+        continuation_populated = continuation is not None and continuation.get("path") not in (
+            None,
+            "undecided",
+        )
+        populated = continuation_populated or any(
+            corridor.get(f) is not None for f in _ANALYST_ONLY_FIELDS if f != "continuation"
+        )
+        if not populated:
+            continue
+        if corridor.get("entered_by") is None or corridor.get("entered_on") is None:
+            raise ValueError(
+                "validate_analyst_provenance: corridor "
+                f"{corridor.get('origin_iso2')}-{corridor.get('destination_iso2')} carries an "
+                "analyst-only field populated without both entered_by and entered_on set"
+            )
+
+
 def check_corridor_adjacency(
     corridors: list[tuple[str, str]], dim_country_adjacency: pd.DataFrame
 ) -> list[tuple[str, str]]:

@@ -301,6 +301,28 @@ def load_fact_pipe_net_position(
     con.unregister("fact_pipe_net_position_df")
 
 
+def load_fact_lng_net_position(
+    con: duckdb.DuckDBPyConnection, fact_lng_net_position: pd.DataFrame
+) -> None:
+    """Session 8. Derived LNG net position per (``country_iso2``, ``year``),
+    at mapping 545's grain (``net_exports_bcm``/``net_imports_bcm``). All
+    three numeric columns are nullable: a country/year with no analyst pipe
+    number on file carries a null here, never a fabricated zero (CLAUDE.md,
+    "a null beats a plausible invented number") -- as of session 8, every
+    row is null, since STEP 1 stripped every analyst-entered flow value."""
+    con.register("fact_lng_net_position_df", fact_lng_net_position)
+    con.execute(
+        "CREATE TABLE fact_lng_net_position ("
+        "country_iso2 VARCHAR, year INTEGER, lng_net_bcm DOUBLE, "
+        "net_exports_bcm DOUBLE, net_imports_bcm DOUBLE, source VARCHAR, "
+        "PRIMARY KEY (country_iso2, year), "
+        "FOREIGN KEY (country_iso2) REFERENCES dim_country (country_iso2))"
+    )
+    if len(fact_lng_net_position):
+        con.execute("INSERT INTO fact_lng_net_position SELECT * FROM fact_lng_net_position_df")
+    con.unregister("fact_lng_net_position_df")
+
+
 def assert_foreign_key_enforced(con: duckdb.DuckDBPyConnection) -> None:
     """Build plan 2.8: attempt to insert a fact row carrying an unmapped
     country_iso2 into a throwaway fact table with a declared FK to

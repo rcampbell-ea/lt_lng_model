@@ -1,9 +1,29 @@
-# Session 7. The corridor list and the analyst assumptions that turn it into
-# a net pipe flow timeseries per country, 2025-2050 (plus history back to
-# 2008 wherever IEA GTF measures it). Read by scripts/build_session7.py
-# alongside the GTF file itself (STEP 1 corridors are computed from GTF, not
-# hand-typed here -- see "measured_corridor_overrides" below for the only
-# hand-authored judgement calls layered on top of GTF).
+# Session 8, STEP 1: every invented current-year flow value stripped
+# unconditionally. Session 7 wrote 249 bcma for CA-US with a citation
+# attached; EA's own fact_net_gas_position puts Canada's entire 2030 surplus
+# at 81.3 bcm, so that corridor alone implied Canada importing 183 bcm of
+# LNG it never called for -- a cited wrong number survived review. The split
+# session 7 drew between "sourced" and "invented" was that session's own
+# account of its own behaviour and is not verifiable (CA-US 249 was
+# self-reported as genuinely sourced and is exactly the falsified one), so
+# nothing here is preserved on the grounds that it looked sourced. Every
+# corridor below is an entry awaiting a person's number, not a data point.
+#
+# Session 8, STEP 3: the schema is split into two zones per corridor so this
+# cannot recur through wording alone.
+#   Tool-writable  -- origin_iso2, destination_iso2, adjacency_flag (a
+#                     derived geometry fact, not a flow judgement).
+#   Analyst-only   -- current_flow_bcma, basis_year, continuation (and
+#                     everything nested in it: path, target_flow_bcma,
+#                     target_year, terminal_year, lookback_years), source.
+#                     pipe_flow_forecast.validate_analyst_provenance raises
+#                     if any analyst-only field is populated without a
+#                     matching entered_by and entered_on on the same
+#                     corridor -- a value with no name and no date attached
+#                     to it is exactly how the CA-US number happened again.
+# `entered_by` and `entered_on` are themselves analyst-only fields: a corridor
+# with a null current_flow_bcma is incomplete, not zero, and carries null
+# entered_by/entered_on too until a person fills the whole row in together.
 #
 # basis values used throughout this file and in fact_pipe_net_position:
 #   measured       -- IEA GTF border-point flow, an observed year.
@@ -15,8 +35,9 @@
 #
 # Numbers here are current-year point estimates and continuation paths, not
 # capacity x availability x ramp (per the session 7 task: one number, not
-# three). Every filled number carries a source; every unfilled one is null,
-# per CLAUDE.md ("a null beats a plausible invented number").
+# three). Every filled number must carry entered_by and entered_on; every
+# unfilled one is null, per CLAUDE.md ("a null beats a plausible invented
+# number").
 
 scope:
   modelled_countries_source: "session 6 fact_net_gas_position: countries with at least one (country, year) row carrying both supply and demand"
@@ -25,12 +46,15 @@ scope:
   history_start: 2008 # only populated for corridors GTF actually measures
 
 # ---------------------------------------------------------------------------
-# STEP 3 (measured corridors). Continuation for the 148 GTF corridors past
-# their last observed year. Rather than hand-typing a continuation for 148
-# corridors, a single default rule applies to all of them, with named
-# overrides only for corridors where a default flat continuation would be a
-# poor read of already-visible facts (a war, a contract, a field decline).
-# The default itself is a generalisable rule, not a corridor-specific number.
+# STEP 3 (measured corridors). Continuation for the GTF corridors past their
+# last observed year. Rather than hand-typing a continuation for every one, a
+# single default rule applies to all of them, with named overrides only for
+# corridors where a default flat continuation would be a poor read of
+# already-visible facts (a war, a contract, a field decline). This is a
+# continuation METHOD (which of the corridor's own already-measured years to
+# average), not an invented flow value -- every number it produces is a
+# GTF-observed one, so it is out of scope for the STEP 1 strip. Session 8
+# leaves it as session 7 built it.
 # ---------------------------------------------------------------------------
 measured_corridor_default_continuation:
   path: flat
@@ -60,64 +84,61 @@ measured_corridor_overrides:
     source: iea_gtf_202606
 
 # ---------------------------------------------------------------------------
-# STEP 2 + STEP 3 (hand-listed corridors outside GTF coverage). One entry per
-# pair. current_flow_bcma/basis_year are the analyst's stated current point;
-# continuation carries the forward path. Left null throughout where no
-# defensible number was found -- these are the corridors reported as
-# "awaiting an analyst number" in docs/session_07_pipe_assumptions.md.
+# STEP 2 + STEP 3 (hand-listed corridors outside GTF coverage). Corridor
+# identity is a fact (this pair carries physical gas, GTF just doesn't
+# measure it); the flow magnitude is not. Every current_flow_bcma,
+# basis_year, continuation and source below is null, stripped by session 8
+# STEP 1 without exception. A corridor stays in this list because the pipe
+# is real -- the number is awaiting an analyst, named entered_by and dated
+# entered_on, per STEP 3's schema split above.
 #
-# continuation.path is one of: flat, growing, declining, terminating.
-#   flat        -- current_flow_bcma held to horizon_end.
-#   growing/declining -- linear from (basis_year, current_flow_bcma) to
-#                  (target_year, target_flow_bcma), then flat at
-#                  target_flow_bcma through horizon_end.
-#   terminating -- linear from (basis_year, current_flow_bcma) to 0 at
-#                  terminal_year, then flat at 0 through horizon_end.
+# continuation.path is one of: flat, growing, declining, terminating,
+# undecided -- undecided (or a null current_flow_bcma) is the state of
+# every corridor below.
 # adjacency_flag is set where dim_country_adjacency (geometric adjacency +
 # the signed-off crosswalks/adjacency_override.csv) has neither a direct
 # border nor an override row for the pair -- the check build plan session 3
 # already built (pipe_checks.check_gtf_adjacency), reused here rather than
-# re-implemented.
+# re-implemented. This is a derived geometry fact, tool-writable, not an
+# analyst judgement, so it survives the strip.
 # ---------------------------------------------------------------------------
 corridors_assumed:
   - origin_iso2: CA
     destination_iso2: US
-    current_flow_bcma: 249
-    basis_year: 2024
-    continuation: {path: growing, target_flow_bcma: 270, target_year: 2032}
-    source: "EIA, Today in Energy: US-Canada natural gas trade, 2024"
-    note: "Record 2024 exports (+8.1% y/y) on record Canadian production; modest further growth assumed, then flat -- a mature, near-fully-utilised corridor."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: US
     destination_iso2: MX
-    current_flow_bcma: 66
-    basis_year: 2024
-    continuation: {path: growing, target_flow_bcma: 95, target_year: 2035}
-    source: "EIA, Today in Energy: US natural gas exports to Mexico reach new records, 2024"
-    note: "2024 exports a record (+25% vs 2019); EIA notes corridor capacity only ~43% utilised, headroom assumed to fill on Mexican power-sector demand growth."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: RU
     destination_iso2: CN
-    current_flow_bcma: 31.1
-    basis_year: 2024
-    continuation: {path: growing, target_flow_bcma: 38, target_year: 2027}
-    source: "Interfax: Power of Siberia reaches design capacity, 2024"
-    note: "Power of Siberia 1 ramp (4.1 bcm 2020 -> 31.1 bcm 2024) reached its 38 bcm/yr contracted design capacity ahead of schedule; assumed flat at that ceiling from 2027."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: TM
     destination_iso2: CN
-    current_flow_bcma: 34
-    basis_year: 2022
-    continuation: {path: flat}
-    source: "Wikipedia/CNPC, Central Asia-China gas pipeline; corroborated by kun.uz reporting on Chinese customs disclosure practice"
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
     adjacency_flag: true
-    note: >
-      Not a direct CN border -- transits Uzbekistan/Kazakhstan (existing
-      Lines A/B/C), a real, long-operating corridor rather than a data
-      error. China stopped publishing per-country physical volumes after
-      2022; 2022 is the last confirmed bcm figure, held flat rather than
-      extrapolated from unconfirmed trade-value data. Line D capacity
-      expansion is a separate STEP 4 entry in pipeline_projects.yaml.
 
   - origin_iso2: UZ
     destination_iso2: CN
@@ -125,84 +146,82 @@ corridors_assumed:
     basis_year: null
     continuation: {path: undecided}
     source: null
+    entered_by: null
+    entered_on: null
     adjacency_flag: true
-    note: >
-      Chinese customs data stopped disclosing physical bcm by partner
-      country from 2023 (only trade-value data available, and Uzbekistan
-      suspended exports Jan-Mar 2023 amid a domestic energy crisis); no
-      defensible bcm figure found. Not a direct CN border -- transits
-      Kazakhstan/Kyrgyzstan. AWAITING ANALYST NUMBER.
 
   - origin_iso2: KZ
     destination_iso2: CN
-    current_flow_bcma: 5.86
-    basis_year: 2023
-    continuation: {path: growing, target_flow_bcma: 6.6, target_year: 2026}
-    source: "Astana Times: Where Does Kazakh Gas Flow Worldwide, citing sci99.com contract data, 2024"
-    note: "Stepped-up 6.6 bcm/yr volume already agreed for the 2024-25 supply year, against a contracted ceiling of up to 10 bcm/yr; held flat at the agreed step from 2026 rather than assumed up to the unconfirmed ceiling."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: MM
     destination_iso2: CN
-    current_flow_bcma: 4.7
-    basis_year: "2013-2023 average"
-    continuation: {path: declining, target_flow_bcma: 2.0, target_year: 2040}
-    source: "Global Times / Wikipedia, Shwe gas field: cumulative 52 bcm shipped 2013-2023, ~60 bcm reserves remaining as of 2023"
-    note: "No single-year throughput published; current flow is the 11-year cumulative average. Reserve depletion (60 bcm remaining at this draw rate) assumed to bend the profile down over the model horizon rather than hold flat."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: MM
     destination_iso2: TH
-    current_flow_bcma: 4.9
-    basis_year: 2024
-    continuation: {path: declining, target_flow_bcma: 2.0, target_year: 2035}
-    source: "Frontier Myanmar Energy Monitor, PTTEP 2024 production (Jan-Nov, Yadana + Zawtika)"
-    note: "Both fields already declining y/y (Yadana -13%, Zawtika -5%) on maturity; mature-field decline assumed to continue rather than flatten."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: QA
     destination_iso2: AE
-    current_flow_bcma: 20.5
-    basis_year: 2024
-    continuation: {path: flat}
-    source: "Dolphin Energy operations page; Global Energy Monitor, Dolphin Qatar-UAE pipeline"
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
     adjacency_flag: true
-    note: >
-      Dolphin subsea pipeline -- not a shared land border; a real, 20+ year
-      named subsea link, not a data error (candidate for
-      crosswalks/adjacency_override.csv, flagged for sign-off, not added by
-      this session). Exact-year figure has low confidence (operating rate
-      proxy, not a confirmed single-year customs figure); held flat given a
-      long, stable contracted operating history.
 
   - origin_iso2: IR
     destination_iso2: IQ
-    current_flow_bcma: 9
-    basis_year: 2024
-    continuation: {path: terminating, terminal_year: 2027}
-    source: "Caspian News, Iraq extends deal to import gas from Iran, 2024; Tehran Times, Iran gas exports 2024"
-    note: "Actual 2024 flow (~25 mcm/d annualised) already well below the ~50 mcm/d contracted ceiling; 2025 US sanctions pressure cut utilisation further (~21% of capacity). Termination by 2027 is an analyst call on the sanctions trajectory, not a confirmed decision -- flagged as such in the session report."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: AZ
     destination_iso2: TR
-    current_flow_bcma: 6
-    basis_year: 2024
-    continuation: {path: growing, target_flow_bcma: 9, target_year: 2028}
-    source: "Oxford Institute for Energy Studies, Expansion of the Southern Gas Corridor, 2024"
-    note: "AZ-TR leg of TANAP/SCP only (the onward TAP leg into Greece/Albania/Italy is out of scope for this pair). TANAP's own Phase 2 expansion (16 -> 24 bcm/yr total capacity) is the separate STEP 4 new-connection entry."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: BO
     destination_iso2: BR
-    current_flow_bcma: 6.7
-    basis_year: 2022
-    continuation: {path: terminating, terminal_year: 2030}
-    source: "BNamericas/Wood Mackenzie: Bolivian gas production to decline faster than expected, exports to Brazil and Argentina to cease by 2030"
-    note: "Brazil's share of a shrinking export pie has risen further since Bolivia's exports to Argentina ceased (Sept 2024) and remaining volumes were redirected to Brazil; Wood Mackenzie's own cited end date (2030) is used as the termination year."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: BO
     destination_iso2: AR
-    current_flow_bcma: 0
-    basis_year: 2024
-    continuation: {path: flat}
-    source: "Enerdata; Oil & Gas Journal: Argentina and Brazil set to lose most Bolivian gas imports, 2024"
-    note: "Exports ceased entirely in September 2024 after roughly two decades, as Bolivian production fell and Argentina itself pivots to becoming a net gas exporter. Stated as a measured-zero current flow, not an absence."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: AR
     destination_iso2: CL
@@ -210,29 +229,26 @@ corridors_assumed:
     basis_year: null
     continuation: {path: undecided}
     source: null
-    note: >
-      Strong, well-sourced directional evidence (5-9 mcm/d range across
-      2024, rising, on Vaca Muerta ramp and Nestor Kirchner pipeline
-      capacity additions reversing the historical Chile-to-Argentina
-      direction) but no confirmed full-year bcm total found. AWAITING
-      ANALYST NUMBER rather than converting a partial-year seasonal range
-      into an annual figure.
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: IL
     destination_iso2: EG
-    current_flow_bcma: 4.6
-    basis_year: 2023
-    continuation: {path: growing, target_flow_bcma: 6.7, target_year: 2027}
-    source: "MEES: Israel-Egypt Gas Volumes To Rise, 2024"
-    note: "EMG/Ashkelon-Arish line specifically. A $35bn, 130+ bcm supply deal through 2040 has been signed, targeting a rise from ~4.7 to ~6.7 bcm/yr; EMG's own physical capacity is being expanded 6.5 -> 8.5 bcm/yr in support."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: IL
     destination_iso2: JO
-    current_flow_bcma: 6.8
-    basis_year: 2023
-    continuation: {path: growing, target_flow_bcma: 8, target_year: 2030}
-    source: "FDD: Israeli Natural Gas Exports to Arab Neighbors Jumped Over 13% in 2024; Enerdata"
-    note: "2023 figure is the Jordan-specific (North Jordan pipeline) split; 2024's Jordan-only split was not separately confirmed (only the Egypt+Jordan combined total, +13.4% y/y, was), so continuation is anchored on the last isolated figure rather than backed into from the combined total."
+    current_flow_bcma: null
+    basis_year: null
+    continuation: {path: undecided}
+    source: null
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: MZ
     destination_iso2: ZA
@@ -240,12 +256,8 @@ corridors_assumed:
     basis_year: null
     continuation: {path: undecided}
     source: null
-    note: >
-      ROMPCO/Sasol report throughput in MJ, not bcm; no bcm figure found.
-      Direction is clear and severe (Sasol's Pande/Temane fields expected
-      to stop third-party supply by end-June 2026 -- described elsewhere as
-      South Africa's 2026 "day zero"), but a terminating path needs a
-      current bcm level to terminate from. AWAITING ANALYST NUMBER.
+    entered_by: null
+    entered_on: null
 
   - origin_iso2: MY
     destination_iso2: SG
@@ -253,15 +265,9 @@ corridors_assumed:
     basis_year: null
     continuation: {path: undecided}
     source: null
+    entered_by: null
+    entered_on: null
     adjacency_flag: true
-    note: >
-      Subsea pipeline (Peninsular Malaysia-Singapore interconnection), not a
-      shared land border -- a real named link (candidate for
-      crosswalks/adjacency_override.csv, flagged for sign-off, not added by
-      this session), not a data error. No corridor-isolated bcm figure
-      found -- Malaysia's published export total is overwhelmingly LNG, and
-      Singapore's PNG import statistics are not split by origin country in
-      the sources checked. AWAITING ANALYST NUMBER.
 
   - origin_iso2: NG
     destination_iso2: GH
@@ -269,19 +275,9 @@ corridors_assumed:
     basis_year: null
     continuation: {path: undecided}
     source: null
+    entered_by: null
+    entered_on: null
     adjacency_flag: true
-    note: >
-      West African Gas Pipeline (WAGP): Nigeria to Ghana, transiting Benin
-      and Togo -- not a shared land border, but a real, operating named
-      pipeline (candidate for crosswalks/adjacency_override.csv, flagged
-      for sign-off, not added by this session). A real, operating corridor since 2011, not a gap in
-      coverage -- found missing from this file only when build_session7.py's
-      derived zero-coverage check flagged NG and GH as apparently
-      pipe-free, which they are not. WAGP has a long history of chronic
-      underutilisation against its ~170 mmscfd (~1.76 bcma) design capacity
-      -- Nigerian upstream supply disruptions and force majeure events are
-      recurrent -- and no confident current-year bcm figure was found in
-      this session's research pass. AWAITING ANALYST NUMBER.
 
   - origin_iso2: ID
     destination_iso2: SG
@@ -289,25 +285,18 @@ corridors_assumed:
     basis_year: null
     continuation: {path: undecided}
     source: null
+    entered_by: null
+    entered_on: null
     adjacency_flag: true
-    note: >
-      Subsea pipeline (West Natuna / South Sumatra to Singapore), not a
-      shared land border -- a real named link (candidate for
-      crosswalks/adjacency_override.csv, flagged for sign-off, not added by
-      this session), not a data error. No corridor-isolated bcm figure
-      found; direction is known (Indonesia is redirecting West Natuna gas to
-      domestic Sumatra by 2028, and existing Singapore supply deals are
-      described as winding down rather than being renewed at scale).
-      AWAITING ANALYST NUMBER.
 
 # ---------------------------------------------------------------------------
-# STEP 5. Modelled countries with no cross-border pipe at all -- computed by
-# build_session7.py as (modelled countries) minus (every country appearing
-# as an origin or destination anywhere above or in fact_pipe_flow_hist), not
-# hand-typed, so the list cannot silently miss an island/isolated country
-# this file's author did not think to name. The task's own worked examples
-# are asserted against that computed set below; a mismatch is reported, not
-# silently reconciled.
+# STEP 5 (of session 7). Modelled countries with no cross-border pipe at all
+# -- computed by build_session7.py as (modelled countries) minus (every
+# country appearing as an origin or destination anywhere above or in
+# fact_pipe_flow_hist), not hand-typed. This is a structural finding (a
+# country has no named corridor at all), not an invented flow magnitude, so
+# it is out of scope for the STEP 1 strip and is left exactly as session 7
+# built it.
 # ---------------------------------------------------------------------------
 zero_countries_expected:
   # The task's own worked examples (session 6's table):

@@ -1,0 +1,18 @@
+# Session 8: turning analyst pipeline assumptions into an LNG number. Every
+# numeric value the session 8 build uses lives here, never inline in code
+# (CLAUDE.md, "numbers, failure and provenance").
+
+# STEP 4 validation tolerances, all in bcm.
+validation:
+  # 4c: a country with |supply_bcm| below this is treated as having no
+  # domestic gas production of its own, i.e. a pure transit country, whose
+  # net pipe position should sit within transit_tolerance_bcm of zero.
+  transit_supply_threshold_bcm: 0.5
+  transit_tolerance_bcm: 1.0
+  # 4e: the modelled set's net_pipe_bcm should sum to within this of zero
+  # each year physical pipe gas is conserved across the modelled countries.
+  global_closure_tolerance_bcm: 5.0
+
+# The year the STEP 4 checks and the report's worked tables are run against,
+# same convention as session 7's residual_ranking_year.
+checks_reporting_year: 2030
