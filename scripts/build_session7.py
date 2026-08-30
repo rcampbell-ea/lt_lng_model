@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from lt_lng_flows.ingest.provenance import write_manifest  # noqa: E402
-from lt_lng_flows.output import duckdb_store  # noqa: E402
+from lt_lng_flows.output import duckdb_store, session7_outputs  # noqa: E402
 from lt_lng_flows.pipe import gtf_flows  # noqa: E402
 from lt_lng_flows.pipe import pipe_flow_forecast as pff  # noqa: E402
 
@@ -253,6 +253,11 @@ def main() -> None:
     out_path = DATA_OUTPUT / "fact_pipe_net_position.parquet"
     net_position.to_parquet(out_path, index=False)
     log(f"Wrote data/output/{out_path.name}.")
+
+    # ---- HTML report ----------------------------------------------------
+    html_path = DATA_OUTPUT / "session_07_pipe_net_position.html"
+    session7_outputs.build_html(net_position, dim_country, html_path)
+    log(f"Wrote data/output/{html_path.name}.")
 
     # ---- FK/PK join check against fact_net_gas_position --------------------
     joined = horizon_rows.merge(
