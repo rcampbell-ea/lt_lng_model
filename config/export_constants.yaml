@@ -1,0 +1,35 @@
+# EA long-term gas supply/demand export. Every filter value and expected
+# count used by scripts/export_ea_lt_supply_demand.py lives here, never
+# inline in code (CLAUDE.md, "numbers, failure and provenance").
+#
+# Filters and expected shapes were established against the pinned 202608
+# vintage (data/raw/ea_api/202608/mapping_297, mapping_314) and are asserted
+# on every run, current or refreshed. A future vintage that does not match
+# fails loudly rather than being silently accepted.
+
+series:
+  supply:
+    mapping_id: 297
+    category: natural_gas
+    unit: bcm
+    aspect_subtype: null  # blank on every row in this mapping; not a filter criterion
+    expected_countries: 170
+    expected_min_year: 2012
+    expected_max_year: 2050
+    expected_obs_per_series: 39
+  demand:
+    mapping_id: 314
+    category: natural_gas
+    unit: bcm
+    aspect_subtype: total
+    expected_countries: 80
+    expected_min_year: 2005
+    expected_max_year: 2050
+    expected_obs_per_series: 46
+
+output_columns:
+  - country_iso2
+  - country_name
+  - year
+  - supply_bcm
+  - demand_bcm
